@@ -1,2005 +1,1018 @@
 <!doctype html>
-<html lang="en" dir="ltr" data-mode="dark">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ABDULAZIZ ALOMRAN — Data Science and Analyst</title>
-<meta name="description" id="meta-desc" content="I'm Abdulaziz Alomran, a Computer Information Systems student at Imam Mohammad Ibn Saud Islamic University. With a strong passion for Data Science and Analytics">
-<meta name="theme-color" id="meta-theme" content="#1a1b26">
-<meta property="og:type" content="profile">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" id="og-title" content="ABDULAZIZ ALOMRAN — Data Science and Analyst">
-<meta property="og:description" id="og-desc" content="I'm Abdulaziz Alomran, a Computer Information Systems student at Imam Mohammad Ibn Saud Islamic University. With a strong passion for Data Science and Analytics">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" id="tw-title" content="ABDULAZIZ ALOMRAN — Data Science and Analyst">
-<meta name="twitter:description" id="tw-desc" content="I'm Abdulaziz Alomran, a Computer Information Systems student at Imam Mohammad Ibn Saud Islamic University. With a strong passion for Data Science and Analytics">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1b26'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%237aa2f7' text-anchor='middle'%3EAZ%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عبدالعزيز العمران — Portfolio</title>
+<meta name="description" content="Abdulaziz Alomran — CIS student, Data Science &amp; Analytics. عبدالعزيز العمران — علوم وتحليل البيانات.">
+<meta property="og:title" content="Abdulaziz Alomran — Portfolio">
+<meta property="og:description" content="Data Science &amp; Analytics · CIS student at IMSIU, Riyadh">
+<meta name="theme-color" content="#0F172A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E7C86'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Arial' font-weight='700' font-size='13' fill='white'%3EAA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;800&display=swap">
-<style id="site-style">
-:root {
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-  color-scheme: dark;
-  --bg: #1a1b26; --panel: #16161e; --surface: #1f2335; --surface-2: #24283b; --hover: #2a2f45;
-  --border: #2b2f44; --border-strong: #3b4261;
-  --text: #c0caf5; --muted: #7982a9; --faint: #565f89; --bright: #e9edff; --on-accent: #0f1220;
-  --blue: #7aa2f7; --cyan: #7dcfff; --purple: #bb9af7; --green: #9ece6a; --orange: #ff9e64; --red: #f7768e; --yellow: #e0af68; --teal: #73daca;
-  --blue-soft: rgba(122,162,247,.14); --cyan-soft: rgba(125,207,255,.14); --purple-soft: rgba(187,154,247,.14); --green-soft: rgba(158,206,106,.14);
-  --orange-soft: rgba(255,158,100,.16); --red-soft: rgba(247,118,142,.14); --yellow-soft: rgba(224,175,104,.14); --teal-soft: rgba(115,218,202,.14);
-  --sel: rgba(122,162,247,.16); --grid: rgba(122,162,247,.07);
-  --shadow: 0 24px 60px rgba(0,0,0,.5);
-  --dot-s: 70%; --dot-l: 66%;
-  --title-h: 44px; --tabs-h: 38px; --status-h: 30px; --line: 28px;
-}
-:root[data-mode="light"] {
-  color-scheme: light;
-  --bg: #f7f8fc; --panel: #eef0f7; --surface: #ffffff; --surface-2: #f1f3f9; --hover: #e4e8f4;
-  --border: #dde1ee; --border-strong: #c3c9dd;
-  --text: #2b3049; --muted: #6b7089; --faint: #9096b0; --bright: #12162a; --on-accent: #ffffff;
-  --blue: #2e5fd6; --cyan: #0b7aa3; --purple: #7847bd; --green: #3f7216; --orange: #a85200; --red: #c93655; --yellow: #8f6d17; --teal: #0f8a78;
-  --blue-soft: rgba(46,95,214,.11); --cyan-soft: rgba(11,122,163,.11); --purple-soft: rgba(120,71,189,.11); --green-soft: rgba(78,140,28,.12);
-  --orange-soft: rgba(194,95,0,.12); --red-soft: rgba(201,54,85,.11); --yellow-soft: rgba(143,109,23,.12); --teal-soft: rgba(15,138,120,.11);
-  --sel: rgba(46,95,214,.12); --grid: rgba(46,95,214,.07);
-  --shadow: 0 20px 50px rgba(30,40,80,.12);
-  --dot-s: 62%; --dot-l: 44%;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--title-h) + var(--tabs-h) + 20px); }
-body {
-  margin: 0; background: var(--bg); color: var(--text);
-  font-family: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size: 15.5px; line-height: 1.6; -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; }
-[hidden] { display: none !important; }
-a { color: inherit; }
-button { font-family: inherit; }
-.mono, .tab, .ex-file, .ex-folder, .ex-title, .crumbs, .status, .badge, .tag, .tech, .sha, .btn, .commit-head, .commit-meta, .file-head, .fetch, .typed, .diff-line, .term, .rl, .repo-head, .repo-kicker, .repo-role, .repo-url, .mod-title, .folder-head, .inp, .pal, .kbd { font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", ui-monospace, SFMono-Regular, Menlo, monospace; }
-.display { font-family: "Chakra Petch", "Noto Kufi Arabic", sans-serif; font-weight: 700; }
-[dir="rtl"] .display { font-family: "Noto Kufi Arabic", "Chakra Petch", sans-serif; font-weight: 800; }
-[dir="rtl"] .tag, [dir="rtl"] .repo-kicker, [dir="rtl"] .ex-title, [dir="rtl"] .quote .qt { letter-spacing: 0; }
-.ic { display: inline-grid; place-items: center; }
-.ic svg { width: 16px; height: 16px; display: block; }
-.arrow { display: inline-block; }
-[dir="rtl"] .arrow { transform: scaleX(-1); }
-.muted { color: var(--muted); }
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#EEF0F3}
+html{scroll-behavior:smooth}
+a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
+.d-card{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}
+.d-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(15,23,42,.08)}
+.d-nav{transition:background .2s,color .2s}.d-nav:hover{background:#1E293B;color:#fff}
+.d-btn{transition:transform .2s,box-shadow .2s}.d-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(14,124,134,.22)}
+.d-chip{transition:background .2s,color .2s,border-color .2s}
+.d-prev{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.d-card:hover .d-prev{transform:scale(1.04)}
+.d-barh{transition:opacity .2s}.d-chart:hover .d-barh{opacity:.45}.d-chart .d-barh:hover{opacity:1}
+@supports (animation-timeline: view()){.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% cover 25%}}
+@keyframes rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.d-bar{transform-origin:bottom;transform:scaleY(0);animation:gy 1s cubic-bezier(.3,.8,.2,1) forwards}
+@keyframes gy{to{transform:scaleY(1)}}
+.d-fun{transform:scaleX(0);animation:gx 1s cubic-bezier(.3,.8,.2,1) forwards}
+[dir=ltr] .d-fun{transform-origin:left}[dir=rtl] .d-fun{transform-origin:right}
+@keyframes gx{to{transform:scaleX(1)}}
+.d-s2{stroke-dasharray:0 377;animation:s2 1.2s ease-out forwards}
+.d-s1{stroke-dasharray:0 377;animation:s1 1.2s ease-out forwards}
+@keyframes s2{to{stroke-dasharray:105 377}}
+@keyframes s1{to{stroke-dasharray:52 377}}
+.d-line{stroke-dasharray:700;stroke-dashoffset:700;animation:draw 1.6s ease 1s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.d-live{animation:live 1.6s ease-in-out infinite}
+@keyframes live{50%{opacity:.3}}
+.d-fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-/* accents */
-.c-blue { --ac: var(--blue); --ac-soft: var(--blue-soft); }
-.c-cyan { --ac: var(--cyan); --ac-soft: var(--cyan-soft); }
-.c-purple { --ac: var(--purple); --ac-soft: var(--purple-soft); }
-.c-green { --ac: var(--green); --ac-soft: var(--green-soft); }
-.c-orange { --ac: var(--orange); --ac-soft: var(--orange-soft); }
-.c-red { --ac: var(--red); --ac-soft: var(--red-soft); }
-.c-yellow { --ac: var(--yellow); --ac-soft: var(--yellow-soft); }
-.c-teal { --ac: var(--teal); --ac-soft: var(--teal-soft); }
+.no-sdt .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.no-sdt .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
 
-/* window chrome */
-.win { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; padding-bottom: calc(var(--status-h) + env(safe-area-inset-bottom, 0px)); }
-.titlebar {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; height: var(--title-h);
-  display: flex; align-items: center; gap: 12px; padding: 0 12px;
-  background: var(--panel); border-bottom: 1px solid var(--border);
-}
-.lights { display: flex; gap: 7px; flex: none; }
-.lights i { width: 12px; height: 12px; border-radius: 50%; background: #ff5f57; display: block; }
-.lights i:nth-child(2) { background: #febc2e; }
-.lights i:nth-child(3) { background: #28c840; }
-.win-title { flex: 1; text-align: center; font-size: .76rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: "IBM Plex Mono", monospace; }
-.win-title b { color: var(--text); font-weight: 600; }
-.title-actions { display: flex; gap: 6px; align-items: center; flex: none; }
-.tb-btn {
-  height: 30px; min-width: 30px; padding: 0 8px; border-radius: 6px; border: 1px solid transparent; background: transparent;
-  color: var(--muted); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: .72rem; font-family: "IBM Plex Mono", monospace;
-  transition: background .15s, color .15s, border-color .15s;
-}
-.tb-btn:hover { background: var(--hover); color: var(--text); }
-.tb-btn.accent { color: var(--blue); border-color: var(--border-strong); }
-.tb-btn.warn { color: var(--orange); border-color: var(--border-strong); }
-.tb-btn:focus-visible, .btn:focus-visible, .tab:focus-visible, .ex-file:focus-visible, .st:focus-visible, .repo:focus-visible, .commit-card:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
-.kbd { font-size: .6rem; border: 1px solid var(--border-strong); border-radius: 4px; padding: 1px 5px; color: var(--muted); line-height: 1.4; }
-.unsaved { display: inline-flex; align-items: center; gap: 8px; font-size: .74rem; color: var(--orange); font-family: "IBM Plex Mono", monospace; }
-.unsaved::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 10px var(--orange); }
-
-/* workspace */
-.workspace { display: grid; grid-template-columns: 48px 224px minmax(0, 1fr); flex: 1; }
-.activity, .explorer {
-  position: sticky; top: calc(var(--title-h) + env(safe-area-inset-top, 0px)); align-self: start;
-  height: calc(100vh - var(--title-h) - var(--status-h)); height: calc(100dvh - var(--title-h) - var(--status-h)); background: var(--panel); border-inline-end: 1px solid var(--border);
-}
-.activity { display: flex; flex-direction: column; align-items: center; padding-block: 10px; gap: 4px; }
-.act { width: 40px; height: 40px; border-radius: 8px; display: grid; place-items: center; color: var(--faint); border: 0; background: transparent; cursor: pointer; position: relative; }
-.act::before { content: ''; position: absolute; inset-inline-start: -4px; top: 8px; bottom: 8px; width: 2px; border-radius: 2px; background: transparent; }
-.act.on { color: var(--text); }
-.act.on::before { background: var(--blue); }
-.act:hover { color: var(--text); }
-.act.bottom { margin-top: auto; }
-.explorer { padding: 10px 0; overflow: auto; }
-.ex-title { font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 4px 16px 8px; }
-.ex-folder { display: flex; align-items: center; gap: 6px; padding: 4px 12px; font-size: .78rem; color: var(--text); }
-.ex-folder .chev { color: var(--faint); font-size: .7rem; }
-.ex-file {
-  display: flex; align-items: center; gap: 8px; padding: 5px 12px 5px 30px; font-size: .78rem; color: var(--muted);
-  text-decoration: none; border-inline-start: 2px solid transparent; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-[dir="rtl"] .ex-file { padding: 5px 30px 5px 12px; }
-.ex-file.sub { padding-inline-start: 46px; }
-.ex-file:hover { background: var(--hover); color: var(--text); }
-.ex-file.on { background: var(--sel); color: var(--text); border-color: var(--blue); }
-.fi { font-size: .64rem; font-weight: 600; width: 18px; text-align: center; flex: none; }
-.fi-md { color: var(--blue); } .fi-log { color: var(--cyan); } .fi-dir { color: var(--yellow); } .fi-json { color: var(--yellow); } .fi-sh { color: var(--green); }
-
-.editor { min-width: 0; display: flex; flex-direction: column; }
-.tabs {
-  position: sticky; top: calc(var(--title-h) + env(safe-area-inset-top, 0px)); z-index: 40; display: flex; height: var(--tabs-h);
-  background: var(--panel); border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none;
-}
-.tabs::-webkit-scrollbar { display: none; }
-.tab {
-  display: flex; align-items: center; gap: 8px; padding: 0 16px; font-size: .74rem; color: var(--muted); text-decoration: none;
-  border-inline-end: 1px solid var(--border); white-space: nowrap; position: relative; flex: none;
-}
-.tab.on { color: var(--text); background: var(--bg); }
-.tab.on::after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--blue); }
-.tab .dirty { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); display: none; }
-body.dirty .tab .dirty { display: block; }
-.crumbs { display: flex; align-items: center; gap: 8px; padding: 7px 20px; font-size: .7rem; color: var(--muted); border-bottom: 1px solid var(--border); background: var(--bg); overflow: hidden; white-space: nowrap; }
-.crumbs .sep { color: var(--faint); }
-.crumbs .cur { color: var(--text); }
-
-/* documents */
-.editor { container-type: inline-size; }
-.doc { position: relative; border-bottom: 1px solid var(--border); }
-.gutter {
-  position: absolute; top: 0; bottom: 0; inset-inline-start: 0; width: 60px; overflow: hidden;
-  font-family: "IBM Plex Mono", monospace; font-size: .7rem; color: var(--faint); text-align: end; padding: 40px 10px 0 0;
-  user-select: none; border-inline-end: 1px solid var(--border); line-height: var(--line);
-}
-[dir="rtl"] .gutter { padding: 40px 0 0 10px; }
-.gutter span { display: block; height: var(--line); }
-.body { padding: 40px clamp(20px, 4vw, 56px) 56px; padding-inline-start: calc(60px + clamp(20px, 4vw, 56px)); min-width: 0; }
-.doc.readme .body { background-image: radial-gradient(var(--grid) 1px, transparent 1.2px); background-size: 28px 28px; }
-.file-head { display: flex; align-items: center; gap: 10px; margin: 0 0 22px; font-size: .74rem; color: var(--faint); flex-wrap: wrap; }
-.file-head .fn { color: var(--muted); }
-.file-head .cm::before { content: '// '; }
-.h-sec { font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin: 0 0 8px; color: var(--bright); letter-spacing: .01em; text-transform: uppercase; line-height: 1.1; }
-[dir="rtl"] .h-sec { line-height: 1.5; }
-.sec-intro { margin: 0 0 26px; max-width: 62ch; color: var(--text); }
-.sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
-
-/* README */
-.readme-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
-@container (max-width: 820px) { .readme-grid { grid-template-columns: minmax(0, 1fr); } .fetch { max-width: 560px; } }
-@media (max-width: 1000px) and (min-width: 901px) { .readme-grid { grid-template-columns: minmax(0, 1fr); } }
-.md-h1 { font-size: clamp(2.5rem, 6.2vw, 4.8rem); line-height: 1; margin: 6px 0 14px; color: var(--bright); text-transform: uppercase; letter-spacing: .01em; overflow-wrap: anywhere; text-wrap: balance; }
-[dir="rtl"] .md-h1 { line-height: 1.35; font-size: clamp(2.2rem, 5.5vw, 4rem); }
-.md-h1 .hash { color: var(--faint); font-family: "IBM Plex Mono", monospace; font-weight: 400; font-size: .5em; vertical-align: .4em; margin-inline-end: .25em; }
-.typed { font-size: clamp(1rem, 1.7vw, 1.2rem); color: var(--cyan); min-height: 1.7em; }
-.typed .cur { display: inline-block; width: .6em; height: 1.1em; background: var(--cyan); vertical-align: -.15em; margin-inline-start: 2px; animation: blink 1s steps(1) infinite; }
-@keyframes blink { 50% { opacity: 0; } }
-.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0; }
-.badge { display: inline-flex; font-size: .68rem; border-radius: 4px; overflow: hidden; border: 1px solid var(--border-strong); position: relative; }
-.badge .k { background: var(--surface-2); color: var(--muted); padding: 4px 8px; }
-.badge .v { background: var(--blue-soft); color: var(--blue); padding: 4px 8px; font-weight: 600; }
-.prose { font-size: 1.06rem; max-width: 62ch; }
-.prose b, .prose strong { color: var(--bright); font-weight: 600; }
-.quote { border-inline-start: 3px solid var(--purple); padding: 10px 16px; margin: 18px 0; color: var(--text); background: var(--purple-soft); border-radius: 0 8px 8px 0; max-width: 62ch; white-space: pre-line; }
-[dir="rtl"] .quote { border-radius: 8px 0 0 8px; }
-.quote .qt { font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; font-size: .7rem; color: var(--purple); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; display: block; }
-.cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
-.btn {
-  display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--border-strong);
-  background: var(--surface); color: var(--text); text-decoration: none; font-size: .8rem; font-weight: 600; cursor: pointer; line-height: 1.3;
-  transition: transform .15s, background .2s, border-color .2s, box-shadow .2s;
-}
-.btn:hover { transform: translateY(-1px); border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-soft); }
-.btn.primary { background: var(--blue); color: var(--on-accent); border-color: transparent; }
-.btn.primary:hover { filter: brightness(1.08); }
-.btn.small { padding: 6px 12px; font-size: .72rem; }
-.btn[disabled] { opacity: .5; cursor: default; transform: none; box-shadow: none; }
-
-/* neofetch card */
-.fetch { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; font-size: .78rem; box-shadow: var(--shadow); position: relative; overflow: hidden; }
-.fetch::before { content: ''; position: absolute; inset: 0; background: radial-gradient(80% 60% at 100% 0%, var(--blue-soft), transparent 60%); pointer-events: none; }
-.fetch-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: start; position: relative; }
-.fetch-logo { font-size: 3rem; line-height: 1; color: var(--blue); text-shadow: 0 0 28px var(--blue-soft); letter-spacing: -.02em; padding-top: 4px; }
-.fetch-lines { min-width: 0; }
-.fetch-user { color: var(--green); font-weight: 600; margin-bottom: 2px; direction: ltr; text-align: start; }
-.fetch-user .at { color: var(--faint); }
-.fetch-rule { color: var(--faint); margin-bottom: 6px; letter-spacing: -.05em; }
-.fetch-line { display: flex; gap: 8px; line-height: 1.75; align-items: baseline; }
-.fetch-line .k { color: var(--purple); flex: none; min-width: 58px; }
-.fetch-line .k::after { content: ':'; color: var(--faint); }
-.fetch-line .v { color: var(--text); overflow-wrap: anywhere; }
-.swatches { display: flex; gap: 4px; margin-top: 14px; }
-.swatches i { width: 20px; height: 12px; border-radius: 2px; display: block; }
-@media (max-width: 420px) { .fetch-grid { grid-template-columns: 1fr; } .fetch-logo { font-size: 2.6rem; } }
-
-/* skills modules */
-.stack { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
-.mod { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; position: relative; }
-.mod-title { font-size: .74rem; color: var(--muted); margin-bottom: 12px; display: flex; gap: 8px; align-items: center; }
-.mod-title .key { color: var(--cyan); }
-.mod-title .cnt { color: var(--faint); margin-inline-start: auto; }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.tech { display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); font-size: .72rem; line-height: 1.4; }
-.tech i { width: 9px; height: 9px; border-radius: 50%; background: hsl(var(--h) var(--dot-s) var(--dot-l)); flex: none; }
-
-/* git log */
-.git { display: grid; }
-.commit { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 0 14px; position: relative; }
-.rail { position: relative; }
-.rail::before { content: ''; position: absolute; top: 0; bottom: 0; inset-inline-start: 19px; width: 2px; background: var(--border-strong); }
-.commit:first-child .rail::before { top: 22px; }
-.commit:last-child .rail::before { height: 22px; bottom: auto; }
-.commit:only-child .rail::before { display: none; }
-.node { position: absolute; top: 14px; inset-inline-start: 12px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 3px solid var(--ac); box-shadow: 0 0 0 4px var(--bg); }
-.node.live::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px solid var(--ac); opacity: .6; animation: ping 1.8s ease-out infinite; }
-@keyframes ping { 0% { transform: scale(.55); opacity: .8; } 100% { transform: scale(1.4); opacity: 0; } }
-.commit-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; cursor: pointer; transition: border-color .2s, background .2s; position: relative; }
-.commit-card:hover { border-color: var(--border-strong); background: var(--surface-2); }
-.commit-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-size: .72rem; color: var(--muted); }
-.sha { color: var(--orange); font-weight: 600; direction: ltr; }
-.tag { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 999px; font-size: .64rem; font-weight: 600; background: var(--ac-soft); color: var(--ac); text-transform: uppercase; letter-spacing: .06em; }
-.tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--ac); }
-.commit-msg { font-size: 1.1rem; font-weight: 600; color: var(--bright); margin: 8px 0 4px; line-height: 1.35; }
-.commit-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .72rem; color: var(--muted); }
-.commit-meta .k { color: var(--faint); }
-.diff { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
-.diff > div { overflow: hidden; min-height: 0; }
-.commit-card.open .diff { grid-template-rows: 1fr; }
-.diff-body { margin-top: 14px; border-top: 1px dashed var(--border-strong); padding-top: 12px; }
-.diff-line { display: flex; gap: 10px; font-size: .78rem; line-height: 1.6; padding: 4px 10px; border-radius: 4px; background: var(--green-soft); color: var(--text); white-space: pre-wrap; }
-.diff-line::before { content: '+'; color: var(--green); font-weight: 700; flex: none; }
-.diff-skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; align-items: center; }
-.diff-skills .k { font-family: "IBM Plex Mono", monospace; font-size: .68rem; color: var(--faint); }
-.seg { display: inline-flex; border: 1px solid var(--border-strong); border-radius: 8px; padding: 3px; background: var(--surface); }
-.seg-btn { border: 0; background: transparent; color: var(--muted); font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; font-size: .7rem; padding: 5px 10px; border-radius: 6px; cursor: pointer; }
-.seg-btn.on { background: var(--sel); color: var(--blue); }
-
-/* repos */
-.folder-head { display: flex; align-items: center; gap: 10px; margin: 26px 0 14px; font-size: .78rem; color: var(--text); flex-wrap: wrap; position: relative; }
-.folder-head .chev { color: var(--faint); }
-.folder-head .fname { color: var(--yellow); font-weight: 600; }
-.folder-head .cnt { color: var(--faint); }
-.folder-head .gtitle { color: var(--muted); }
-.repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
-.repo { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px; position: relative; transition: transform .2s, border-color .2s, box-shadow .2s; cursor: pointer; min-width: 0; }
-.repo:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow); }
-.repo-head { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.repo-head .ric { color: var(--muted); flex: none; }
-.repo-name { font-weight: 600; color: var(--blue); font-size: .95rem; overflow-wrap: anywhere; min-width: 0; }
-.repo-kind { margin-inline-start: auto; font-size: .62rem; padding: 2px 8px; border: 1px solid var(--border-strong); border-radius: 999px; color: var(--muted); white-space: nowrap; flex: none; }
-.repo-kicker { font-size: .68rem; color: var(--purple); text-transform: uppercase; letter-spacing: .06em; }
-.repo-desc { font-size: .92rem; color: var(--text); margin: 0; white-space: pre-line; }
-.repo:not(.open):not(.editing) .repo-desc { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.repo-url { font-size: .68rem; color: var(--faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; direction: ltr; text-align: start; }
-.langbar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; gap: 2px; margin-top: auto; }
-.langbar i { flex: 1; background: hsl(var(--h) var(--dot-s) var(--dot-l)); }
-.repo-more { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
-.repo-more > div { overflow: hidden; min-height: 0; }
-.repo.open .repo-more, .repo.editing .repo-more { grid-template-rows: 1fr; }
-.repo-role { font-size: .72rem; color: var(--muted); padding-top: 6px; }
-.repo-role b { color: var(--text); font-weight: 500; }
-.repo-foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-top: 10px; border-top: 1px solid var(--border); }
-.repo-links { display: flex; gap: 6px; flex-wrap: wrap; margin-inline-start: auto; }
-.rl { font-size: .7rem; color: var(--blue); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; padding: 4px 8px; border-radius: 6px; border: 1px solid transparent; }
-.rl:hover { border-color: var(--border-strong); background: var(--hover); }
-
-/* terminal */
-.term { background: #0f111a; border: 1px solid var(--border-strong); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); color: #c0caf5; max-width: 780px; }
-.term-bar { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #161a2b; border-bottom: 1px solid rgba(255,255,255,.06); font-size: .68rem; color: #7982a9; }
-.term-bar .lights i { width: 10px; height: 10px; }
-.term-body { padding: 16px 18px; font-size: .8rem; line-height: 1.85; direction: ltr; text-align: left; }
-[dir="rtl"] .term-body { direction: rtl; text-align: right; }
-.tl { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
-.tl .ps { color: #9ece6a; }
-.tl .cmd { color: #c0caf5; }
-.tl .ok { color: #7dcfff; min-width: 96px; }
-.tl a { color: #bb9af7; text-decoration: none; overflow-wrap: anywhere; }
-.tl a:hover { text-decoration: underline; }
-.tl .cmt { color: #565f89; font-style: italic; }
-.term .cur { display: inline-block; width: .6em; height: 1.1em; background: #c0caf5; vertical-align: -.15em; animation: blink 1s steps(1) infinite; }
-.contact-cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
-
-/* status bar */
-.status {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; height: calc(var(--status-h) + env(safe-area-inset-bottom, 0px));
-  padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--panel); border-top: 1px solid var(--border); color: var(--muted);
-  display: flex; align-items: stretch; font-size: .68rem; overflow: hidden;
-}
-.st { display: inline-flex; align-items: center; gap: 6px; padding: 0 10px; white-space: nowrap; background: transparent; border: 0; color: inherit; font: inherit; font-family: inherit; }
-button.st { cursor: pointer; }
-button.st:hover { background: var(--hover); color: var(--text); }
-.st.brand { background: var(--blue); color: var(--on-accent); font-weight: 600; }
-body.editing .st.brand { background: var(--orange); }
-.st.push { margin-inline-start: auto; }
-.st .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
-@media (max-width: 640px) { .st.hide-sm { display: none; } }
-
-/* command palette */
-.palette { position: fixed; inset: 0; z-index: 80; background: rgba(5,7,15,.55); display: grid; place-items: start center; padding: 12vh 16px 0; backdrop-filter: blur(4px); }
-.pal { width: min(560px, 100%); background: var(--surface); border: 1px solid var(--border-strong); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
-.pal input { width: 100%; border: 0; background: transparent; color: var(--text); font: inherit; font-family: inherit; font-size: .9rem; padding: 14px 16px; outline: none; border-bottom: 1px solid var(--border); }
-.pal-list { max-height: 50vh; overflow: auto; padding: 6px; }
-.pal-item { display: flex; align-items: center; gap: 10px; padding: 9px 12px; font-size: .78rem; cursor: pointer; color: var(--text); border-radius: 8px; border: 0; background: transparent; width: 100%; text-align: start; font-family: inherit; }
-.pal-item.on, .pal-item:hover { background: var(--sel); }
-.pal-item .hint { margin-inline-start: auto; color: var(--faint); font-size: .66rem; }
-.pal-empty { padding: 14px 16px; color: var(--faint); font-size: .78rem; }
-
-/* edit mode */
-.ed { outline: 1px dashed color-mix(in srgb, var(--orange) 60%, transparent); outline-offset: 3px; border-radius: 3px; min-width: 1.5em; display: inline-block; cursor: text; white-space: pre-wrap; transition: outline-color .15s, background .15s; }
-.ed:hover, .ed:focus { outline: 2px solid var(--orange); background: var(--orange-soft); }
-.ed:empty::before { content: attr(data-ph); opacity: .45; }
-div.ed { display: block; }
-.inp { font-size: .78rem; padding: 7px 10px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface-2); color: var(--text); min-width: 0; max-width: 100%; }
-.inp:focus { outline: 2px solid var(--orange); outline-offset: 1px; border-color: transparent; }
-select.inp { cursor: pointer; }
-.field { display: flex; flex-direction: column; gap: 6px; font-size: .68rem; color: var(--muted); font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; }
-.field-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.del { position: absolute; top: 10px; inset-inline-end: 10px; z-index: 4; width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface-2); color: var(--muted); cursor: pointer; display: grid; place-items: center; font-size: 14px; line-height: 1; padding: 0; }
-.del:hover { color: var(--red); border-color: var(--red); }
-.del.inline { position: static; flex: none; }
-.del.armed { background: var(--red); color: #fff; border-color: transparent; width: auto; padding: 0 8px; font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; font-size: .66rem; }
-.mover { display: inline-flex; gap: 4px; position: absolute; top: 10px; inset-inline-end: 42px; z-index: 4; }
-.mover button { width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--surface-2); color: var(--muted); cursor: pointer; display: grid; place-items: center; padding: 0; }
-.mover button:hover { color: var(--blue); border-color: var(--blue); }
-.mover button[disabled] { opacity: .35; cursor: default; }
-[dir="rtl"] .mover .ic { transform: scaleX(-1); }
-.add { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border: 1px dashed var(--border-strong); border-radius: 10px; background: transparent; color: var(--muted); cursor: pointer; font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; font-size: .76rem; width: 100%; margin-top: 12px; }
-.add:hover { color: var(--orange); border-color: var(--orange); }
-.add.tile { min-height: 160px; margin-top: 0; }
-.add.small { width: auto; padding: 6px 12px; font-size: .7rem; margin-top: 8px; }
-.repo.editing, .commit-card.editing { cursor: default; }
-.repo.editing:hover { transform: none; box-shadow: none; }
-.check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: .7rem; color: var(--muted); font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; }
-.check input { accent-color: var(--orange); }
-.link-row { display: grid; grid-template-columns: minmax(80px, 1fr) 1.6fr auto; gap: 8px; align-items: center; margin-bottom: 8px; }
-.social-edit { display: grid; grid-template-columns: auto 1fr auto; gap: 6px; align-items: center; margin-bottom: 6px; }
-.toast { position: fixed; bottom: calc(var(--status-h) + 16px); left: 50%; transform: translateX(-50%); background: var(--bright); color: var(--bg); padding: 9px 16px; border-radius: 8px; font-size: .8rem; font-weight: 500; z-index: 100; box-shadow: var(--shadow); max-width: min(90vw, 520px); text-align: center; animation: toast-in .25s ease; font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", monospace; }
-@keyframes toast-in { from { opacity: 0; transform: translate(-50%, 8px); } }
-
-@media (max-width: 900px) {
-  .workspace { grid-template-columns: minmax(0, 1fr); }
-  .activity, .explorer { display: none; }
-  .gutter { display: none; }
-  .body { padding-inline-start: clamp(20px, 4vw, 56px); }
-}
-@media (max-width: 640px) {
-  .win-title { display: none; }
-  .titlebar { gap: 8px; }
-  .body { padding: 28px 16px 40px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
-  html { scroll-behavior: auto; }
-}
-
-/* ---- added: keyboard skip link (only visible on focus) ---- */
-.skip-link {
-  position: fixed; inset-inline-start: 12px; top: -80px; z-index: 200;
-  background: var(--blue); color: var(--on-accent); padding: 10px 16px;
-  border-radius: 8px; font: 600 .8rem/1 var(--mono, monospace); text-decoration: none;
-  transition: top .18s ease;
-}
-.skip-link:focus { top: calc(12px + env(safe-area-inset-top, 0px)); }
-
-/* ---- added: no-JavaScript fallback ---- */
-.noscript-note {
-  max-width: 640px; margin: 12vh auto; padding: 28px 24px; text-align: center;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 14px; color: var(--text);
-}
-.noscript-note h1 { font-size: 1.4rem; margin: 0 0 12px; letter-spacing: .04em; }
-.noscript-note p { margin: 8px 0; color: var(--muted); }
-.noscript-note a { color: var(--blue); }
-
-/* ---- added: print / save-as-PDF (turns the page into a clean CV) ---- */
-@media print {
-  :root { color-scheme: light; }
-  html, body { background: #fff !important; color: #111 !important; }
-  .titlebar, .activity, .explorer, .tabs, .crumbs, .status, .gutter,
-  .skip-link, .toast, .seg, .add, .del, .move, .pal-overlay { display: none !important; }
-  .win { min-height: 0 !important; padding: 0 !important; display: block !important; }
-  .workspace, .editor { display: block !important; }
-  .doc { break-inside: auto; page-break-inside: auto; border: 0 !important; }
-  .doc .body { padding: 0 !important; max-width: 100% !important; }
-  .commit-card, .repo, .mod, .fetch { break-inside: avoid; page-break-inside: avoid;
-    background: #fff !important; border: 1px solid #ddd !important; color: #111 !important; }
-  .commit-card .diff, .repo .readme { display: block !important; max-height: none !important; }
-  a { color: #111 !important; text-decoration: underline; }
-  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .72em; color: #555; word-break: break-all; }
-  h1, h2, h3 { color: #111 !important; }
-  @page { margin: 14mm; }
-}
-
-/* ===== added: profile photo ===== */
-.fetch-logo.has-photo { padding: 0; overflow: hidden; }
-.fetch-logo img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: inherit; }
-.photo-tools { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 8px; }
-
-/* ===== added: soft glow behind the name ===== */
-.readme-grid { position: relative; }
-.readme-grid::before {
-  content: ''; position: absolute; inset-inline-start: -8%; top: -60px;
-  width: 460px; height: 260px; max-width: 90%; pointer-events: none; z-index: 0;
-  background: radial-gradient(closest-side, var(--blue-soft), transparent 72%);
-}
-.readme-grid > * { position: relative; z-index: 1; }
-
-/* ===== added: availability pulse ===== */
-.live-dot {
-  display: inline-block; width: 7px; height: 7px; border-radius: 50%;
-  background: var(--green); margin-inline-end: 7px; vertical-align: middle;
-  box-shadow: 0 0 0 0 var(--green-soft); animation: livePulse 2.4s ease-out infinite;
-}
-@keyframes livePulse {
-  0% { box-shadow: 0 0 0 0 var(--green-soft); }
-  70% { box-shadow: 0 0 0 7px transparent; }
-  100% { box-shadow: 0 0 0 0 transparent; }
-}
-
-/* ===== added: "cards open" hint ===== */
-.open-hint {
-  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; max-width: 100%; flex-wrap: wrap;
-  font-size: .72rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace;
-  border: 1px dashed var(--border-strong); border-radius: 999px; padding: 5px 12px;
-}
-.open-hint i {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--blue);
-  animation: livePulse 2.4s ease-out infinite;
-}
-
-/* ===== added: project screenshots ===== */
-.repo .shot {
-  margin: -18px -18px 14px; border-radius: 11px 11px 0 0; overflow: hidden;
-  border-bottom: 1px solid var(--border); background: var(--surface-2);
-}
-.repo .shot img { width: 100%; max-height: 210px; object-fit: cover; display: block; }
-.shot-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-
-/* ===== added: certificates ===== */
-.mod.cert { display: block; min-width: 0; overflow-wrap: anywhere; }
-.cert-body { display: flex; flex-direction: column; gap: 8px; }
-.cert-name { display: flex; align-items: center; gap: 9px; font-weight: 600; color: var(--bright); overflow-wrap: anywhere; min-width: 0; }
-.cert-name .ric { color: var(--yellow); display: inline-flex; }
-.cert-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .76rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
-.cert-meta .k { color: var(--faint); }
-.cert-link {
-  display: inline-flex; align-items: center; gap: 6px; font-size: .74rem; color: var(--blue);
-  font-family: 'IBM Plex Mono', monospace; max-width: 100%; min-width: 0;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; direction: ltr;
-}
-.cert-link:hover { text-decoration: underline; }
-
-/* ===== added: recommendations ===== */
-.recs { display: grid; gap: 14px; }
-@media (min-width: 900px) { .recs { grid-template-columns: 1fr 1fr; } }
-.quote.rec { position: relative; margin: 0; min-width: 0; overflow-wrap: anywhere; }
-.quote.rec .qt { display: inline-flex; color: var(--purple); opacity: .8; }
-.rec-by { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font-size: .78rem; overflow-wrap: anywhere; min-width: 0; }
-.rec-by b { color: var(--bright); }
-.rec-role { color: var(--muted); font-family: 'IBM Plex Mono', monospace; font-size: .72rem; }
-
-/* ===== added: QR card ===== */
-.qr-box {
-  margin-top: 22px; max-width: 100%; display: inline-flex; flex-direction: column; align-items: center; gap: 9px;
-  padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface);
-}
-.qr { line-height: 0; background: #fff; padding: 6px; border-radius: 8px; }
-.qr svg { display: block; }
-.qr-cap { font-size: .7rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; max-width: 190px; text-align: center; }
-
-/* ===== added: Arabic reading comfort ===== */
-:root[lang="ar"] .prose, :root[lang="ar"] .quote, :root[lang="ar"] .repo-desc,
-:root[lang="ar"] .diff-line, :root[lang="ar"] .sec-intro { line-height: 2.05; letter-spacing: 0; }
-:root[lang="ar"] .prose p { margin-bottom: .9em; }
-:root[lang="ar"] .rec-by b, :root[lang="ar"] .cert-name { line-height: 1.8; }
-
-/* ===== added: print (CV mode) ===== */
-@media print {
-  .qr-box, .open-hint, .shot-tools, .photo-tools, .live-dot { display: none !important; }
-  .repo .shot img { max-height: 150px; }
-  .mod.cert, .quote.rec { break-inside: avoid; page-break-inside: avoid; }
-}
-
-/* ===== added: reading progress ===== */
-.read-progress {
-  position: fixed; top: 0; inset-inline-start: 0; height: 2px; width: 0; z-index: 55;
-  background: linear-gradient(90deg, var(--purple), var(--blue), var(--cyan));
-  pointer-events: none; transition: width .08s linear;
-}
-
-/* ===== added: staggered reveal ===== */
-.rv { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,.7,.3,1), transform .55s cubic-bezier(.22,.7,.3,1); }
-.rv.rv-in { opacity: 1; transform: none; }
-body.editing .rv { opacity: 1 !important; transform: none !important; }
-
-/* ===== added: pointer glow on the intro ===== */
-section.readme .body { position: relative; overflow-x: hidden; overflow-x: clip; }
-.pointer-glow {
-  position: absolute; width: 300px; height: 300px; border-radius: 50%;
-  transform: translate(-50%, -50%); pointer-events: none; z-index: 0; opacity: 0;
-  transition: opacity .35s ease;
-  background: radial-gradient(closest-side, var(--cyan-soft), transparent 70%);
-}
-section.readme .body > *:not(.pointer-glow) { position: relative; z-index: 1; }
-
-/* ===== added: touch comfort & no iOS zoom while editing ===== */
-@media (pointer: coarse) {
-  /* grow the chrome itself instead of overflowing its fixed height */
-  :root { --tabs-h: 44px; --status-h: 36px; }
-  .btn, .add, .del, .move, .seg button { min-height: 42px; }
-  .del, .move { min-width: 38px; }
-  .tb-btn { min-height: 38px; }
-  .commit-card, .repo { -webkit-tap-highlight-color: transparent; }
-  /* iOS zooms in on fields under 16px — raise only the small ones, never headings */
-  body.editing [contenteditable] { font-size: 16px; line-height: 1.6; }
-  body.editing .md-h1 [contenteditable], body.editing .h-sec [contenteditable],
-  body.editing .display [contenteditable], body.editing .commit-msg [contenteditable],
-  body.editing .repo-name [contenteditable], body.editing .typed [contenteditable],
-  body.editing .fetch-logo [contenteditable], body.editing .cert-name [contenteditable],
-  body.editing .rec-by [contenteditable], body.editing .mod-title [contenteditable] { font-size: inherit; line-height: inherit; }
-  body.editing .inp, body.editing input, body.editing select, body.editing textarea { font-size: 16px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .rv { opacity: 1 !important; transform: none !important; }
-  .read-progress { transition: none; }
+.mbar{display:none}
+.i-close{display:none}.sb-open .i-menu{display:none}.sb-open .i-close{display:block}
+@media (max-width: 809px){
+  .sb{position:sticky!important;top:0;z-index:40;padding:10px 14px!important;box-shadow:0 6px 20px rgba(15,23,42,.2)}
+  .mbar{display:flex!important}
+  .sb-head{display:none!important}
+  .sb-inner{position:static!important;max-height:none!important;display:none}
+  .sb-open .sb-inner{display:block;max-height:calc(100vh - 80px)!important;overflow-y:auto;padding:14px 0 6px}
+  section[id]{scroll-margin-top:80px}
 }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#readme">Skip to content</a>
+<!--
+  ============================================================
+  CONTENT — edit your text here only (Arabic "ar" + English "en").
+  "learning": skills shown as "currently learning" instead of ✓.
+  ============================================================
+-->
+<script type="application/json" id="content">
+{
+  "learning": [
+    "Python",
+    "Java"
+  ],
+  "ar": {
+    "name": "عبدالعزيز العمران",
+    "nameAlt": "ABDULAZIZ ALOMRAN",
+    "field": "علوم وتحليل البيانات ← تعلّم الآلة",
+    "hero": "علوم وتحليل البيانات",
+    "ctaProjects": "مشاريعي",
+    "ctaContact": "تواصل معي",
+    "langBtn": "EN",
+    "nav": {
+      "home": "الرئيسية",
+      "about": "نبذة",
+      "projects": "المشاريع",
+      "skills": "المهارات",
+      "journey": "المسيرة",
+      "contact": "تواصل"
+    },
+    "ui": {
+      "menu": "القائمة",
+      "crumb": "البورتفوليو",
+      "city": "الرياض",
+      "uni": "جامعة الإمام · CIS",
+      "details": "التفاصيل",
+      "pipelineSub": "كيف أشتغل على أي مشكلة بيانات",
+      "projectsSub": "التحليل وذكاء الأعمال وقواعد البيانات",
+      "skillsSub": "كل مهارة مع المشاريع اللي استخدمتها فيها",
+      "all": "الكل",
+      "sample": "تجريبي",
+      "usedIn": "في",
+      "notYet": "قريبًا في مشروع",
+      "learning": "أتعلّمها حاليًا",
+      "copy": "نسخ",
+      "copied": "تم النسخ ✓",
+      "backTop": "للأعلى",
+      "emptyTitle": "المشاريع قيد الإعداد",
+      "emptyText": "أشتغل حاليًا على مشاريع في تحليل البيانات وذكاء الأعمال وقواعد البيانات، وبتنزل هنا قريبًا.",
+      "emptyCta": "تابعني على LinkedIn",
+      "listEmpty": "تُضاف قريبًا",
+      "journeySub": "التعليم والشهادات والتطوع والجوائز",
+      "stages": {
+        "raw": "بيانات خام",
+        "clean": "تنظيف",
+        "model": "نمذجة",
+        "insight": "استنتاج",
+        "decision": "قرار"
+      }
+    },
+    "aboutTitle": "نبذة عني",
+    "bio": "طالب نظم معلومات شغوف بعلوم البيانات والتحليل، أجمع بين الفضول التقني والتنفيذ المنظّم؛ يهمني فهم المشكلة وبناء حلول عملية وواضحة.",
+    "openToLabel": "أرحّب بـ",
+    "openTo": [
+      "تدريب تعاوني",
+      "مشاريع",
+      "فرص تعلّم"
+    ],
+    "info": [
+      {
+        "k": "الجامعة",
+        "v": "جامعة الإمام محمد بن سعود الإسلامية"
+      },
+      {
+        "k": "التخصص",
+        "v": "نظم المعلومات الحاسوبية (CIS)"
+      },
+      {
+        "k": "المدينة",
+        "v": "الرياض"
+      },
+      {
+        "k": "اللغات",
+        "v": "العربية، الإنجليزية"
+      }
+    ],
+    "kpis": [
+      {
+        "n": "3",
+        "l": "مشاريع",
+        "href": "#projects"
+      },
+      {
+        "n": "7",
+        "l": "مهارات",
+        "href": "#skills"
+      },
+      {
+        "n": "1",
+        "l": "شهادة",
+        "href": "#journey"
+      },
+      {
+        "n": "2",
+        "l": "لغات",
+        "href": "#about"
+      }
+    ],
+    "projectsTitle": "المشاريع",
+    "labels": {
+      "problem": "المشكلة",
+      "did": "ما قمت به",
+      "result": "النتيجة",
+      "view": "عرض المشروع"
+    },
+    "projects": [],
+    "skillsTitle": "المهارات",
+    "skills": [
+      {
+        "group": "البرمجة",
+        "items": [
+          "Python",
+          "Java"
+        ]
+      },
+      {
+        "group": "البيانات وقواعدها",
+        "items": [
+          "SQL",
+          "Databases"
+        ]
+      },
+      {
+        "group": "التحليل وذكاء الأعمال",
+        "items": [
+          "Excel",
+          "Power BI"
+        ]
+      },
+      {
+        "group": "العرض والتواصل",
+        "items": [
+          "PowerPoint"
+        ]
+      }
+    ],
+    "journeyTitle": "المسيرة",
+    "educationTitle": "التعليم",
+    "certificatesTitle": "الشهادات",
+    "volunteeringTitle": "التطوع",
+    "awardsTitle": "الجوائز والتكريمات",
+    "education": [
+      {
+        "date": "الآن",
+        "state": "now",
+        "status": "جارٍ",
+        "title": "بكالوريوس نظم المعلومات الحاسوبية",
+        "org": "جامعة الإمام محمد بن سعود الإسلامية",
+        "desc": "أسعى باستمرار لتطوير مهاراتي في البيانات وتحويل ما أتعلمه إلى مشاريع عملية."
+      }
+    ],
+    "certificates": [
+      {
+        "date": "2026",
+        "state": "done",
+        "status": "مكتمل",
+        "title": "برنامج غرس للتمكين",
+        "org": "المربع الجديد — New Murabba",
+        "desc": "شهادة إتمام برنامج التمكين."
+      },
+      {
+        "date": "أكتوبر 2023",
+        "state": "done",
+        "status": "مكتمل",
+        "title": "Academic IELTS",
+        "org": "IDP Saudi Arabia",
+        "desc": "الدرجة: 5 من 9"
+      }
+    ],
+    "volunteering": [
+      {
+        "date": "أكتوبر 2026 — الآن",
+        "state": "now",
+        "status": "جارٍ",
+        "title": "نادي طويق",
+        "org": "عضو في لجنة الأنشطة",
+        "desc": ""
+      },
+      {
+        "date": "أكتوبر 2026 — الآن",
+        "state": "now",
+        "status": "جارٍ",
+        "title": "نادي IEEE",
+        "org": "عضو في لجنة الموارد البشرية",
+        "desc": ""
+      },
+      {
+        "date": "أكتوبر 2026 — الآن",
+        "state": "now",
+        "status": "جارٍ",
+        "title": "نادي ظهير",
+        "org": "عضو متطوع",
+        "desc": ""
+      },
+      {
+        "date": "يوليو 2026",
+        "state": "done",
+        "status": "مكتمل",
+        "title": "جمعية رحماء الصحية",
+        "org": "إدخال بيانات (Data Entry)",
+        "desc": "20 ساعة تطوعية في دعم فعاليات الصحة المجتمعية، وكان دوري إدخال بيانات الزوار."
+      }
+    ],
+    "awards": [
+      {
+        "date": "أغسطس 2026",
+        "state": "done",
+        "status": "",
+        "title": "المركز الثالث — مشروع نادي المربع الطلابي | برنامج غرس للتمكين",
+        "org": "المربع الجديد — New Murabba",
+        "desc": ""
+      }
+    ],
+    "contactTitle": "لنعمل معًا",
+    "contactText": "أرحّب بفرص التدريب التعاوني والمشاريع والتعلّم. راسلني وأرد عليك بأقرب وقت.",
+    "email": "abdualaziz1777@gmail.com",
+    "emailHref": "mailto:abdualaziz1777@gmail.com",
+    "linkedinLabel": "LinkedIn",
+    "linkedin": "https://www.linkedin.com/in/abdulazizabdullahis/",
+    "cv": "تحميل السيرة الذاتية",
+    "cvUrl": "cv.pdf",
+    "footer": "© 2026 عبدالعزيز العمران"
+  },
+  "en": {
+    "name": "Abdulaziz Alomran",
+    "nameAlt": "عبدالعزيز العمران",
+    "field": "Data Science & Analytics → Machine Learning",
+    "hero": "Data Science & Analytics",
+    "ctaProjects": "My projects",
+    "ctaContact": "Contact me",
+    "langBtn": "ع",
+    "nav": {
+      "home": "Overview",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "journey": "Journey",
+      "contact": "Contact"
+    },
+    "ui": {
+      "menu": "Menu",
+      "crumb": "Portfolio",
+      "city": "Riyadh",
+      "uni": "IMSIU · CIS",
+      "details": "Details",
+      "pipelineSub": "How I approach any data problem",
+      "projectsSub": "Analytics, BI and databases",
+      "skillsSub": "Each skill with the projects it was used in",
+      "all": "All",
+      "sample": "Sample",
+      "usedIn": "in",
+      "notYet": "Next project",
+      "learning": "Currently learning",
+      "copy": "Copy",
+      "copied": "Copied ✓",
+      "backTop": "Back to top",
+      "emptyTitle": "Projects in progress",
+      "emptyText": "I'm currently working on projects in data analytics, BI and databases. They'll be here soon.",
+      "emptyCta": "Follow me on LinkedIn",
+      "listEmpty": "Coming soon",
+      "journeySub": "Education, certificates, volunteering and awards",
+      "stages": {
+        "raw": "Raw data",
+        "clean": "Clean",
+        "model": "Model",
+        "insight": "Insight",
+        "decision": "Decision"
+      }
+    },
+    "aboutTitle": "About me",
+    "bio": "A CIS student passionate about data science and analytics. I combine technical curiosity with organized execution — I care about understanding the problem and building practical, clear solutions.",
+    "openToLabel": "Open to",
+    "openTo": [
+      "Co-op training",
+      "Projects",
+      "Learning opportunities"
+    ],
+    "info": [
+      {
+        "k": "University",
+        "v": "Imam Mohammad Ibn Saud Islamic University"
+      },
+      {
+        "k": "Major",
+        "v": "Computer Information Systems (CIS)"
+      },
+      {
+        "k": "City",
+        "v": "Riyadh"
+      },
+      {
+        "k": "Languages",
+        "v": "Arabic, English"
+      }
+    ],
+    "kpis": [
+      {
+        "n": "3",
+        "l": "Projects",
+        "href": "#projects"
+      },
+      {
+        "n": "7",
+        "l": "Skills",
+        "href": "#skills"
+      },
+      {
+        "n": "1",
+        "l": "Certificate",
+        "href": "#journey"
+      },
+      {
+        "n": "2",
+        "l": "Languages",
+        "href": "#about"
+      }
+    ],
+    "projectsTitle": "Projects",
+    "labels": {
+      "problem": "Problem",
+      "did": "What I did",
+      "result": "Result",
+      "view": "View project"
+    },
+    "projects": [],
+    "skillsTitle": "Skills",
+    "skills": [
+      {
+        "group": "Programming",
+        "items": [
+          "Python",
+          "Java"
+        ]
+      },
+      {
+        "group": "Data & Databases",
+        "items": [
+          "SQL",
+          "Databases"
+        ]
+      },
+      {
+        "group": "Analytics & BI",
+        "items": [
+          "Excel",
+          "Power BI"
+        ]
+      },
+      {
+        "group": "Presenting",
+        "items": [
+          "PowerPoint"
+        ]
+      }
+    ],
+    "journeyTitle": "Journey",
+    "educationTitle": "Education",
+    "certificatesTitle": "Certificates",
+    "volunteeringTitle": "Volunteering",
+    "awardsTitle": "Awards & Honors",
+    "education": [
+      {
+        "date": "Now",
+        "state": "now",
+        "status": "In progress",
+        "title": "B.Sc. Computer Information Systems",
+        "org": "Imam Mohammad Ibn Saud Islamic University",
+        "desc": "Always working to grow my data skills and turn what I learn into practical projects."
+      }
+    ],
+    "certificates": [
+      {
+        "date": "2026",
+        "state": "done",
+        "status": "Completed",
+        "title": "Ghars Empowerment Program",
+        "org": "New Murabba",
+        "desc": "Program completion certificate."
+      },
+      {
+        "date": "Oct 2023",
+        "state": "done",
+        "status": "Completed",
+        "title": "Academic IELTS",
+        "org": "IDP Saudi Arabia",
+        "desc": "Band score: 5 / 9"
+      }
+    ],
+    "volunteering": [
+      {
+        "date": "Oct 2026 — Present",
+        "state": "now",
+        "status": "Active",
+        "title": "Tuwaiq Club",
+        "org": "Member, Activities Committee",
+        "desc": ""
+      },
+      {
+        "date": "Oct 2026 — Present",
+        "state": "now",
+        "status": "Active",
+        "title": "IEEE Club",
+        "org": "Member, Human Resources Committee",
+        "desc": ""
+      },
+      {
+        "date": "Oct 2026 — Present",
+        "state": "now",
+        "status": "Active",
+        "title": "Zaheer Club",
+        "org": "Volunteer member",
+        "desc": ""
+      },
+      {
+        "date": "Jul 2026",
+        "state": "done",
+        "status": "Completed",
+        "title": "Rohama'a Health Society",
+        "org": "Data Entry",
+        "desc": "20 volunteer hours supporting community health and wellness events; my role focused on entering visitor data."
+      }
+    ],
+    "awards": [
+      {
+        "date": "Aug 2026",
+        "state": "done",
+        "status": "",
+        "title": "3rd Place — Murabba Student Club Project | Ghars Empowerment Program",
+        "org": "New Murabba",
+        "desc": ""
+      }
+    ],
+    "contactTitle": "Let's work together",
+    "contactText": "Open to co-op training, projects and learning opportunities. Send me a message and I'll get back to you soon.",
+    "email": "abdualaziz1777@gmail.com",
+    "emailHref": "mailto:abdualaziz1777@gmail.com",
+    "linkedinLabel": "LinkedIn",
+    "linkedin": "https://www.linkedin.com/in/abdulazizabdullahis/",
+    "cv": "Download CV",
+    "cvUrl": "cv.pdf",
+    "footer": "© 2026 Abdulaziz Alomran"
+  }
+}
+</script>
+
 <div id="app"></div>
-<noscript>
-  <div class="noscript-note">
-    <h1>ABDULAZIZ ALOMRAN</h1>
-    <p>I'm Abdulaziz Alomran, a Computer Information Systems student at Imam Mohammad Ibn Saud Islamic University. With a strong passion for Data Science and Analytics</p>
-    <p><a href="mailto:abdualaziz1777@gmail.com">abdualaziz1777@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/abdulazizabdullahis/">www.linkedin.com/in/abdulazizabdullahis/</a></p>
+<noscript><p style="padding:24px;font-family:sans-serif">Abdulaziz Alomran — Data Science &amp; Analytics. Please enable JavaScript.</p></noscript>
+
+<!-- Page template (design) — no need to touch for content changes -->
+<template id="tpl">
+<div dir="{{dir}}" lang="{{lang}}" style="font-family: 'DM Sans', 'Tajawal', system-ui, sans-serif; color: #0F172A; background: #EEF0F3; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: flex-start">
+
+  <aside id="sidebar" class="sb {{sbOpen}}" style="flex: 1 1 250px; max-width: 100%; box-sizing: border-box; padding: 22px 16px; background: #0F172A; color: #E2E8F0; align-self: stretch">
+    <div class="mbar" style="align-items: center; justify-content: space-between; gap: 12px">
+      <a href="#top" onClick="{{closeMenu}}" style="display: flex; align-items: center; gap: 10px; min-width: 0; color: #fff"><span style="width: 38px; height: 38px; border-radius: 10px; background: #0E7C86; display: grid; place-items: center; font-weight: 800; font-size: 14px; flex: 0 0 auto">AA</span><span style="font-weight: 700; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.name}}</span></a>
+      <button onClick="{{toggleMenu}}" aria-expanded="{{menuExpanded}}" aria-label="Menu" style="width: 44px; height: 44px; flex: 0 0 auto; border-radius: 10px; border: 1px solid #334155; background: #1E293B; color: #fff; display: grid; place-items: center; cursor: pointer; padding: 0"><svg class="i-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="i-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+    </div>
+    <div class="sb-inner" style="position: sticky; top: 22px; max-height: calc(100vh - 44px); overflow-y: auto; scrollbar-width: none">
+    <div class="sb-head" style="display: flex; align-items: center; gap: 12px; padding: 4px 6px 20px">
+      <div style="width: 46px; height: 46px; border-radius: 12px; background: #0E7C86; display: grid; place-items: center; font-weight: 800; color: #fff; font-size: 16px; flex: 0 0 auto">AA</div>
+      <div style="min-width: 0"><div style="font-weight: 700; font-size: 15px">{{t.name}}</div><div style="font-size: 12px; color: #94A3B8">{{t.nameAlt}}</div></div>
+    </div>
+    <div style="font-size: 11px; font-weight: 700; color: #64748B; letter-spacing: .08em; text-transform: uppercase; padding: 0 8px 8px">{{t.ui.menu}}</div>
+    <nav style="display: flex; flex-wrap: wrap; gap: 4px; font-size: 14px">
+      <a class="d-nav" href="#top" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.top.bg}}; color: {{nav.top.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>{{t.nav.home}}</a>
+      <a class="d-nav" href="#about" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.about.bg}}; color: {{nav.about.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>{{t.nav.about}}</a>
+      <a class="d-nav" href="#journey" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.journey.bg}}; color: {{nav.journey.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>{{t.nav.journey}}</a>
+      <a class="d-nav" href="#projects" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.projects.bg}}; color: {{nav.projects.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>{{t.nav.projects}}<span style="margin-inline-start: auto; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #0E7C86; color: #fff">{{projectCount}}</span></a>
+      <a class="d-nav" href="#skills" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.skills.bg}}; color: {{nav.skills.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"></path></svg>{{t.nav.skills}}</a>
+      <a class="d-nav" href="#contact" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.contact.bg}}; color: {{nav.contact.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>{{t.nav.contact}}</a>
+    </nav>
+    <div style="margin-top: 22px; padding: 14px; border-radius: 12px; background: #1E293B">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5EEAD4; font-weight: 700"><span class="d-live" style="width: 8px; height: 8px; border-radius: 50%; background: #2DD4BF"></span>{{t.openToLabel}}</div>
+      <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{t.openTo}}" as="o" hint-placeholder-count="3"><span style="font-size: 12px; padding: 4px 9px; border-radius: 6px; background: #0F172A; color: #CBD5E1">{{o}}</span></sc-for></div>
+    </div>
+    <div style="margin-top: 14px; padding: 14px; border-radius: 12px; border: 1px solid #1E293B; font-size: 13px; color: #94A3B8; display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; gap: 8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>{{t.ui.city}}</div>
+      <div style="display: flex; align-items: center; gap: 8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg>{{t.ui.uni}}</div>
+    </div>
+    </div>
+  </aside>
+
+  <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 18px clamp(16px, 3vw, 36px) 48px; display: flex; flex-direction: column; gap: 20px">
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 0 2px">
+      <div style="font-size: 14px; color: #475569"><span>{{t.ui.crumb}}</span> <span style="color: #94A3B8">/</span> <b style="color: #0F172A">{{t.nav.home}}</b></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: #fff; border: 1px solid #E2E8F0; color: #0F172A; font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
+        <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2E8F0; background: #fff; color: #0F172A; font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
+      </div>
+    </div>
+
+    <section id="top" style="display: flex; flex-wrap: wrap; gap: 20px">
+      <div class="d-card" style="flex: 2 1 420px; min-width: 0; background: #fff; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; position: relative; overflow: hidden">
+        <svg aria-hidden="true" viewBox="0 0 400 120" preserveAspectRatio="none" style="position: absolute; inset-inline: 0; bottom: 0; width: 100%; height: 90px; opacity: .9"><path class="d-line" d="M0,100 C50,96 80,80 120,84 C170,88 190,60 240,58 C290,56 310,40 350,30 L400,12" fill="none" stroke="#B9E1E3" stroke-width="2.5"></path></svg>
+        <div style="position: relative">
+          <h1 style="margin: 0; font-size: clamp(36px, 4.8vw, 60px); line-height: 1.08; letter-spacing: -0.025em; font-weight: 800">{{t.name}}</h1>
+          <p style="margin: 12px 0 0; font-size: clamp(18px, 2vw, 22px); color: #475569; line-height: 1.5">{{t.hero}}</p>
+        </div>
+        <div style="position: relative; display: flex; flex-wrap: wrap; gap: 10px">
+          <a class="d-btn" href="#projects" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #0E7C86; color: #fff; font-weight: 700">{{t.ctaProjects}}</a>
+          <a class="d-btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #F1F5F9; color: #0F172A; font-weight: 700">{{t.ctaContact}}</a>
+        </div>
+      </div>
+      <div class="d-card" style="flex: 1 1 280px; min-width: 0; background: #fff; border-radius: 18px; padding: 24px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline"><div style="font-size: 14px; font-weight: 700">{{t.skillsTitle}}</div><a href="#skills" style="font-size: 13px; font-weight: 700">{{t.ui.details}}</a></div>
+        <div style="display: flex; align-items: center; gap: 18px; margin-top: 12px; flex-wrap: wrap">
+          <svg viewBox="0 0 160 160" width="140" height="140" role="img" aria-label="Skills by group">
+            <g transform="rotate(-90 80 80)" fill="none" stroke-width="22">
+              <circle cx="80" cy="80" r="60" stroke="#F1F5F9"></circle>
+              <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" style="animation-delay: .3s"></circle>
+              <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".7" stroke-dashoffset="-108" style="animation-delay: .6s"></circle>
+              <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".45" stroke-dashoffset="-216" style="animation-delay: .9s"></circle>
+              <circle class="d-s1" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".22" stroke-dashoffset="-324" style="animation-delay: 1.2s"></circle>
+            </g>
+            <text x="80" y="80" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="800" fill="#0F172A" font-family="DM Sans, sans-serif">{{skillCount}}</text>
+          </svg>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; flex: 1; min-width: 130px">
+            <sc-for list="{{skillsX}}" as="g" hint-placeholder-count="4">
+              <div style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #0E7C86; opacity: {{g.shade}}"></span><span style="flex: 1; color: #334155">{{g.group}}</span><b>{{g.count}}</b></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px">
+      <sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
+        <a class="d-card" href="{{k.href}}" style="display: block; background: #fff; border-radius: 16px; padding: 20px; color: #0F172A">
+          <div style="display: flex; justify-content: space-between; font-size: 13px; color: #475569; font-weight: 700"><span>{{k.l}}</span><span style="color: #0E7C86">↗</span></div>
+          <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; margin-top: 8px">
+            <div style="font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">{{k.n}}</div>
+            <svg width="70" height="28" viewBox="0 0 70 28" aria-hidden="true"><path d="M2 24 L14 18 L26 20 L38 11 L50 13 L68 4" fill="none" stroke="#0E7C86" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+        </a>
+      </sc-for>
+    </section>
+
+    <section class="d-card" aria-label="Data to decision" style="background: #fff; border-radius: 18px; padding: 26px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline">
+        <div><div style="font-weight: 800; font-size: 17px">Data → Decision</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.pipelineSub}}</div></div>
+        <div style="font-size: 13px; color: #475569; display: flex; align-items: center; gap: 6px"><span class="d-live" style="width: 10px; height: 10px; border-radius: 50%; background: #0E7C86"></span></div>
+      </div>
+      <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end">
+        <div class="d-chart" dir="ltr" aria-hidden="true" style="flex: 2 1 380px; min-width: 0; height: 180px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px; align-items: end; border-bottom: 1px solid #E2E8F0">
+          <div class="d-barh" style="height: 30%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .1s"></div></div>
+          <div class="d-barh" style="height: 42%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .15s"></div></div>
+          <div class="d-barh" style="height: 36%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .2s"></div></div>
+          <div class="d-barh" style="height: 50%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .25s"></div></div>
+          <div class="d-barh" style="height: 46%"><div class="d-bar" style="height: 100%; background: #94A3B8; border-radius: 6px 6px 0 0; animation-delay: .3s"></div></div>
+          <div class="d-barh" style="height: 58%"><div class="d-bar" style="height: 100%; background: #94A3B8; border-radius: 6px 6px 0 0; animation-delay: .35s"></div></div>
+          <div class="d-barh" style="height: 55%"><div class="d-bar" style="height: 100%; background: #94A3B8; border-radius: 6px 6px 0 0; animation-delay: .4s"></div></div>
+          <div class="d-barh" style="height: 66%"><div class="d-bar" style="height: 100%; background: #94A3B8; border-radius: 6px 6px 0 0; animation-delay: .45s"></div></div>
+          <div class="d-barh" style="height: 72%"><div class="d-bar" style="height: 100%; background: #5FB3B9; border-radius: 6px 6px 0 0; animation-delay: .5s"></div></div>
+          <div class="d-barh" style="height: 78%"><div class="d-bar" style="height: 100%; background: #3A9AA2; border-radius: 6px 6px 0 0; animation-delay: .55s"></div></div>
+          <div class="d-barh" style="height: 86%"><div class="d-bar" style="height: 100%; background: #1F8A93; border-radius: 6px 6px 0 0; animation-delay: .6s"></div></div>
+          <div class="d-barh" style="height: 100%"><div class="d-bar" style="height: 100%; background: #0E7C86; border-radius: 6px 6px 0 0; animation-delay: .65s"></div></div>
+        </div>
+        <div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13px">
+          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.raw}}</div><div class="d-fun" style="height: 12px; width: 100%; border-radius: 6px; background: #CBD5E1; animation-delay: .8s"></div></div>
+          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.clean}}</div><div class="d-fun" style="height: 12px; width: 78%; border-radius: 6px; background: #94A3B8; animation-delay: 1s"></div></div>
+          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.model}}</div><div class="d-fun" style="height: 12px; width: 56%; border-radius: 6px; background: #5FB3B9; animation-delay: 1.2s"></div></div>
+          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.insight}}</div><div class="d-fun" style="height: 12px; width: 36%; border-radius: 6px; background: #1F8A93; animation-delay: 1.4s"></div></div>
+          <div><div style="color: #0E7C86; font-weight: 800; margin-bottom: 4px">{{t.ui.stages.decision}} ✓</div><div class="d-fun" style="height: 12px; width: 18%; border-radius: 6px; background: #0E7C86; animation-delay: 1.6s"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="rv" style="display: flex; flex-wrap: wrap; gap: 20px">
+      <div class="d-card" style="flex: 1 1 340px; min-width: 0; background: #fff; border-radius: 18px; padding: 26px">
+        <div style="font-weight: 800; font-size: 20px; margin-bottom: 12px">{{t.aboutTitle}}</div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.85; color: #334155">{{t.bio}}</p>
+      </div>
+      <div style="flex: 1 1 340px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px">
+        <sc-for list="{{t.info}}" as="i" hint-placeholder-count="4">
+          <div class="d-card" style="background: #fff; border-radius: 14px; padding: 16px">
+            <div style="font-size: 12px; color: #475569; font-weight: 700">{{i.k}}</div>
+            <div style="margin-top: 6px; font-size: 15px; font-weight: 700; line-height: 1.45">{{i.v}}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="journey" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px">
+        <div><div style="font-weight: 800; font-size: 20px">{{t.journeyTitle}}</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.journeySub}}</div></div>
+        <div role="tablist" aria-label="{{t.journeyTitle}}" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: #F1F5F9; border-radius: 12px">
+          <sc-for list="{{journeyTabs}}" as="tab" hint-placeholder-count="3">
+            <button class="d-chip" role="tab" aria-selected="{{tab.pressed}}" onClick="{{tab.pick}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border: 0; border-radius: 9px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: {{tab.bg}}; color: {{tab.fg}}; box-shadow: {{tab.shadow}}">{{tab.label}}<span style="font-size: 11px; min-width: 20px; padding: 1px 6px; border-radius: 999px; background: {{tab.countBg}}; color: {{tab.countFg}}">{{tab.count}}</span></button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div role="tabpanel" style="margin-top: 22px; max-width: 760px">
+        <sc-for list="{{journeyItems}}" as="e" hint-placeholder-count="1">
+          <div class="d-fade" style="display: flex; gap: 18px">
+            <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center">
+              <span style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #fff; border: 3px solid #0E7C86; box-sizing: border-box"></span>
+              <span style="flex: 1; width: 2px; background: #E2E8F0; margin-top: 4px"></span>
+            </div>
+            <div style="flex: 1; min-width: 0; padding-bottom: 26px">
+              <sc-if value="{{e.hasMeta}}" hint-placeholder-val="{{true}}"><div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; margin-bottom: 6px"><b style="color: #0F172A">{{e.date}}</b><sc-if value="{{e.status}}" hint-placeholder-val="{{true}}"><span style="font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: {{e.bg}}; color: {{e.fg}}">{{e.status}}</span></sc-if></div></sc-if>
+              <div style="font-size: 18px; font-weight: 800; line-height: 1.4">{{e.title}}</div>
+              <div style="margin-top: 2px; font-size: 14px; color: #475569">{{e.org}}</div>
+              <sc-if value="{{e.desc}}" hint-placeholder-val="{{true}}"><p style="margin: 8px 0 0; font-size: 15px; line-height: 1.75; color: #334155">{{e.desc}}</p></sc-if>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{journeyEmpty}}" hint-placeholder-val="{{false}}">
+          <div class="d-fade" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 2px dashed #CBD5E1; border-radius: 14px; background: #F8FAFC">
+            <span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 10px; background: #E6F2F3; display: grid; place-items: center; flex: 0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+            <span style="font-size: 15px; color: #475569">{{t.ui.listEmpty}}</span>
+          </div>
+        </sc-if>
+      </div>
+    </section>
+
+    <section id="projects" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 18px">
+        <div><div style="font-weight: 800; font-size: 20px">{{t.projectsTitle}}</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.projectsSub}}</div></div>
+        <sc-if value="{{hasProjects}}" hint-placeholder-val="{{false}}"><div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 6px; padding: 4px; background: #F1F5F9; border-radius: 12px">
+          <sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+            <button class="d-chip" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 40px; padding: 0 14px; border: 0; border-radius: 9px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; background: {{f.bg}}; color: {{f.fg}}; box-shadow: {{f.shadow}}">{{f.label}}</button>
+          </sc-for>
+        </div></sc-if>
+      </div>
+      <sc-if value="{{noProjects}}" hint-placeholder-val="{{true}}">
+        <div style="border: 2px dashed #CBD5E1; border-radius: 16px; padding: clamp(28px, 5vw, 56px) 24px; text-align: center; background: #F8FAFC">
+          <div aria-hidden="true" style="width: 64px; height: 64px; margin: 0 auto; border-radius: 16px; background: #E6F2F3; display: grid; place-items: center">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"><path d="M4 20V14M10 20V9M16 20v-4M22 20H2"></path><path d="M17 3v6M14 6h6"></path></svg>
+          </div>
+          <div style="margin-top: 16px; font-size: 19px; font-weight: 800">{{t.ui.emptyTitle}}</div>
+          <p style="margin: 8px auto 0; max-width: 460px; font-size: 15px; line-height: 1.75; color: #475569">{{t.ui.emptyText}}</p>
+          <a class="d-btn" href="{{t.linkedin}}" style="display: inline-flex; align-items: center; margin-top: 18px; min-height: 44px; padding: 0 20px; border-radius: 10px; background: #0E7C86; color: #fff; font-weight: 700; font-size: 14px">{{t.ui.emptyCta}} ↗</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{hasProjects}}" hint-placeholder-val="{{false}}">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px">
+        <sc-for list="{{projects}}" as="p" hint-placeholder-count="3">
+          <article class="d-card d-fade" style="border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: #fff">
+            <div aria-hidden="true" dir="ltr" style="height: 140px; background: #F8FAFC; border-bottom: 1px solid #E2E8F0; overflow: hidden; display: grid; place-items: center">
+              <sc-if value="{{p.isBI}}" hint-placeholder-val="{{true}}">
+                <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
+                  <rect x="20" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="112" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="204" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect>
+                  <rect x="30" y="24" width="30" height="6" rx="3" fill="#0E7C86"></rect><rect x="122" y="24" width="40" height="6" rx="3" fill="#94A3B8"></rect><rect x="214" y="24" width="24" height="6" rx="3" fill="#94A3B8"></rect>
+                  <g fill="#CBD5E1"><rect x="24" y="84" width="22" height="22" rx="3"></rect><rect x="54" y="72" width="22" height="34" rx="3"></rect><rect x="84" y="78" width="22" height="28" rx="3"></rect><rect x="114" y="64" width="22" height="42" rx="3"></rect></g>
+                  <rect x="144" y="56" width="22" height="50" rx="3" fill="#0E7C86"></rect>
+                  <circle cx="232" cy="82" r="24" fill="none" stroke="#E2E8F0" stroke-width="10"></circle><circle cx="232" cy="82" r="24" fill="none" stroke="#0E7C86" stroke-width="10" stroke-dasharray="100 151" transform="rotate(-90 232 82)"></circle>
+                </svg>
+              </sc-if>
+              <sc-if value="{{p.isPy}}" hint-placeholder-val="{{false}}">
+                <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
+                  <line x1="30" y1="106" x2="280" y2="106" stroke="#CBD5E1"></line><line x1="30" y1="12" x2="30" y2="106" stroke="#CBD5E1"></line>
+                  <g fill="#0E7C86"><circle cx="220" cy="30" r="5"></circle><circle cx="236" cy="38" r="5"></circle><circle cx="248" cy="26" r="5"></circle><circle cx="230" cy="20" r="5"></circle><circle cx="256" cy="40" r="5"></circle></g>
+                  <g fill="#5FB3B9"><circle cx="150" cy="56" r="5"></circle><circle cx="164" cy="64" r="5"></circle><circle cx="140" cy="68" r="5"></circle><circle cx="172" cy="50" r="5"></circle></g>
+                  <g fill="#94A3B8"><circle cx="86" cy="76" r="5"></circle><circle cx="100" cy="84" r="5"></circle><circle cx="74" cy="88" r="5"></circle><circle cx="110" cy="72" r="5"></circle></g>
+                  <g fill="#CBD5E1"><circle cx="48" cy="96" r="5"></circle><circle cx="60" cy="90" r="5"></circle><circle cx="44" cy="84" r="5"></circle></g>
+                  <path d="M40 98 Q150 80 260 22" fill="none" stroke="#0E7C86" stroke-width="2" stroke-dasharray="5 5"></path>
+                </svg>
+              </sc-if>
+              <sc-if value="{{p.isSQL}}" hint-placeholder-val="{{false}}">
+                <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
+                  <path d="M96 40 H130 M170 40 H204 M150 62 V80" stroke="#94A3B8" stroke-width="2" fill="none"></path>
+                  <g><rect x="20" y="14" width="76" height="52" rx="6" fill="#fff" stroke="#CBD5E1"></rect><rect x="20" y="14" width="76" height="14" rx="6" fill="#0E7C86"></rect><rect x="28" y="36" width="44" height="5" rx="2" fill="#CBD5E1"></rect><rect x="28" y="48" width="56" height="5" rx="2" fill="#CBD5E1"></rect></g>
+                  <g><rect x="130" y="14" width="40" height="48" rx="6" fill="#fff" stroke="#CBD5E1"></rect><rect x="130" y="14" width="40" height="14" rx="6" fill="#1F8A93"></rect><rect x="137" y="36" width="26" height="5" rx="2" fill="#CBD5E1"></rect><rect x="137" y="48" width="20" height="5" rx="2" fill="#CBD5E1"></rect></g>
+                  <g><rect x="204" y="14" width="76" height="52" rx="6" fill="#fff" stroke="#CBD5E1"></rect><rect x="204" y="14" width="76" height="14" rx="6" fill="#0E7C86"></rect><rect x="212" y="36" width="50" height="5" rx="2" fill="#CBD5E1"></rect><rect x="212" y="48" width="38" height="5" rx="2" fill="#CBD5E1"></rect></g>
+                  <g><rect x="112" y="80" width="76" height="32" rx="6" fill="#fff" stroke="#CBD5E1"></rect><rect x="112" y="80" width="76" height="12" rx="6" fill="#94A3B8"></rect><rect x="120" y="99" width="48" height="5" rx="2" fill="#CBD5E1"></rect></g>
+                </svg>
+              </sc-if>
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700"><span style="padding: 4px 10px; border-radius: 6px; background: #E6F2F3; color: #0E7C86">{{p.tag}}</span><span style="color: #64748B">#{{p.num}} · {{t.ui.sample}}</span></div>
+              <h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 800">{{p.title}}</h3>
+              <div><div style="font-size: 12px; font-weight: 700; color: #B45309">{{t.labels.problem}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #334155">{{p.problem}}</p></div>
+              <div><div style="font-size: 12px; font-weight: 700; color: #475569">{{t.labels.did}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #334155">{{p.did}}</p></div>
+              <div style="background: #E6F2F3; border-radius: 10px; padding: 12px 14px"><div style="font-size: 12px; font-weight: 700; color: #0E7C86">{{t.labels.result}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #0F172A; font-weight: 500">{{p.result}}</p></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{p.tools}}" as="tool" hint-placeholder-count="3"><span style="font-size: 12px; padding: 4px 9px; border-radius: 6px; background: #F1F5F9; color: #334155">{{tool}}</span></sc-for></div>
+              <a href="{{p.link}}" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 40px; font-size: 14px; font-weight: 800">{{t.labels.view}} ↗</a>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+      </sc-if>
+    </section>
+
+    <section id="skills" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+      <div style="font-weight: 800; font-size: 20px">{{t.skillsTitle}}</div>
+      <div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.skillsSub}}</div>
+      <div style="margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px">
+        <sc-for list="{{skillTable}}" as="g" hint-placeholder-count="4">
+          <div class="d-card" style="border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px">
+            <div style="display: flex; justify-content: space-between; font-size: 13px; color: #475569; font-weight: 700"><span>{{g.group}}</span><span style="padding: 2px 8px; border-radius: 999px; background: #F1F5F9">{{g.count}}</span></div>
+            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px">
+              <sc-for list="{{g.rows}}" as="r" hint-placeholder-count="2">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; border-radius: 10px; background: #0F172A; color: #fff"><span style="font-size: 15px; font-weight: 800">{{r.name}}</span><span style="font-size: 11px; color: #94A3B8; font-weight: 500">{{r.used}}</span></div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="contact" class="rv" style="background: #0F172A; color: #fff; border-radius: 18px; padding: clamp(24px, 4vw, 40px); display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+      <div style="flex: 1 1 320px; min-width: 0">
+        <h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); letter-spacing: -0.02em; font-weight: 800">{{t.contactTitle}}</h2>
+        <p style="margin: 10px 0 0; color: #CBD5E1; line-height: 1.75; font-size: 15px">{{t.contactText}}</p>
+      </div>
+      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; align-items: center; gap: 8px; padding: 6px; padding-inline-start: 16px; border-radius: 12px; background: #1E293B">
+          <a href="{{t.emailHref}}" style="flex: 1; min-width: 0; color: #fff; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{t.email}}</a>
+          <button onClick="{{copyEmail}}" style="min-height: 44px; padding: 0 16px; border: 0; border-radius: 9px; background: #2DD4BF; color: #0F172A; font: inherit; font-weight: 800; cursor: pointer">{{copyLabel}}</button>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <a class="d-btn" href="{{t.linkedin}}" style="flex: 1 1 140px; display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 10px; border: 1px solid #334155; color: #fff; font-weight: 700">{{t.linkedinLabel}} ↗</a>
+          <a class="d-btn" href="{{t.cvUrl}}" style="flex: 1 1 140px; display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 10px; border: 1px solid #334155; color: #fff; font-weight: 700">↓ {{t.cv}}</a>
+        </div>
+      </div>
+    </section>
+
+    <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 12px; color: #475569; padding: 4px 0 64px"><span>{{t.footer}}</span><a href="#top" style="font-weight: 700">{{t.ui.backTop}} ↑</a></footer>
+  </main>
+  <div id="dock" aria-hidden="{{dockHidden}}" style="position: fixed; bottom: 20px; inset-inline-end: 20px; z-index: 50; display: flex; gap: 8px; filter: drop-shadow(0 10px 24px rgba(15,23,42,.16)); transition: opacity .5s cubic-bezier(.22,.8,.24,1), transform .6s cubic-bezier(.22,.8,.24,1), visibility .6s; opacity: {{dockOpacity}}; transform: {{dockTransform}}; visibility: {{dockVis}}">
+      <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: #fff; border: 1px solid #E2E8F0; color: #0F172A; font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
+      <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2E8F0; background: #fff; color: #0F172A; font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
   </div>
-</noscript>
-<script id="site-data" type="application/json">{"lang":"en","bilingual":true,"initials":"AZ","name":{"en":"ABDULAZIZ ALOMRAN","ar":"عبدالعزيز العمران"},"role":{"en":"Data Science and Analyst","ar":"علوم بيانات"},"openTo":{"en":"Job, Projects, Learning Opportunities","ar":"تدريب تعاوني, مشاريع, فرص تعلّم"},"focus":{"en":"AI, ML, Data Analytics","ar":"AI, ML, Data Analytics"},"contact":"abdualaziz1777@gmail.com","about":{"bio":{"en":"I'm Abdulaziz Alomran, a Computer Information Systems student at Imam Mohammad Ibn Saud Islamic University. With a strong passion for Data Science and Analytics.","ar":"أنا عبدالعزيز العمران، طالب نظم معلومات حاسوبية في \u003cb>جامعة الامام محمد بن سعود الاسلامية\u003c/b>. أستمتع ببناء المشاريع وتنسيق الخطط والأشخاص والتفاصيل التي تدفع المشاريع للأمام."},"whyTitle":{"en":"Why me?","ar":"لماذا أنا؟"},"why":{"en":"Because I bring both technical curiosity and organized execution. I care about understanding the problem, building practical solutions, and keeping the work clear, structured, and useful.","ar":"لأنني أجمع بين الفضول التقني والتنفيذ المنظّم. يهمني فهم المشكلة، وبناء حلول عملية، وإبقاء العمل واضحًا ومنظمًا ومفيدًا."},"facts":[{"label":{"en":"university","ar":"الجامعة"},"value":{"en":"Imamu Mohammed Ibn Saud University","ar":"جامعة الامام محمد بن سعود الاسلامية"}},{"label":{"en":"major","ar":"التخصص"},"value":{"en":"Computer Information Systems","ar":"نظم معلومات حاسوبية"}},{"label":{"en":"languages","ar":"اللغات"},"value":{"en":"Arabic, English","ar":"العربية، الإنجليزية"}},{"label":{"en":"location","ar":"المدينة"},"value":{"en":"Riyadh, Saudi Arabia","ar":"الرياض، السعودية"}}]},"skills":[{"title":{"en":"languages","ar":"لغات البرمجة"},"items":"Python, Java, SQL"},{"title":{"en":"frameworks & tools","ar":"الأطر والأدوات"},"items":"Databases, Excel, PowerPoint, PowerBI"}],"experienceIntro":{"en":"Every role, committed in order. Click a commit to see the diff — what I did there and the skills it sharpened.","ar":"كل دور مسجّل بترتيبه. اضغط على أي commit لترى الـ diff — ماذا فعلت هناك وأي مهارات صقلتها."},"experience":[],"projectsIntro":{"en":"Things I've shipped, organized like repositories. Open one to read its README.","ar":"أشياء أنجزتها، مرتبة كمستودعات. افتح أي واحد لقراءة الـ README الخاص به."},"projects":[{"tag":{"en":"apps","ar":"apps"},"title":{"en":"Mobile Apps","ar":"تطبيقات الجوال"},"kind":"app","items":[]},{"tag":{"en":"web","ar":"web"},"title":{"en":"Web Projects","ar":"مشاريع الويب"},"kind":"web","items":[]}],"socials":[{"type":"linkedin","url":"https://www.linkedin.com/in/abdulazizabdullahis/"},{"type":"email","url":"abdualaziz1777@gmail.com"}],"certificates":[{"title":{"en":"Ghars Empowerment Program","ar":""},"issuer":{"en":"New Murabba","ar":""},"date":"2026-08","url":""}],"recommendations":[],"resume":"","photo":"","updated":"2026-09-20","locked":true}</script>
-<script id="site-code">
+</div>
+</template>
+
+<script>
 (function () {
   'use strict';
+  /* ---------- content ---------- */
+  var C = JSON.parse(document.getElementById('content').textContent);
+  var DATA = { ar: C.ar, en: C.en };
+  var LEARNING = C.learning || [];
 
-  var FONTS = 'https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;800&display=swap';
-  var DATA_KEY = 'ide-portfolio:data', DRAFT_KEY = 'ide-portfolio:draft', LANG_KEY = 'ide-portfolio:lang', MODE_KEY = 'ide-portfolio:mode';
-  var HUES = [222, 187, 265, 95, 25, 348, 42, 168];
-  var ACC = ['c-blue', 'c-purple', 'c-green', 'c-orange', 'c-cyan', 'c-red', 'c-yellow', 'c-teal'];
-  var SOCIAL_TYPES = ['github', 'linkedin', 'x', 'instagram', 'youtube', 'email', 'website', 'whatsapp'];
-  var SECTIONS = [
-    { id: 'readme', file: 'README.md', fi: 'md' },
-    { id: 'stack', file: 'skills.json', fi: 'json' },
-    { id: 'experience', file: 'experience.log', fi: 'log' },
-    { id: 'certificates', file: 'certificates.md', fi: 'md' },
-    { id: 'projects', file: 'projects/', fi: 'dir' },
-    { id: 'recommendations', file: 'recommendations.md', fi: 'md' },
-    { id: 'contact', file: 'contact.sh', fi: 'sh' }
-  ];
-  var NBSP = String.fromCharCode(160), BS = String.fromCharCode(92);
-  var MONTHS = {
-    en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    ar: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر']
-  };
-
-  var UI = {
-    en: {
-      explorer: 'Explorer', portfolio: 'portfolio', aboutTitle: 'About me', stackTitle: 'Skills', experienceTitle: 'Experience',
-      projectsTitle: 'Projects', contactTitle: 'Contact', cmReadme: 'who I am', cmStack: 'what I work with',
-      cmExperience: '{n} roles', cmProjects: '{n} projects', cmContact: 'ways to reach me',
-      cmCerts: '{n} certificates', cmRecs: 'what people say',
-      certsTitle: 'Courses & certificates', recsTitle: 'Recommendations',
-      contact: 'Contact me', browse: 'Browse projects', sayHello: 'Say hello', present: 'present', author: 'author', date: 'date',
-      newest: 'newest', oldest: 'oldest', skills: 'skills', role: 'role', tech: 'tech', live: 'Live', code: 'Code',
-      atOrg: 'at', details: 'details', lessDetails: 'less', openHint: 'Tap a card to open it', resume: 'Download CV',
-      copyMail: 'Copy email', copied: 'Email copied', copyFail: 'Copy failed', scanMe: 'Scan to open on your phone',
-      updated: 'updated', addPhoto: 'Photo', addShot: 'Project image', removeImg: 'Remove image', resumeLink: 'CV link',
-      issuer: 'issuer', certDate: 'date', recAuthor: 'Name', recRole: 'Role / relationship', recText: 'What they said…',
-      certName: 'Certificate name', certIssuer: 'Issued by',
-      backupData: 'Back up data (JSON)', restoreData: 'Restore data', resetData: 'Reset to original',
-      sessionOnly: 'Saved for this session only — use “Back up data” to keep it.',
-      lockOn: 'Locked — no one can edit this page', lockOff: 'Unlocked — you can edit this page',
-      lockCmd: 'Lock page (read-only after publish)', unlockCmd: 'Unlock page (allow editing)',
-      lockedNote: 'read-only',
-      backedUp: 'Backup downloaded', restored2: 'Data restored', badFile: 'That file is not a valid backup',
-      resetQ: 'Undo every edit and restore the original content?',
-      fRole: 'role', fFocus: 'focus', fOpen: 'open to', fStack: 'skills', online: 'online', ln: 'Ln', editing: 'EDITING',
-      search: 'Type a section or command…', goTo: 'Go to', toggleTheme: 'Toggle theme', switchLang: 'Switch to Arabic',
-      editSite: 'Edit site', exportHtml: 'Download page', noResults: 'No matches', commands: 'Commands', palette: 'Search',
-      edit: 'Edit', save: 'Save & publish', saveLocal: 'Save', saving: 'Publishing…', cancel: 'Cancel', unsaved: 'Unsaved changes',
-      hint: 'Click any text to change it. Ctrl+B makes text bold in the bio.', siteLang: 'Default language', bilingual: 'EN/AR toggle',
-      addFact: 'Add badge', addSkillGroup: 'Add skill group', addExperience: 'Add role', addGroup: 'Add category', addProject: 'Add project',
-      addCert: 'Add certificate', addRec: 'Add recommendation',
-      addLink: 'Add link', addSocial: 'Add channel', contactLink: 'Contact button link', kindApp: 'apps', kindWeb: 'web',
-      kindApp1: 'app', kindWeb1: 'site', delete: 'Delete', deleteQ: 'Delete?', moveLeft: 'Move back', moveRight: 'Move forward',
-      saved: 'Published — everyone now sees the new version.', savedLocal: 'Saved in this browser.',
-      restored: 'Your unsaved edits were restored — save to publish them.',
-      conflict: 'A newer version was published meanwhile — the page will reload and keep your edits.',
-      readonly: 'This view is read-only.', slow: 'Publishing too often — wait a moment and try again.',
-      tooLarge: 'The page is too large to publish.', failed: 'Saving failed', exported: 'Downloaded.', declined: 'Download cancelled.',
-      editHint: 'Edit mode on — click any text to change it.',
-      phName: 'Your name', phRole: 'Your role', phBio: 'Write a short bio…', phLabel: 'label', phValue: 'value', phType: 'Type',
-      phTitle: 'Job title', phOrg: 'Organization', phDetails: 'One achievement per line', phProject: 'repo-name',
-      phKicker: 'Category · Note', phDesc: 'Describe the project…', phRole2: 'Your role', phTag: 'folder', phGroupTitle: 'Group title',
-      phLinkLabel: 'Label', phList: 'Item one, Item two', phSkills: 'Skill one, Skill two', phWhy: 'Why should someone work with you?',
-      en: 'English', ar: 'Arabic'
-    },
-    ar: {
-      explorer: 'المستكشف', portfolio: 'portfolio', aboutTitle: 'عنّي', stackTitle: 'المهارات', experienceTitle: 'الخبرات',
-      projectsTitle: 'المشاريع', contactTitle: 'التواصل', cmReadme: 'من أنا', cmStack: 'ما أعمل به',
-      cmExperience: '{n} أدوار', cmProjects: '{n} مشاريع', cmContact: 'طرق التواصل',
-      cmCerts: '{n} شهادات', cmRecs: 'ماذا قالوا عني',
-      certsTitle: 'الدورات والشهادات', recsTitle: 'توصيات',
-      contact: 'تواصل معي', browse: 'تصفح المشاريع', sayHello: 'قل مرحباً', present: 'حتى الآن', author: 'الجهة', date: 'التاريخ',
-      newest: 'الأحدث', oldest: 'الأقدم', skills: 'المهارات', role: 'الدور', tech: 'التقنيات', live: 'مباشر', code: 'الكود',
-      atOrg: 'لدى', details: 'التفاصيل', lessDetails: 'إخفاء', openHint: 'اضغط على أي بطاقة لفتحها', resume: 'تحميل السيرة الذاتية',
-      copyMail: 'نسخ الإيميل', copied: 'تم نسخ الإيميل', copyFail: 'تعذّر النسخ', scanMe: 'امسح الرمز لفتح الصفحة على جوالك',
-      updated: 'آخر تحديث', addPhoto: 'صورة', addShot: 'صورة المشروع', removeImg: 'حذف الصورة', resumeLink: 'رابط السيرة الذاتية',
-      issuer: 'الجهة', certDate: 'التاريخ', recAuthor: 'الاسم', recRole: 'الصفة / العلاقة', recText: 'ما الذي قالوه…',
-      certName: 'اسم الشهادة', certIssuer: 'جهة الإصدار',
-      backupData: 'نسخة احتياطية (JSON)', restoreData: 'استعادة البيانات', resetData: 'استرجاع الأصل',
-      sessionOnly: 'حُفظ لهذه الجلسة فقط — استخدم «نسخة احتياطية» للاحتفاظ به.',
-      lockOn: 'مقفلة — لا أحد يستطيع تعديل الصفحة', lockOff: 'مفتوحة — تستطيع تعديل الصفحة',
-      lockCmd: 'قفل الصفحة (للعرض فقط بعد النشر)', unlockCmd: 'فتح القفل (السماح بالتعديل)',
-      lockedNote: 'للعرض فقط',
-      backedUp: 'تم تنزيل النسخة الاحتياطية', restored2: 'تمت استعادة البيانات', badFile: 'هذا الملف ليس نسخة احتياطية صالحة',
-      resetQ: 'التراجع عن كل التعديلات والرجوع للمحتوى الأصلي؟',
-      fRole: 'الدور', fFocus: 'التركيز', fOpen: 'متاح لـ', fStack: 'المهارات', online: 'متاح', ln: 'سطر', editing: 'تعديل',
-      search: 'اكتب قسماً أو أمراً…', goTo: 'انتقل إلى', toggleTheme: 'تبديل المظهر', switchLang: 'التبديل إلى الإنجليزية',
-      editSite: 'تعديل الموقع', exportHtml: 'تنزيل الصفحة', noResults: 'لا نتائج', commands: 'أوامر', palette: 'بحث',
-      edit: 'تعديل', save: 'حفظ ونشر', saveLocal: 'حفظ', saving: 'جارٍ النشر…', cancel: 'إلغاء', unsaved: 'تعديلات غير محفوظة',
-      hint: 'اضغط على أي نص لتغييره. Ctrl+B لجعل النص عريضًا في النبذة.', siteLang: 'اللغة الافتراضية', bilingual: 'زر تبديل EN/AR',
-      addFact: 'إضافة شارة', addSkillGroup: 'إضافة مجموعة مهارات', addExperience: 'إضافة دور', addGroup: 'إضافة تصنيف', addProject: 'إضافة مشروع',
-      addCert: 'إضافة شهادة', addRec: 'إضافة توصية',
-      addLink: 'إضافة رابط', addSocial: 'إضافة قناة', contactLink: 'رابط زر التواصل', kindApp: 'apps', kindWeb: 'web',
-      kindApp1: 'تطبيق', kindWeb1: 'موقع', delete: 'حذف', deleteQ: 'حذف؟', moveLeft: 'تحريك للخلف', moveRight: 'تحريك للأمام',
-      saved: 'تم النشر — الجميع يرى النسخة الجديدة الآن.', savedLocal: 'تم الحفظ في هذا المتصفح.',
-      restored: 'تمت استعادة تعديلاتك غير المحفوظة — احفظ لنشرها.',
-      conflict: 'نُشرت نسخة أحدث في هذه الأثناء — ستُعاد الصفحة مع الاحتفاظ بتعديلاتك.',
-      readonly: 'هذه النسخة للعرض فقط.', slow: 'النشر متكرر جدًا — انتظر لحظة وحاول مجددًا.',
-      tooLarge: 'حجم الصفحة أكبر من المسموح للنشر.', failed: 'فشل الحفظ', exported: 'تم التنزيل.', declined: 'أُلغي التنزيل.',
-      editHint: 'وضع التعديل مفعّل — اضغط على أي نص لتغييره.',
-      phName: 'اسمك', phRole: 'مسمّاك', phBio: 'اكتب نبذة قصيرة…', phLabel: 'العنوان', phValue: 'القيمة', phType: 'النوع',
-      phTitle: 'المسمى الوظيفي', phOrg: 'الجهة', phDetails: 'إنجاز واحد في كل سطر', phProject: 'اسم-المستودع',
-      phKicker: 'التصنيف · ملاحظة', phDesc: 'صف المشروع…', phRole2: 'دورك', phTag: 'مجلد', phGroupTitle: 'عنوان المجموعة',
-      phLinkLabel: 'نص الرابط', phList: 'عنصر أول, عنصر ثانٍ', phSkills: 'مهارة أولى, مهارة ثانية', phWhy: 'لماذا يعمل أحد معك؟',
-      en: 'الإنجليزية', ar: 'العربية'
-    }
-  };
-
-  function svg(inner, extra) {
-    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"' + (extra || '') + '>' + inner + '</svg>';
+  /* ---------- tiny template engine ---------- */
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  var WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function resolve(ctx, path) {
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.'), v = ctx;
+    for (var i = 0; i < parts.length; i++) { if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
   }
-  var ICONS = {
-    copy: svg('<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>'),
-    award: svg('<circle cx="12" cy="8" r="5.5"/><path d="M8.5 13.2L7 22l5-2.6L17 22l-1.5-8.8"/>'),
-    quote: svg('<path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3M19 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3"/>'),
-    sun: svg('<circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>'),
-    moon: svg('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'),
-    globe: svg('<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'),
-    edit: svg('<path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>'),
-    search: svg('<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>'),
-    files: svg('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>'),
-    branch: svg('<circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9a9 9 0 0 1-9 9M6 9v6"/>'),
-    box: svg('<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/>'),
-    mail: svg('<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>'),
-    terminal: svg('<path d="M4 17l6-6-6-6M12 19h8"/>'),
-    repo: svg('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>'),
-    ext: svg('<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>'),
-    github: svg('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>'),
-    linkedin: svg('<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>'),
-    x: svg('<path d="M4 4l16 16M20 4L4 20"/>', ' stroke-width="2.4"'),
-    instagram: svg('<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/>'),
-    youtube: svg('<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/>'),
-    whatsapp: svg('<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>'),
-    left: svg('<path d="M15 18l-6-6 6-6"/>'),
-    right: svg('<path d="M9 18l6-6-6-6"/>'),
-    plus: svg('<path d="M12 5v14M5 12h14"/>'),
-    download: svg('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>')
-  };
-  ICONS.email = ICONS.mail; ICONS.website = ICONS.globe;
-
-  var state = {
-    data: null, lang: 'en', mode: 'dark', editing: false, dirty: false, saving: false, sort: 'newest',
-    open: {}, flipped: {}, can: 'none', artifact: null, downloads: null, snapshot: null, pendingDraft: false, active: 'readme'
-  };
-
-  /* ---------- DOM helpers ---------- */
-  function h(tag, attrs) {
-    var el = document.createElement(tag);
-    if (attrs) {
-      Object.keys(attrs).forEach(function (k) {
-        var v = attrs[k];
-        if (v == null || v === false) return;
-        if (k === 'class') el.className = v;
-        else if (k === 'style') el.style.cssText = v;
-        else if (k === 'html') el.innerHTML = v;
-        else if (k.indexOf('on') === 0) el.addEventListener(k.slice(2), v);
-        else if (k === 'selected') { if (v) el.setAttribute('selected', ''); }
-        else if (k === 'checked' || k === 'disabled') el[k] = !!v;
-        else if (k === 'value') el.value = v;
-        else el.setAttribute(k, v === true ? '' : v);
-      });
-    }
-    for (var i = 2; i < arguments.length; i++) append(el, arguments[i]);
-    return el;
+  function interp(str, ctx) {
+    return str.replace(HOLE, function (_, p) { var v = resolve(ctx, p); return v == null ? '' : String(v); });
   }
-  function append(el, kid) {
-    if (kid == null || kid === false) return;
-    if (Array.isArray(kid)) { kid.forEach(function (k) { append(el, k); }); return; }
-    el.appendChild(kid.nodeType ? kid : document.createTextNode(String(kid)));
+  function child(ctx, extra) { var c = Object.create(ctx); for (var k in extra) c[k] = extra[k]; return c; }
+  function renderChildren(node, ctx, out) {
+    for (var n = node.firstChild; n; n = n.nextSibling) renderNode(n, ctx, out);
   }
-  function cx() { return Array.prototype.filter.call(arguments, Boolean).join(' '); }
-  function icon(name) { return h('span', { class: 'ic', html: ICONS[name] || ICONS.globe }); }
-  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
-  function fmt(s, n) { return String(s).replace('{n}', n); }
-
-  /* ---------- data helpers ---------- */
-  function t(key) { return (UI[state.lang] && UI[state.lang][key]) || UI.en[key] || key; }
-  function T(v, lang) {
-    lang = lang || state.lang;
-    if (v == null) return '';
-    if (typeof v === 'string') return v;
-    return v[lang] || v.en || v.ar || '';
-  }
-  function getPath(obj, path) { return path.split('.').reduce(function (o, k) { return o == null ? undefined : o[k]; }, obj); }
-  function setPath(obj, path, val) {
-    var ks = path.split('.'), last = ks.pop();
-    var parent = ks.reduce(function (o, k) { return o[k]; }, obj);
-    parent[last] = val;
-  }
-  function writeField(path, val, i18n) {
-    var cur = getPath(state.data, path);
-    if (i18n) {
-      var obj = (cur && typeof cur === 'object') ? cur : { en: typeof cur === 'string' ? cur : '', ar: '' };
-      obj[state.lang] = val;
-      setPath(state.data, path, obj);
-    } else setPath(state.data, path, val);
-    markDirty();
-  }
-  function list(s) { return String(s || '').split(/[,،]/).map(function (x) { return x.trim(); }).filter(Boolean); }
-  function hash(s) { var x = 5381; s = String(s); for (var i = 0; i < s.length; i++) x = ((x << 5) + x + s.charCodeAt(i)) | 0; return Math.abs(x); }
-  function hueOf(s) { return HUES[hash(String(s).toLowerCase()) % HUES.length]; }
-  function sha(s) { return ('0000000' + (hash('sha:' + s) % 0xfffffff).toString(16)).slice(-7); }
-  function accentFor(s) {
-    s = String(s).toLowerCase();
-    if (/intern|تدريب/.test(s)) return 'c-orange';
-    if (/volunteer|تطوع/.test(s)) return 'c-green';
-    if (/club|نادي/.test(s)) return 'c-purple';
-    if (/work|job|full|part|freelance|وظيف|عمل/.test(s)) return 'c-blue';
-    return ACC[hash(s) % ACC.length];
-  }
-  function slug(sep) {
-    var s = T(state.data.name, 'en').toLowerCase().replace(/[^a-z0-9]+/g, sep).replace(new RegExp('^\\' + sep + '+|\\' + sep + '+$', 'g'), '');
-    return s || 'portfolio';
-  }
-  function initials() {
-    var d = state.data;
-    if (d.initials && d.initials.trim()) return d.initials.trim();
-    var w = T(d.name, 'en').split(/\s+/).filter(Boolean);
-    if (w.length >= 2) return (w[0].charAt(0) + w[1].charAt(0)).toUpperCase();
-    if (w.length === 1) return w[0].slice(0, 2).toUpperCase();
-    return 'ME';
-  }
-  function fmtMonth(ym) {
-    if (!ym || !/^\d{4}-\d{2}/.test(ym)) return ym || '';
-    var y = ym.slice(0, 4), m = parseInt(ym.slice(5, 7), 10) - 1;
-    var names = MONTHS[state.lang] || MONTHS.en;
-    return (names[m] || '') + ' ' + y;
-  }
-  function dateRange(x) {
-    if (!x.start) return x.end ? fmtMonth(x.end) : '';
-    if (!x.end) return fmtMonth(x.start) + ' → ' + t('present');
-    if (x.end === x.start) return fmtMonth(x.start);
-    return fmtMonth(x.start) + ' → ' + fmtMonth(x.end);
-  }
-  function dateKey(x) { return x.start ? parseInt(x.start.slice(0, 4), 10) * 12 + (parseInt(x.start.slice(5, 7), 10) || 1) : -1; }
-  function safeUrl(u, type) {
-    u = String(u || '').trim();
-    if (!u) return '#';
-    if (type === 'email' && !/^mailto:/i.test(u)) return 'mailto:' + u;
-    if (type === 'whatsapp' && /^[\d+\s\-()]+$/.test(u)) return 'https://wa.me/' + u.replace(/\D/g, '');
-    if (/^javascript:/i.test(u)) return '#';
-    if (/^(https?:|mailto:|tel:)/i.test(u)) return u;
-    return 'https://' + u;
-  }
-  function displayUrl(u) { return String(u || '').replace(/^https?:\/\//i, '').replace(/^mailto:/i, ''); }
-  function sanitizeRich(html) {
-    var tpl = document.createElement('template');
-    tpl.innerHTML = String(html || '');
-    var out = [];
-    var ALLOWED = { B: 'b', STRONG: 'b', I: 'i', EM: 'i', U: 'u' };
-    (function walk(node) {
-      Array.prototype.forEach.call(node.childNodes, function (n) {
-        if (n.nodeType === 3) out.push(esc(n.nodeValue));
-        else if (n.nodeType === 1) {
-          var tag = ALLOWED[n.tagName];
-          if (n.tagName === 'BR') out.push('<br>');
-          else if (tag) { out.push('<' + tag + '>'); walk(n); out.push('</' + tag + '>'); }
-          else if (n.tagName === 'DIV' || n.tagName === 'P') { if (out.length) out.push('<br>'); walk(n); }
-          else walk(n);
-        }
-      });
-    })(tpl.content);
-    return out.join('').replace(/^(<br>)+/, '').replace(/(<br>)+$/, '');
-  }
-
-  /* ---------- editable text & edit controls ---------- */
-  function ed(path, o) {
-    o = o || {};
-    var tag = o.tag || 'span';
-    var i18n = o.i18n !== false;
-    var raw = getPath(state.data, path);
-    var text = i18n ? T(raw) : (raw == null ? '' : String(raw));
-    var el = h(tag, { class: cx(o.cls, state.editing && 'ed'), 'data-ph': state.editing ? (o.placeholder || '') : null, 'data-path': state.editing ? path : null, dir: o.dir || null });
-    if (o.rich) el.innerHTML = sanitizeRich(text); else el.textContent = text;
-    if (!state.editing) return el;
-    el.setAttribute('contenteditable', o.rich ? 'true' : 'plaintext-only');
-    el.setAttribute('spellcheck', 'false');
-    el.addEventListener('input', function () {
-      var v;
-      if (o.rich) v = sanitizeRich(el.innerHTML);
-      else if (o.multi) v = el.innerText.split(NBSP).join(' ');
-      else v = el.textContent.replace(/[\r\n]+/g, ' ').split(NBSP).join(' ');
-      writeField(path, v, i18n);
-      if (!o.rich) {
-        var twins = document.querySelectorAll('.ed[data-path="' + path + '"]');
-        Array.prototype.forEach.call(twins, function (tw) { if (tw !== el && tw.textContent !== v) tw.textContent = v; });
-      }
-    });
-    if (!o.multi && !o.rich) el.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); el.blur(); } });
-    el.addEventListener('paste', function (e) {
-      e.preventDefault();
-      var txt = (e.clipboardData || window.clipboardData).getData('text/plain');
-      if (!o.multi && !o.rich) txt = txt.replace(/\s*[\r\n]+\s*/g, ' ');
-      document.execCommand('insertText', false, txt);
-    });
-    el.addEventListener('click', function (e) { e.stopPropagation(); });
-    return el;
-  }
-  function delBtn(onConfirm, inline) {
-    var armed = false, timer;
-    var b = h('button', { type: 'button', class: cx('del', inline && 'inline'), 'aria-label': t('delete'), title: t('delete') }, '×');
-    b.addEventListener('click', function (e) {
-      e.stopPropagation(); e.preventDefault();
-      if (!armed) {
-        armed = true; b.classList.add('armed'); b.textContent = t('deleteQ');
-        timer = setTimeout(function () { armed = false; b.classList.remove('armed'); b.textContent = '×'; }, 3000);
-      } else { clearTimeout(timer); onConfirm(); markDirty(); }
-    });
-    return b;
-  }
-  function addBtn(label, onClick, variant) {
-    return h('button', { type: 'button', class: cx('add', variant), onclick: function (e) { e.preventDefault(); e.stopPropagation(); onClick(); markDirty(); } }, icon('plus'), label);
-  }
-  function moveBtns(arr, i) {
-    function swap(j) { var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp; markDirty(); render(); }
-    return h('div', { class: 'mover' },
-      h('button', { type: 'button', disabled: i === 0, 'aria-label': t('moveLeft'), title: t('moveLeft'), onclick: function (e) { e.stopPropagation(); swap(i - 1); } }, icon('left')),
-      h('button', { type: 'button', disabled: i === arr.length - 1, 'aria-label': t('moveRight'), title: t('moveRight'), onclick: function (e) { e.stopPropagation(); swap(i + 1); } }, icon('right')));
-  }
-  function chipTech(name) { return h('span', { class: 'tech' }, h('i', { style: '--h:' + hueOf(name) }), name); }
-  function stop(e) { e.stopPropagation(); }
-
-  /* ---------- chrome ---------- */
-  var FI = { md: 'md', json: '{}', log: '≡', dir: '/', sh: '$' };
-  function sectionById(id) { for (var i = 0; i < SECTIONS.length; i++) if (SECTIONS[i].id === id) return SECTIONS[i]; return SECTIONS[0]; }
-  function go(id) { var el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-
-  function renderTitlebar() {
-    var d = state.data, actions = [];
-    if (state.editing) {
-      actions.push(h('span', { class: 'unsaved', id: 'unsaved' }, state.dirty ? t('unsaved') : t('editing')));
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-export', onclick: exportHtml }, icon('download'), h('span', { class: 'hide-sm' }, t('exportHtml'))));
-      actions.push(h('button', { type: 'button', class: cx('tb-btn', state.data.locked && 'accent'), id: 'btn-lock', title: state.data.locked ? t('unlockCmd') : t('lockCmd'), 'aria-pressed': String(!!state.data.locked), onclick: toggleLock }, state.data.locked ? '\u25A0' : '\u25A1', h('span', { class: 'hide-sm' }, state.data.locked ? t('lockedNote') : '')));
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-backup', title: t('backupData'), onclick: backupData }, icon('download'), h('span', { class: 'hide-sm' }, 'JSON')));
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-restore', title: t('restoreData'), onclick: restoreData }, icon('files')));
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-cancel', onclick: cancelEdit }, t('cancel')));
-      actions.push(h('button', { type: 'button', class: 'btn primary small', id: 'btn-save', disabled: !state.dirty || state.saving, onclick: save },
-        state.saving ? t('saving') : (state.can === 'artifact' ? t('save') : t('saveLocal'))));
-    } else {
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-palette', title: t('palette'), 'aria-label': t('palette'), onclick: openPalette }, icon('search'), h('span', { class: 'kbd' }, 'Ctrl K')));
-      if (d.bilingual !== false) actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-lang', title: t('switchLang'), 'aria-label': t('switchLang'), onclick: toggleLang }, icon('globe'), state.lang === 'en' ? 'AR' : 'EN'));
-      actions.push(h('button', { type: 'button', class: 'tb-btn', id: 'btn-theme', title: t('toggleTheme'), 'aria-label': t('toggleTheme'), onclick: toggleMode }, icon(state.mode === 'dark' ? 'sun' : 'moon')));
-      if (state.can !== 'none') actions.push(h('button', { type: 'button', class: 'tb-btn accent', id: 'btn-edit', title: t('editSite'), onclick: enterEdit }, icon('edit'), t('edit')));
-    }
-    return h('div', { class: 'titlebar' },
-      h('div', { class: 'lights', 'aria-hidden': 'true' }, h('i'), h('i'), h('i')),
-      h('div', { class: 'win-title' }, h('b', null, slug('-')), ' — ', h('span', { id: 'win-file' }, sectionById(state.active).file)),
-      h('div', { class: 'title-actions' }, actions));
-  }
-  function renderActivity() {
-    var items = [['readme', 'files'], ['experience', 'branch'], ['projects', 'box'], ['contact', 'mail']].map(function (p) {
-      return h('a', { class: cx('act', state.active === p[0] && 'on'), href: '#' + p[0], 'data-nav': p[0], title: sectionById(p[0]).file, 'aria-label': sectionById(p[0]).file }, icon(p[1]));
-    });
-    items.push(h('button', { type: 'button', class: 'act bottom', title: t('toggleTheme'), 'aria-label': t('toggleTheme'), onclick: toggleMode }, icon(state.mode === 'dark' ? 'sun' : 'moon')));
-    return h('nav', { class: 'activity', 'aria-label': 'Activity' }, items);
-  }
-  function renderExplorer() {
-    var d = state.data, rows = [];
-    SECTIONS.forEach(function (s) {
-      rows.push(h('a', { class: cx('ex-file', state.active === s.id && 'on'), href: '#' + s.id, 'data-nav': s.id }, h('span', { class: 'fi fi-' + s.fi }, FI[s.fi]), s.file));
-      if (s.id === 'projects') d.projects.forEach(function (g, gi) {
-        rows.push(h('a', { class: 'ex-file sub', href: '#pg-' + gi }, h('span', { class: 'fi fi-dir' }, '/'), (T(g.tag) || 'group') + '/'));
-      });
-    });
-    return h('aside', { class: 'explorer', 'aria-label': t('explorer') },
-      h('div', { class: 'ex-title' }, t('explorer')),
-      h('div', { class: 'ex-folder' }, h('span', { class: 'chev' }, '▾'), h('span', { class: 'fi fi-dir' }, '/'), t('portfolio')),
-      rows);
-  }
-  function renderTabs() {
-    return h('nav', { class: 'tabs', 'aria-label': 'Files' }, SECTIONS.map(function (s) {
-      return h('a', { class: cx('tab', state.active === s.id && 'on'), href: '#' + s.id, 'data-nav': s.id }, h('span', { class: 'fi fi-' + s.fi }, FI[s.fi]), s.file, h('span', { class: 'dirty', 'aria-hidden': 'true' }));
-    }));
-  }
-  function renderCrumbs() {
-    return h('div', { class: 'crumbs' }, h('span', null, t('portfolio')), h('span', { class: 'sep' }, '›'), h('span', { class: 'cur', id: 'crumb-file' }, sectionById(state.active).file));
-  }
-  function fileHead(name, comment) { return h('div', { class: 'file-head' }, h('span', { class: 'fn' }, name), h('span', { class: 'cm' }, comment)); }
-  function gutter() { return h('div', { class: 'gutter', 'aria-hidden': 'true' }); }
-
-  /* ---------- README ---------- */
-  function renderReadme() {
-    var d = state.data, a = d.about;
-    var badges = a.facts.map(function (f, i) {
-      var base = 'about.facts.' + i;
-      return h('span', { class: 'badge' },
-        h('span', { class: 'k' }, ed(base + '.label', { placeholder: t('phLabel') })),
-        h('span', { class: 'v' }, ed(base + '.value', { placeholder: t('phValue') })),
-        state.editing ? delBtn(function () { a.facts.splice(i, 1); render(); }, true) : null);
-    });
-    var contactBtn = state.editing
-      ? h('label', { class: 'field' }, t('contactLink'), h('input', { class: 'inp', type: 'text', dir: 'ltr', id: 'contact-url', value: d.contact || '', placeholder: 'mailto:you@example.com',
-          oninput: function (e) { d.contact = e.target.value.trim(); markDirty(); } }))
-      : h('a', { class: 'btn primary', href: safeUrl(d.contact) }, icon('mail'), t('contact'));
-    var mail = String(d.contact || '').replace(/^mailto:/i, '');
-    var copyBtn = (!state.editing && mail) ? h('button', { type: 'button', class: 'btn', title: t('copyMail'),
-      onclick: function () { copyText(mail); } }, icon('copy'), t('copyMail')) : null;
-    var cvBtn = state.editing
-      ? h('label', { class: 'field' }, t('resumeLink'), h('input', { class: 'inp', type: 'text', dir: 'ltr', id: 'resume-url', value: d.resume || '', placeholder: 'https://… .pdf',
-          oninput: function (e) { d.resume = e.target.value.trim(); markDirty(); } }))
-      : (d.resume ? h('a', { class: 'btn', href: safeUrl(d.resume), target: '_blank', rel: 'noopener' }, icon('download'), t('resume')) : null);
-    var left = h('div', null,
-      fileHead('README.md', t('cmReadme')),
-      h('h1', { class: 'md-h1 display' }, h('span', { class: 'hash', 'aria-hidden': 'true' }, '#'), ed('name', { placeholder: t('phName') })),
-      h('div', { class: 'typed' }, state.editing ? ed('role', { placeholder: t('phRole') }) : [h('span', { id: 'typed-text' }), h('span', { class: 'cur', 'aria-hidden': 'true' })]),
-      h('div', { class: 'badges' }, badges, state.editing ? addBtn(t('addFact'), function () { a.facts.push({ label: { en: '', ar: '' }, value: { en: '', ar: '' } }); render(); }, 'small') : null),
-      h('h2', { class: 'h-sec display', style: 'font-size:1.25rem;margin-top:30px' }, t('aboutTitle')),
-      h('div', { class: 'prose' }, ed('about.bio', { tag: 'div', rich: true, placeholder: t('phBio') })),
-      h('blockquote', { class: 'quote' }, h('span', { class: 'qt' }, ed('about.whyTitle', { placeholder: t('phLabel') })), ed('about.why', { multi: true, placeholder: t('phWhy') })),
-      h('div', { class: 'cta' }, contactBtn, cvBtn, copyBtn, h('a', { class: 'btn', href: '#projects' }, icon('box'), t('browse'))));
-    return h('div', { class: 'readme-grid' }, left, renderFetch());
-  }
-  function renderFetch() {
-    var d = state.data;
-    var stack = list(d.skills[0] && d.skills[0].items).slice(0, 4).join(', ');
-    function line(k, v) { return h('div', { class: 'fetch-line' }, h('span', { class: 'k' }, k), h('span', { class: 'v' }, v)); }
-    var rule = ''; for (var i = 0; i < 26; i++) rule += '─';
-    return h('div', { class: 'fetch' }, h('div', { class: 'fetch-grid' },
-      h('div', { class: cx('fetch-logo', 'display', d.photo && 'has-photo'), 'aria-hidden': state.editing ? null : 'true' },
-        d.photo ? h('img', { src: d.photo, alt: '' }) : (state.editing ? ed('initials', { i18n: false, placeholder: 'AB' }) : initials()),
-        state.editing ? h('div', { class: 'photo-tools' },
-          h('button', { type: 'button', class: 'add small', onclick: function () { pickImage(420, function (u) { d.photo = u; markDirty(); render(); }); } }, icon('plus'), t('addPhoto')),
-          d.photo ? h('button', { type: 'button', class: 'add small', onclick: function () { d.photo = ''; markDirty(); render(); } }, t('removeImg')) : null) : null),
-      h('div', { class: 'fetch-lines' },
-        h('div', { class: 'fetch-user' }, slug('-'), h('span', { class: 'at' }, '@'), 'portfolio'),
-        h('div', { class: 'fetch-rule', 'aria-hidden': 'true' }, rule),
-        line(t('fRole'), ed('role', { placeholder: t('phRole') })),
-        line(t('fFocus'), ed('focus', { placeholder: t('phList') })),
-        line(t('fOpen'), h('span', null, h('i', { class: 'live-dot', 'aria-hidden': 'true' }), ed('openTo', { placeholder: t('phList') }))),
-        stack ? line(t('fStack'), stack) : null,
-        h('div', { class: 'swatches', 'aria-hidden': 'true' }, ['blue', 'cyan', 'purple', 'green', 'orange', 'red', 'yellow', 'teal'].map(function (c) { return h('i', { style: 'background:var(--' + c + ')' }); })))));
-  }
-
-  /* ---------- stack.json ---------- */
-  function renderStack() {
-    var d = state.data;
-    var mods = d.skills.map(function (g, i) {
-      var base = 'skills.' + i;
-      return h('div', { class: 'mod' },
-        state.editing ? delBtn(function () { d.skills.splice(i, 1); render(); }) : null,
-        h('div', { class: 'mod-title' }, h('span', { class: 'key' }, '"', ed(base + '.title', { placeholder: t('phLabel') }), '"'), h('span', null, ':'), h('span', { class: 'cnt' }, '[' + list(g.items).length + ']')),
-        state.editing ? ed(base + '.items', { tag: 'div', i18n: false, multi: true, placeholder: t('phSkills') }) : h('div', { class: 'chips' }, list(g.items).map(chipTech)));
-    });
-    return [fileHead('stack.json', t('cmStack')), h('h2', { class: 'h-sec display' }, t('stackTitle')), h('div', { class: 'stack' }, mods),
-      state.editing ? addBtn(t('addSkillGroup'), function () { d.skills.push({ title: { en: '', ar: '' }, items: '' }); render(); }) : null];
-  }
-
-  /* ---------- experience.log ---------- */
-  function dateEditor(x, i) {
-    return h('span', { class: 'field-row', dir: 'ltr', onclick: stop },
-      h('input', { type: 'month', class: 'inp', id: 'exp-' + i + '-start', value: x.start || '', onchange: function (e) { x.start = e.target.value; markDirty(); } }),
-      h('span', null, '→'),
-      x.end === '' ? h('span', { class: 'muted' }, t('present'))
-        : h('input', { type: 'month', class: 'inp', id: 'exp-' + i + '-end', value: x.end || '', onchange: function (e) { x.end = e.target.value; markDirty(); } }),
-      h('label', { class: 'check' }, h('input', { type: 'checkbox', id: 'exp-' + i + '-present', checked: x.end === '', onchange: function (e) { x.end = e.target.checked ? '' : (x.start || '2026-01'); markDirty(); render(); } }), t('present')));
-  }
-  function renderCommit(x, i) {
-    var d = state.data;
-    var ac = accentFor(T(x.type, 'en') || T(x.type));
-    var open = state.editing || !!state.open[i];
-    var base = 'experience.' + i;
-    var live = !x.end;
-    var details = state.editing
-      ? ed(base + '.details', { tag: 'div', multi: true, placeholder: t('phDetails') })
-      : T(x.details).split(/\r?\n/).map(function (l) { return l.trim(); }).filter(Boolean).map(function (l) { return h('div', { class: 'diff-line' }, l); });
-    var card = h('div', { class: cx('commit-card', ac, open && 'open', state.editing && 'editing'), tabindex: state.editing ? null : '0', role: state.editing ? null : 'button', 'aria-expanded': String(open) },
-      state.editing ? delBtn(function () { d.experience.splice(i, 1); delete state.open[i]; render(); }) : null,
-      h('div', { class: 'commit-head' },
-        h('span', null, t('role')), h('span', { class: 'sha' }, sha(T(x.title, 'en') + T(x.org, 'en') + (x.start || ''))),
-        h('span', { class: 'tag' }, ed(base + '.type', { placeholder: t('phType') })),
-        live ? h('span', { class: 'tag c-green' }, 'HEAD') : null),
-      h('div', { class: 'commit-msg' }, ed(base + '.title', { placeholder: t('phTitle') })),
-      h('div', { class: 'commit-meta' },
-        h('span', null, h('span', { class: 'k' }, t('atOrg') + ': '), ed(base + '.org', { placeholder: t('phOrg') })),
-        h('span', null, h('span', { class: 'k' }, t('date') + ': '), state.editing ? dateEditor(x, i) : dateRange(x))),
-      h('div', { class: 'diff' }, h('div', null, h('div', { class: 'diff-body' }, details,
-        h('div', { class: 'diff-skills' }, h('span', { class: 'k' }, t('skills') + ':'),
-          state.editing ? ed(base + '.skills', { i18n: false, placeholder: t('phSkills') }) : list(x.skills).map(chipTech))))));
-    if (!state.editing) {
-      var toggle = function () { var o = card.classList.toggle('open'); card.setAttribute('aria-expanded', String(o)); if (o) state.open[i] = true; else delete state.open[i]; };
-      card.addEventListener('click', toggle);
-      card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
-    }
-    return h('div', { class: 'commit' }, h('div', { class: 'rail', 'aria-hidden': 'true' }, h('div', { class: cx('node', ac, live && 'live') })), card);
-  }
-  function renderExperience() {
-    var d = state.data;
-    var items = d.experience.map(function (x, i) { return { x: x, i: i }; });
-    items.sort(function (a, b) { return state.sort === 'newest' ? dateKey(b.x) - dateKey(a.x) : dateKey(a.x) - dateKey(b.x); });
-    var sortCtl = h('div', { class: 'seg', role: 'group', 'aria-label': 'Sort' }, ['newest', 'oldest'].map(function (s) {
-      return h('button', { type: 'button', class: cx('seg-btn', state.sort === s && 'on'), id: 'sort-' + s, 'aria-pressed': String(state.sort === s), onclick: function () { state.sort = s; render(); } }, '--' + s);
-    }));
-    return [fileHead('experience.log', fmt(t('cmExperience'), d.experience.length)),
-      h('div', { class: 'sec-head' }, h('h2', { class: 'h-sec display' }, t('experienceTitle')), sortCtl),
-      state.editing ? null : h('div', { class: 'open-hint' }, h('i', { 'aria-hidden': 'true' }), t('openHint')),
-      h('p', { class: 'sec-intro' }, ed('experienceIntro', { placeholder: '…' })),
-      h('div', { class: 'git' }, items.map(function (it) { return renderCommit(it.x, it.i); })),
-      state.editing ? addBtn(t('addExperience'), function () {
-        d.experience.push({ type: { en: 'Internship', ar: 'تدريب' }, start: '2026-01', end: '', title: { en: '', ar: '' }, org: { en: '', ar: '' }, details: { en: '', ar: '' }, skills: '' });
-        state.sort = 'newest'; render();
-      }) : null];
-  }
-
-  /* ---------- projects/ ---------- */
-  function renderLinks(p, base) {
-    p.links = p.links || [];
-    if (!state.editing) {
-      var shown = p.links.filter(function (l) { return l.url; });
-      return h('div', { class: 'repo-links' }, shown.map(function (l) {
-        return h('a', { class: 'rl', href: safeUrl(l.url), target: '_blank', rel: 'noopener', onclick: stop }, T(l.label) || t('live'), icon('ext'));
-      }));
-    }
-    return h('div', { style: 'width:100%' },
-      p.links.map(function (l, li) {
-        return h('div', { class: 'link-row' },
-          ed(base + '.links.' + li + '.label', { placeholder: t('phLinkLabel') }),
-          h('input', { class: 'inp', type: 'text', dir: 'ltr', id: (base + '.links.' + li).replace(/\./g, '-') + '-url', value: l.url || '', placeholder: 'https://', 'aria-label': 'URL',
-            oninput: function (e) { l.url = e.target.value.trim(); markDirty(); } }),
-          delBtn(function () { p.links.splice(li, 1); render(); }, true));
-      }),
-      p.links.length < 3 ? addBtn(t('addLink'), function () { p.links.push({ label: { en: 'Live', ar: 'مباشر' }, url: '' }); render(); }, 'small') : null);
-  }
-  function renderRepo(g, gi, p, pi) {
-    var base = 'projects.' + gi + '.items.' + pi, key = gi + ':' + pi;
-    var open = !!state.flipped[key], editing = state.editing;
-    var techs = list(p.tech);
-    var card = h('article', { class: cx('repo', open && 'open', editing && 'editing'), tabindex: editing ? null : '0', role: editing ? null : 'button', 'aria-expanded': String(open || editing) },
-      editing ? [delBtn(function () { g.items.splice(pi, 1); render(); }), moveBtns(g.items, pi)] : null,
-      p.image ? h('div', { class: 'shot' }, h('img', { src: p.image, alt: '', loading: 'lazy' })) : null,
-      editing ? h('div', { class: 'shot-tools' },
-        h('button', { type: 'button', class: 'add small', onclick: function (e) { e.stopPropagation(); pickImage(1000, function (u) { p.image = u; markDirty(); render(); }); } }, icon('plus'), t('addShot')),
-        p.image ? h('button', { type: 'button', class: 'add small', onclick: function (e) { e.stopPropagation(); p.image = ''; markDirty(); render(); } }, t('removeImg')) : null) : null,
-      h('div', { class: 'repo-head' }, h('span', { class: 'ric' }, icon('repo')), h('span', { class: 'repo-name' }, ed(base + '.name', { placeholder: t('phProject') })),
-        h('span', { class: 'repo-kind' }, g.kind === 'app' ? t('kindApp1') : t('kindWeb1'))),
-      h('div', { class: 'repo-kicker' }, ed(base + '.kicker', { placeholder: t('phKicker') })),
-      h('p', { class: 'repo-desc' }, ed(base + '.description', { multi: true, placeholder: t('phDesc') })),
-      editing ? h('input', { class: 'inp', type: 'text', dir: 'ltr', id: base.replace(/\./g, '-') + '-url', value: p.url || '', placeholder: 'example.com', 'aria-label': 'URL', oninput: function (e) { p.url = e.target.value.trim(); markDirty(); } })
-              : (p.url ? h('div', { class: 'repo-url' }, displayUrl(p.url)) : null),
-      editing ? h('label', { class: 'field' }, t('tech'), ed(base + '.tech', { i18n: false, placeholder: t('phSkills') }))
-              : h('div', { class: 'langbar', 'aria-hidden': 'true' }, techs.map(function (tn) { return h('i', { style: '--h:' + hueOf(tn) }); })),
-      h('div', { class: 'repo-more' }, h('div', null,
-        h('div', { class: 'repo-role' }, t('role') + ': ', h('b', null, ed(base + '.role', { placeholder: t('phRole2') }))),
-        editing ? null : h('div', { class: 'chips', style: 'margin-top:8px' }, techs.map(chipTech)))),
-      h('div', { class: 'repo-foot' }, editing ? null : h('span', { class: 'repo-role toggle-hint', style: 'padding:0' }, open ? '▴ ' + t('lessDetails') : '▾ ' + t('details')), renderLinks(p, base)));
-    if (!editing) {
-      var toggle = function () {
-        var o = card.classList.toggle('open'); card.setAttribute('aria-expanded', String(o));
-        var hint = card.querySelector('.repo-foot .repo-role'); if (hint) hint.textContent = o ? '▴ ' + t('lessDetails') : '▾ ' + t('details');
-        if (o) state.flipped[key] = true; else delete state.flipped[key];
-      };
-      card.addEventListener('click', function (e) { if (e.target.closest('a')) return; toggle(); });
-      card.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && e.target === card) { e.preventDefault(); toggle(); } });
-    }
-    return card;
-  }
-  function renderGroup(g, gi) {
-    var d = state.data, base = 'projects.' + gi;
-    var head = h('div', { class: 'folder-head', id: 'pg-' + gi },
-      h('span', { class: 'chev' }, '▾'),
-      h('span', { class: 'fname' }, 'projects/', ed(base + '.tag', { placeholder: t('phTag') }), '/'),
-      h('span', { class: 'gtitle' }, '— ', ed(base + '.title', { placeholder: t('phGroupTitle') })),
-      h('span', { class: 'cnt' }, '(' + g.items.length + ')'),
-      state.editing ? h('select', { class: 'inp', id: 'group-' + gi + '-kind', 'aria-label': 'Kind', onchange: function (e) { g.kind = e.target.value; markDirty(); render(); } },
-        h('option', { value: 'app', selected: g.kind === 'app' }, t('kindApp')), h('option', { value: 'web', selected: g.kind !== 'app' }, t('kindWeb'))) : null,
-      state.editing ? delBtn(function () { d.projects.splice(gi, 1); render(); }, true) : null);
-    var grid = h('div', { class: 'repos' }, g.items.map(function (p, pi) { return renderRepo(g, gi, p, pi); }),
-      state.editing ? addBtn(t('addProject'), function () {
-        g.items.push({ name: { en: '', ar: '' }, kicker: { en: '', ar: '' }, description: { en: '', ar: '' }, tech: '', role: { en: '', ar: '' }, url: '', image: '', links: [] }); render();
-      }, 'tile') : null);
-    return h('div', { class: 'group' }, head, grid);
-  }
-  function renderProjects() {
-    var d = state.data, n = 0;
-    d.projects.forEach(function (g) { n += g.items.length; });
-    return [fileHead('projects/', fmt(t('cmProjects'), n)), h('h2', { class: 'h-sec display' }, t('projectsTitle')),
-      h('p', { class: 'sec-intro' }, ed('projectsIntro', { placeholder: '…' })),
-      d.projects.map(renderGroup),
-      state.editing ? addBtn(t('addGroup'), function () { d.projects.push({ tag: { en: 'web', ar: 'web' }, title: { en: '', ar: '' }, kind: 'web', items: [] }); render(); }) : null];
-  }
-
-  /* ---------- certificates ---------- */
-  function renderCertificates() {
-    var d = state.data;
-    var cards = d.certificates.map(function (x, i) {
-      var base = 'certificates.' + i;
-      var url = state.editing ? null : safeUrl(x.url);
-      var body = h('div', { class: 'cert-body' },
-        h('div', { class: 'cert-name' }, h('span', { class: 'ric' }, icon('award')), ed(base + '.title', { placeholder: t('certName') })),
-        h('div', { class: 'cert-meta' },
-          h('span', null, h('span', { class: 'k' }, t('issuer') + ': '), ed(base + '.issuer', { placeholder: t('certIssuer') })),
-          h('span', null, h('span', { class: 'k' }, t('certDate') + ': '),
-            state.editing
-              ? h('input', { type: 'month', class: 'inp', id: 'cert-' + i + '-date', value: x.date || '', onchange: function (e) { x.date = e.target.value; markDirty(); render(); } })
-              : (x.date ? fmtMonth(x.date) : '—'))),
-        state.editing
-          ? h('label', { class: 'field' }, 'URL', h('input', { class: 'inp', type: 'text', dir: 'ltr', id: 'cert-' + i + '-url', value: x.url || '', placeholder: 'example.com', oninput: function (e) { x.url = e.target.value.trim(); markDirty(); } }))
-          : (x.url ? h('a', { class: 'cert-link', href: url, target: '_blank', rel: 'noopener' }, icon('ext'), displayUrl(x.url)) : null));
-      return h('div', { class: 'mod cert' }, state.editing ? delBtn(function () { d.certificates.splice(i, 1); render(); }) : null, body);
-    });
-    return [fileHead('certificates.md', fmt(t('cmCerts'), d.certificates.length)),
-      h('h2', { class: 'h-sec display' }, t('certsTitle')),
-      h('div', { class: 'stack' }, cards),
-      state.editing ? addBtn(t('addCert'), function () {
-        d.certificates.push({ title: { en: '', ar: '' }, issuer: { en: '', ar: '' }, date: '', url: '' }); render();
-      }) : null];
-  }
-
-  /* ---------- recommendations ---------- */
-  function renderRecommendations() {
-    var d = state.data;
-    var cards = d.recommendations.map(function (x, i) {
-      var base = 'recommendations.' + i;
-      return h('blockquote', { class: 'quote rec' },
-        state.editing ? delBtn(function () { d.recommendations.splice(i, 1); render(); }, true) : null,
-        h('span', { class: 'qt', 'aria-hidden': 'true' }, icon('quote')),
-        ed(base + '.text', { multi: true, placeholder: t('recText') }),
-        h('div', { class: 'rec-by' },
-          h('b', null, ed(base + '.author', { placeholder: t('recAuthor') })),
-          h('span', { class: 'rec-role' }, ed(base + '.role', { placeholder: t('recRole') }))));
-    });
-    return [fileHead('recommendations.md', t('cmRecs')),
-      h('h2', { class: 'h-sec display' }, t('recsTitle')),
-      h('div', { class: 'recs' }, cards),
-      state.editing ? addBtn(t('addRec'), function () {
-        d.recommendations.push({ text: { en: '', ar: '' }, author: { en: '', ar: '' }, role: { en: '', ar: '' } }); render();
-      }) : null];
-  }
-
-  /* ---------- contact.sh ---------- */
-  function renderContact() {
-    var d = state.data; d.socials = d.socials || [];
-    var lines = [h('div', { class: 'tl' }, h('span', { class: 'ps' }, '$'), h('span', { class: 'cmd' }, './contact.sh --all'))];
-    if (!state.editing) {
-      if (d.contact) lines.push(h('div', { class: 'tl' }, h('span', { class: 'ok' }, 'contact'), h('a', { href: safeUrl(d.contact) }, displayUrl(d.contact))));
-      d.socials.filter(function (s) { return s.url; }).forEach(function (s) {
-        lines.push(h('div', { class: 'tl' }, h('span', { class: 'ok' }, s.type), h('a', { href: safeUrl(s.url, s.type), target: '_blank', rel: 'noopener' }, displayUrl(s.url))));
-      });
-      lines.push(h('div', { class: 'tl' }, h('span', { class: 'cmt' }, '# ' + T(d.name) + ' · ' + T(d.role))));
-      lines.push(h('div', { class: 'tl' }, h('span', { class: 'ps' }, '$'), h('span', { class: 'cur', 'aria-hidden': 'true' })));
-    } else {
-      lines.push(h('div', { class: 'social-edit' }, h('span', { class: 'ok' }, 'contact'),
-        h('input', { class: 'inp', type: 'text', dir: 'ltr', id: 'contact-url-2', value: d.contact || '', placeholder: 'mailto:you@example.com', 'aria-label': t('contactLink'), oninput: function (e) { d.contact = e.target.value.trim(); markDirty(); var o = document.getElementById('contact-url'); if (o && o !== e.target) o.value = e.target.value; } }),
-        h('span')));
-      d.socials.forEach(function (s, i) {
-        lines.push(h('div', { class: 'social-edit' },
-          h('select', { class: 'inp', id: 'soc-' + i + '-type', 'aria-label': 'Channel', onchange: function (e) { s.type = e.target.value; markDirty(); } },
-            SOCIAL_TYPES.map(function (tp) { return h('option', { value: tp, selected: s.type === tp }, tp); })),
-          h('input', { class: 'inp', type: 'text', dir: 'ltr', id: 'soc-' + i + '-url', value: s.url || '', placeholder: 'https://', 'aria-label': 'Link', oninput: function (e) { s.url = e.target.value.trim(); markDirty(); } }),
-          delBtn(function () { d.socials.splice(i, 1); render(); }, true)));
-      });
-      lines.push(addBtn(t('addSocial'), function () { d.socials.push({ type: 'website', url: '' }); render(); }, 'small'));
-    }
-    var year = new Date().getFullYear();
-    return [fileHead('contact.sh', t('cmContact')), h('h2', { class: 'h-sec display' }, t('contactTitle')),
-      h('div', { class: 'term' }, h('div', { class: 'term-bar' }, h('span', { class: 'lights', 'aria-hidden': 'true' }, h('i'), h('i'), h('i')), 'bash — contact.sh'), h('div', { class: 'term-body' }, lines)),
-      h('div', { class: 'contact-cta' }, h('a', { class: 'btn primary', href: safeUrl(d.contact) }, icon('mail'), t('sayHello')),
-        (!state.editing && d.contact) ? h('button', { type: 'button', class: 'btn', onclick: function () { copyText(String(d.contact).replace(/^mailto:/i, '')); } }, icon('copy'), t('copyMail')) : null,
-        d.socials.filter(function (s) { return s.url && !state.editing; }).map(function (s) {
-          return h('a', { class: 'btn', href: safeUrl(s.url, s.type), target: '_blank', rel: 'noopener', 'aria-label': s.type, title: s.type }, icon(s.type));
-        })),
-      contactExtras(),
-      h('p', { class: 'muted', style: 'font-size:.72rem;margin-top:28px;font-family:"IBM Plex Mono",monospace' },
-        '© ' + year + ' ' + T(d.name) + (d.updated ? '  ·  ' + t('updated') + ' ' + d.updated : ''))];
-  }
-
-  /* ---------- status bar & palette ---------- */
-  function contactExtras() {
-    var d = state.data;
-    if (state.editing) return null;
-    var url = '';
-    try { url = location.href.split('#')[0]; } catch (e) {}
-    var qr = url && url.indexOf('http') === 0 ? renderQR(url) : null;
-    if (!qr) return null;
-    return h('div', { class: 'qr-box' }, qr, h('span', { class: 'qr-cap' }, t('scanMe')));
-  }
-  function renderStatus() {
-    var d = state.data;
-    return h('div', { class: 'status', role: 'contentinfo' },
-      h('span', { class: 'st brand' }, icon('branch'), state.editing ? t('editing') : 'main'),
-      h('span', { class: 'st hide-sm' }, h('span', { class: 'dot', 'aria-hidden': 'true' }), t('online')),
-      h('span', { class: 'st hide-sm', id: 'st-ln' }, t('ln') + ' 1'),
-      h('span', { class: 'st push', id: 'st-file' }, sectionById(state.active).file),
-      d.bilingual !== false ? h('button', { type: 'button', class: 'st', onclick: toggleLang, title: t('switchLang') }, state.lang === 'en' ? 'English' : 'العربية') : null,
-      h('button', { type: 'button', class: 'st', onclick: toggleMode, title: t('toggleTheme') }, icon(state.mode === 'dark' ? 'sun' : 'moon'), state.mode === 'dark' ? 'tokyo-night' : 'tokyo-day'),
-      h('span', { class: 'st hide-sm' }, 'UTF-8'));
-  }
-  function openPalette() {
-    if (document.querySelector('.palette')) return;
-    var items = SECTIONS.map(function (s) { return { label: s.file, hint: t('goTo'), run: function () { go(s.id); } }; });
-    items.push({ label: t('toggleTheme'), hint: t('commands'), run: toggleMode });
-    if (state.data.bilingual !== false) items.push({ label: t('switchLang'), hint: t('commands'), run: toggleLang });
-    if (state.can !== 'none' && !state.editing) items.push({ label: t('editSite'), hint: t('commands'), run: enterEdit });
-    items.push({ label: t('backupData'), hint: t('commands'), run: backupData });
-    if (state.can !== 'none') items.push({ label: state.data.locked ? t('unlockCmd') : t('lockCmd'), hint: t('commands'), run: toggleLock });
-    if (state.can !== 'none') {
-      items.push({ label: t('restoreData'), hint: t('commands'), run: restoreData });
-      items.push({ label: t('resetData'), hint: t('commands'), run: resetData });
-    }
-    var sel = 0, filtered = items.slice();
-    var listEl = h('div', { class: 'pal-list', role: 'listbox' });
-    var input = h('input', { type: 'text', id: 'pal-input', placeholder: t('search'), autocomplete: 'off', 'aria-label': t('palette') });
-    var overlay = h('div', { class: 'palette' }, h('div', { class: 'pal', role: 'dialog', 'aria-label': t('palette') }, input, listEl));
-    function close() { overlay.remove(); document.removeEventListener('keydown', onKey); }
-    function draw() {
-      listEl.replaceChildren();
-      if (!filtered.length) { listEl.appendChild(h('div', { class: 'pal-empty' }, t('noResults'))); return; }
-      filtered.forEach(function (it, i) {
-        listEl.appendChild(h('button', { type: 'button', class: cx('pal-item', i === sel && 'on'), role: 'option', 'aria-selected': String(i === sel), onclick: function () { close(); it.run(); } }, it.label, h('span', { class: 'hint' }, it.hint)));
-      });
-    }
-    function onKey(e) {
-      if (e.key === 'Escape') { close(); }
-      else if (e.key === 'ArrowDown') { sel = Math.min(sel + 1, filtered.length - 1); draw(); e.preventDefault(); }
-      else if (e.key === 'ArrowUp') { sel = Math.max(sel - 1, 0); draw(); e.preventDefault(); }
-      else if (e.key === 'Enter') { if (filtered[sel]) { close(); filtered[sel].run(); } }
-    }
-    input.addEventListener('input', function () { var q = input.value.trim().toLowerCase(); filtered = items.filter(function (it) { return it.label.toLowerCase().indexOf(q) >= 0; }); sel = 0; draw(); });
-    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
-    document.addEventListener('keydown', onKey);
-    document.body.appendChild(overlay); draw(); input.focus();
-  }
-  document.addEventListener('keydown', function (e) { if ((e.ctrlKey || e.metaKey) && String(e.key).toLowerCase() === 'k') { e.preventDefault(); openPalette(); } });
-
-  /* ---------- render ---------- */
-  var navObs, ro, typeTimer;
-  /* ---------- added: progress bar, staggered reveal, pointer glow ---------- */
-  var revealedSections = {};
-  var prefersCalm = false;
-  try { prefersCalm = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
-
-  function markReveal(root, sectionId) {
-    if (prefersCalm || state.editing || revealedSections[sectionId]) return;
-    var scope = root.querySelector('.readme-grid') || root.querySelector('.body');
-    if (!scope) return;
-    var kids = scope.children;
-    for (var i = 0; i < kids.length; i++) {
-      if (kids[i].classList.contains('pointer-glow')) continue;
-      kids[i].classList.add('rv');
-    }
-  }
-  function playReveal(root, sectionId) {
-    if (revealedSections[sectionId]) return;
-    var items = root.querySelectorAll('.rv:not(.rv-in)');
-    for (var i = 0; i < items.length; i++) {
-      (function (el, n) {
-        setTimeout(function () { el.classList.add('rv-in'); }, prefersCalm ? 0 : n * 80);
-      })(items[i], i);
-    }
-    revealedSections[sectionId] = true;
-  }
-  function showAllRevealed() {
-    var items = document.querySelectorAll('.rv:not(.rv-in)');
-    for (var i = 0; i < items.length; i++) items[i].classList.add('rv-in');
-  }
-  function observeReveal() {
-    var secs = document.querySelectorAll('section.doc');
-    if (prefersCalm || state.editing || !('IntersectionObserver' in window)) { showAllRevealed(); return; }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        playReveal(en.target, en.target.id);
-        io.unobserve(en.target);
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
-    for (var i = 0; i < secs.length; i++) {
-      if (revealedSections[secs[i].id]) continue;
-      io.observe(secs[i]);
-    }
-  }
-  function mountProgress() {
-    if (document.getElementById('read-progress')) return;
-    var bar = h('div', { class: 'read-progress', id: 'read-progress', 'aria-hidden': 'true' });
-    document.body.appendChild(bar);
-    function upd() {
-      var de = document.documentElement;
-      var max = de.scrollHeight - de.clientHeight;
-      bar.style.width = (max > 0 ? Math.min(100, (de.scrollTop / max) * 100) : 0) + '%';
-    }
-    window.addEventListener('scroll', upd, { passive: true });
-    window.addEventListener('resize', upd);
-    upd();
-  }
-  function mountGlow() {
-    if (prefersCalm) return;
-    var coarse = false;
-    try { coarse = window.matchMedia('(pointer: coarse)').matches; } catch (e) {}
-    if (coarse) return;
-    var host = document.querySelector('section.readme .body');
-    if (!host || host.querySelector('.pointer-glow')) return;
-    var g = h('div', { class: 'pointer-glow', 'aria-hidden': 'true' });
-    host.appendChild(g);
-    host.addEventListener('mousemove', function (e) {
-      var r = host.getBoundingClientRect();
-      g.style.left = (e.clientX - r.left) + 'px';
-      g.style.top = (e.clientY - r.top) + 'px';
-      g.style.opacity = '1';
-    });
-    host.addEventListener('mouseleave', function () { g.style.opacity = '0'; });
-  }
-
-  function render() {
-    var app = document.getElementById('app');
-    var y = window.scrollY;
-    var docs = [
-      h('section', { class: 'doc readme', id: 'readme' }, gutter(), h('div', { class: 'body' }, renderReadme())),
-      h('section', { class: 'doc', id: 'stack' }, gutter(), h('div', { class: 'body' }, renderStack())),
-      h('section', { class: 'doc', id: 'experience' }, gutter(), h('div', { class: 'body' }, renderExperience())),
-      h('section', { class: 'doc', id: 'certificates' }, gutter(), h('div', { class: 'body' }, renderCertificates())),
-      h('section', { class: 'doc', id: 'projects' }, gutter(), h('div', { class: 'body' }, renderProjects())),
-      h('section', { class: 'doc', id: 'recommendations' }, gutter(), h('div', { class: 'body' }, renderRecommendations())),
-      h('section', { class: 'doc', id: 'contact' }, gutter(), h('div', { class: 'body' }, renderContact()))
-    ];
-    app.replaceChildren(
-      h('div', { class: 'win' }, renderTitlebar(), h('div', { class: 'workspace' }, renderActivity(), renderExplorer(), h('main', { class: 'editor' }, renderTabs(), renderCrumbs(), docs))),
-      renderStatus());
-    document.body.classList.toggle('editing', state.editing);
-    document.body.classList.toggle('dirty', state.dirty);
-    var prev = document.documentElement.style.scrollBehavior;
-    document.documentElement.style.scrollBehavior = 'auto';
-    window.scrollTo(0, y);
-    document.documentElement.style.scrollBehavior = prev;
-    var secs = document.querySelectorAll('section.doc');
-    for (var si = 0; si < secs.length; si++) markReveal(secs[si], secs[si].id);
-    layoutGutters(); observeNav(); typeRole();
-    mountProgress(); mountGlow(); observeReveal();
-    if (state.editing) showAllRevealed();
-  }
-  Element.prototype.replaceChildren || (Element.prototype.replaceChildren = function () { while (this.firstChild) this.removeChild(this.firstChild); for (var i = 0; i < arguments.length; i++) append(this, arguments[i]); });
-  function layoutGutters() {
-    var start = 1, lh = 28;
-    Array.prototype.forEach.call(document.querySelectorAll('.doc'), function (doc) {
-      var g = doc.querySelector('.gutter'), b = doc.querySelector('.body');
-      if (!g || !b) return;
-      var n = Math.max(1, Math.ceil(b.offsetHeight / lh));
-      var frag = document.createDocumentFragment();
-      for (var i = 0; i < n; i++) frag.appendChild(h('span', null, String(start + i)));
-      g.replaceChildren(frag);
-      doc.setAttribute('data-line', String(start));
-      start += n;
-    });
-    if (window.ResizeObserver) {
-      if (ro) ro.disconnect();
-      var pending = false;
-      ro = new ResizeObserver(function () { if (pending) return; pending = true; requestAnimationFrame(function () { pending = false; relayoutGutters(); }); });
-      Array.prototype.forEach.call(document.querySelectorAll('.doc .body'), function (b) { ro.observe(b); });
-    }
-  }
-  function relayoutGutters() {
-    var start = 1, lh = 28;
-    Array.prototype.forEach.call(document.querySelectorAll('.doc'), function (doc) {
-      var g = doc.querySelector('.gutter'), b = doc.querySelector('.body');
-      if (!g || !b) return;
-      var n = Math.max(1, Math.ceil(b.offsetHeight / lh));
-      if (g.childElementCount !== n || g.firstChild.textContent !== String(start)) {
-        var frag = document.createDocumentFragment();
-        for (var i = 0; i < n; i++) frag.appendChild(h('span', null, String(start + i)));
-        g.replaceChildren(frag);
-      }
-      doc.setAttribute('data-line', String(start));
-      start += n;
-    });
-  }
-  function setActive(id) {
-    state.active = id;
-    var file = sectionById(id).file;
-    Array.prototype.forEach.call(document.querySelectorAll('[data-nav]'), function (p) { p.classList.toggle('on', p.getAttribute('data-nav') === id); });
-    ['win-file', 'crumb-file', 'st-file'].forEach(function (x) { var el = document.getElementById(x); if (el) el.textContent = file; });
-    var doc = document.getElementById(id), ln = document.getElementById('st-ln');
-    if (doc && ln) ln.textContent = t('ln') + ' ' + (doc.getAttribute('data-line') || '1');
-  }
-  function observeNav() {
-    if (navObs) navObs.disconnect();
-    if (!('IntersectionObserver' in window)) return;
-    navObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) { if (en.isIntersecting) setActive(en.target.id); });
-    }, { rootMargin: '-30% 0px -60% 0px' });
-    SECTIONS.forEach(function (s) { var el = document.getElementById(s.id); if (el) navObs.observe(el); });
-  }
-  function typeRole() {
-    clearTimeout(typeTimer);
-    var el = document.getElementById('typed-text');
-    if (!el) return;
-    var text = T(state.data.role), key = state.lang + ':' + text;
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce || state.typed === key) { el.textContent = text; return; }
-    var i = 0; el.textContent = '';
-    (function step() {
-      i++; el.textContent = text.slice(0, i);
-      if (i < text.length) typeTimer = setTimeout(step, 26 + Math.random() * 46); else state.typed = key;
-    })();
-  }
-  function plainText(html) {
-    return String(html || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
-  }
-  function setMeta(id, val) { var el = document.getElementById(id); if (el) el.setAttribute('content', val); }
-  function applyChrome() {
-    var root = document.documentElement;
-    root.setAttribute('data-mode', state.mode);
-    root.setAttribute('lang', state.lang);
-    root.setAttribute('dir', state.lang === 'ar' ? 'rtl' : 'ltr');
-    var name = T(state.data.name) || 'Portfolio';
-    var role = T(state.data.role) || '';
-    var title = role ? name + ' — ' + role : name;
-    document.title = title;
-    var desc = plainText(T(state.data.about && state.data.about.bio)).slice(0, 160);
-    setMeta('meta-desc', desc); setMeta('og-desc', desc); setMeta('tw-desc', desc);
-    setMeta('og-title', title); setMeta('tw-title', title);
-    setMeta('meta-theme', state.mode === 'light' ? '#f7f8fc' : '#1a1b26');
-    var ogl = document.querySelector('meta[property="og:locale"]');
-    if (ogl) ogl.setAttribute('content', state.lang === 'ar' ? 'ar_SA' : 'en_US');
-  }
-  function toggleLang() {
-    state.lang = state.lang === 'en' ? 'ar' : 'en';
-    try { localStorage.setItem(LANG_KEY, state.lang); } catch (e) {}
-    applyChrome(); render();
-  }
-  function toggleMode() {
-    state.mode = state.mode === 'dark' ? 'light' : 'dark';
-    try { localStorage.setItem(MODE_KEY, state.mode); } catch (e) {}
-    applyChrome(); render();
-  }
-  var toastEl, toastTimer;
-  function toast(msg) {
-    if (toastEl) toastEl.remove();
-    toastEl = h('div', { class: 'toast', role: 'status' }, msg);
-    document.body.appendChild(toastEl);
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { if (toastEl) { toastEl.remove(); toastEl = null; } }, 4200);
-  }
-
-
-  /* ---------- added: images, clipboard, QR ---------- */
-  function pickImage(maxDim, cb) {
-    var inp = document.createElement('input');
-    inp.type = 'file'; inp.accept = 'image/*'; inp.style.display = 'none';
-    document.body.appendChild(inp);
-    inp.addEventListener('change', function () {
-      var f = inp.files && inp.files[0];
-      inp.remove();
-      if (!f) return;
-      var fr = new FileReader();
-      fr.onload = function () {
-        var img = new Image();
-        img.onload = function () {
-          var sc = Math.min(1, maxDim / Math.max(img.width, img.height));
-          var w = Math.round(img.width * sc), hh = Math.round(img.height * sc);
-          var cv = document.createElement('canvas');
-          cv.width = w; cv.height = hh;
-          cv.getContext('2d').drawImage(img, 0, 0, w, hh);
-          try { cb(cv.toDataURL('image/jpeg', 0.76)); } catch (e) { toast(t('failed')); }
-        };
-        img.onerror = function () { toast(t('failed')); };
-        img.src = fr.result;
-      };
-      fr.onerror = function () { toast(t('failed')); };
-      fr.readAsDataURL(f);
-    });
-    inp.click();
-  }
-  function copyText(txt) {
-    function done() { toast(t('copied')); }
-    function fail() { toast(t('copyFail')); }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(txt).then(done, fail);
+  function renderNode(node, ctx, out) {
+    if (node.nodeType === 3) { out.appendChild(document.createTextNode(interp(node.nodeValue, ctx))); return; }
+    if (node.nodeType !== 1) return;
+    var tag = node.localName;
+    if (tag === 'sc-for') {
+      var list = resolve(ctx, (node.getAttribute('list') || '').replace(WHOLE, '$1')) || [];
+      var as = node.getAttribute('as') || 'item';
+      for (var i = 0; i < list.length; i++) { var e = {}; e[as] = list[i]; e.$index = i; renderChildren(node, child(ctx, e), out); }
       return;
     }
-    try {
-      var ta = document.createElement('textarea');
-      ta.value = txt; ta.setAttribute('readonly', '');
-      ta.style.position = 'fixed'; ta.style.opacity = '0';
-      document.body.appendChild(ta); ta.select();
-      document.execCommand('copy') ? done() : fail();
-      ta.remove();
-    } catch (e) { fail(); }
-  }
-  function qrMatrix(text) {
-    var EXP = [], LOG = [], i, x = 1;
-    for (i = 0; i < 256; i++) { EXP[i] = x; x <<= 1; if (x & 0x100) x ^= 0x11d; }
-    for (i = 0; i < 255; i++) LOG[EXP[i]] = i;
-    function gmul(a, b) { return (a === 0 || b === 0) ? 0 : EXP[(LOG[a] + LOG[b]) % 255]; }
-
-    /* [version] = [totalCodewords, ecPerBlock, blocksG1, blocksG2] for EC level M */
-    var SPEC = {
-      1: [26, 10, 1, 0], 2: [44, 16, 1, 0], 3: [70, 26, 1, 0], 4: [100, 18, 2, 0],
-      5: [134, 24, 2, 0], 6: [172, 16, 4, 0], 7: [196, 18, 4, 0], 8: [242, 22, 2, 2],
-      9: [292, 22, 3, 2], 10: [346, 26, 4, 1]
-    };
-    var ALIGN = {
-      1: [], 2: [6, 18], 3: [6, 22], 4: [6, 26], 5: [6, 30],
-      6: [6, 34], 7: [6, 22, 38], 8: [6, 24, 42], 9: [6, 26, 46], 10: [6, 28, 50]
-    };
-
-    var bytes = [];
-    (function () {
-      var utf8 = unescape(encodeURIComponent(String(text)));
-      for (var j = 0; j < utf8.length; j++) bytes.push(utf8.charCodeAt(j) & 0xff);
-    })();
-
-    var ver = 0, spec, dataCw = 0;
-    for (var v = 1; v <= 10; v++) {
-      spec = SPEC[v];
-      var blocks = spec[2] + spec[3];
-      var cap = spec[0] - spec[1] * blocks;
-      var need = 4 + (v < 10 ? 8 : 16) + bytes.length * 8;
-      if (cap * 8 >= need) { ver = v; dataCw = cap; break; }
+    if (tag === 'sc-if') {
+      if (resolve(ctx, (node.getAttribute('value') || '').replace(WHOLE, '$1'))) renderChildren(node, ctx, out);
+      return;
     }
-    if (!ver) return null;
-    spec = SPEC[ver];
-
-    /* ---- bit stream ---- */
-    var bits = [];
-    function put(val, len) { for (var b = len - 1; b >= 0; b--) bits.push((val >> b) & 1); }
-    put(4, 4);
-    put(bytes.length, ver < 10 ? 8 : 16);
-    for (i = 0; i < bytes.length; i++) put(bytes[i], 8);
-    var cap = dataCw * 8;
-    for (i = 0; i < 4 && bits.length < cap; i++) bits.push(0);
-    while (bits.length % 8) bits.push(0);
-    var data = [];
-    for (i = 0; i < bits.length; i += 8) {
-      var b8 = 0; for (var k = 0; k < 8; k++) b8 = (b8 << 1) | bits[i + k];
-      data.push(b8);
-    }
-    var pad = [0xec, 0x11], pi = 0;
-    while (data.length < dataCw) { data.push(pad[pi++ % 2]); }
-
-    /* ---- split into blocks, Reed-Solomon ---- */
-    var ecLen = spec[1], g1 = spec[2], g2 = spec[3], nBlocks = g1 + g2;
-    var short = Math.floor(dataCw / nBlocks), longLen = short + 1;
-    var dBlocks = [], ecBlocks = [], pos = 0;
-    for (i = 0; i < nBlocks; i++) {
-      var len = i < g1 ? short : longLen;
-      dBlocks.push(data.slice(pos, pos + len));
-      pos += len;
-    }
-    var gen = [1];
-    for (i = 0; i < ecLen; i++) {
-      var ng = new Array(gen.length + 1);
-      for (k = 0; k < ng.length; k++) ng[k] = 0;
-      for (k = 0; k < gen.length; k++) {
-        ng[k] ^= gen[k];
-        ng[k + 1] ^= gmul(gen[k], EXP[i]);
-      }
-      gen = ng;
-    }
-    dBlocks.forEach(function (blk) {
-      var rem = blk.slice();
-      for (var z = 0; z < ecLen; z++) rem.push(0);
-      for (var s = 0; s < blk.length; s++) {
-        var factor = rem[s];
-        if (factor === 0) continue;
-        for (var t = 0; t < gen.length; t++) rem[s + t] ^= gmul(gen[t], factor);
-      }
-      ecBlocks.push(rem.slice(blk.length));
-    });
-
-    var out = [], maxLen = 0;
-    dBlocks.forEach(function (b) { if (b.length > maxLen) maxLen = b.length; });
-    for (i = 0; i < maxLen; i++) dBlocks.forEach(function (b) { if (i < b.length) out.push(b[i]); });
-    for (i = 0; i < ecLen; i++) ecBlocks.forEach(function (b) { out.push(b[i]); });
-
-    /* ---- matrix ---- */
-    var size = ver * 4 + 17;
-    var m = [], reserved = [];
-    for (i = 0; i < size; i++) { m.push(new Array(size).fill(0)); reserved.push(new Array(size).fill(0)); }
-    function setF(r, c, val) { m[r][c] = val; reserved[r][c] = 1; }
-    function finder(r, c) {
-      for (var dr = -1; dr <= 7; dr++) for (var dc = -1; dc <= 7; dc++) {
-        var rr = r + dr, cc = c + dc;
-        if (rr < 0 || cc < 0 || rr >= size || cc >= size) continue;
-        var on = (dr >= 0 && dr <= 6 && (dc === 0 || dc === 6)) ||
-                 (dc >= 0 && dc <= 6 && (dr === 0 || dr === 6)) ||
-                 (dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4);
-        setF(rr, cc, on ? 1 : 0);
-      }
-    }
-    finder(0, 0); finder(0, size - 7); finder(size - 7, 0);
-    for (i = 8; i < size - 8; i++) { setF(6, i, i % 2 === 0 ? 1 : 0); setF(i, 6, i % 2 === 0 ? 1 : 0); }
-    var ap = ALIGN[ver];
-    for (i = 0; i < ap.length; i++) for (k = 0; k < ap.length; k++) {
-      var ar = ap[i], ac = ap[k];
-      if ((ar <= 8 && ac <= 8) || (ar <= 8 && ac >= size - 9) || (ar >= size - 9 && ac <= 8)) continue;
-      for (var dr2 = -2; dr2 <= 2; dr2++) for (var dc2 = -2; dc2 <= 2; dc2++) {
-        var on2 = Math.max(Math.abs(dr2), Math.abs(dc2)) !== 1;
-        setF(ar + dr2, ac + dc2, on2 ? 1 : 0);
-      }
-    }
-    setF(size - 8, 8, 1);
-    if (ver >= 7) {
-      for (i = 0; i < 6; i++) for (k = 0; k < 3; k++) {
-        reserved[i][size - 11 + k] = 1;
-        reserved[size - 11 + k][i] = 1;
-      }
-    }
-    for (i = 0; i <= 8; i++) { if (!reserved[8][i]) setF(8, i, 0); if (!reserved[i][8]) setF(i, 8, 0); }
-    for (i = size - 8; i < size; i++) { if (!reserved[8][i]) setF(8, i, 0); if (!reserved[i][8]) setF(i, 8, 0); }
-
-    /* ---- place data with mask 0 ---- */
-    var bitIdx = 0, total = out.length * 8;
-    function bitAt(n) { return n < total ? (out[n >> 3] >> (7 - (n & 7))) & 1 : 0; }
-    var col = size - 1, up = true;
-    while (col > 0) {
-      if (col === 6) col--;
-      for (var rowStep = 0; rowStep < size; rowStep++) {
-        var row = up ? size - 1 - rowStep : rowStep;
-        for (var c2 = 0; c2 < 2; c2++) {
-          var cc2 = col - c2;
-          if (reserved[row][cc2]) continue;
-          var bit = bitAt(bitIdx++);
-          if ((row + cc2) % 2 === 0) bit ^= 1; /* mask 0 */
-          m[row][cc2] = bit;
-        }
-      }
-      up = !up; col -= 2;
-    }
-
-    /* ---- format info: EC M (00) + mask 0 ---- */
-    var fmt = 0x5412 ^ (function () {
-      var d = 0 << 3 | 0, dd = d << 10, g = 0x537;
-      for (var b = 14; b >= 10; b--) if ((dd >> b) & 1) dd ^= g << (b - 10);
-      return (d << 10) | dd;
-    })();
-    var fbits = [];
-    for (i = 0; i < 15; i++) fbits.push((fmt >> i) & 1); /* fbits[i] = bit i, LSB first */
-    var VERT = [[0,8],[1,8],[2,8],[3,8],[4,8],[5,8],[7,8],[8,8],[8,7],[8,5],[8,4],[8,3],[8,2],[8,1],[8,0]];
-    for (i = 0; i < 15; i++) m[VERT[i][0]][VERT[i][1]] = fbits[i];
-    for (i = 0; i < 8; i++) m[8][size - 1 - i] = fbits[i];
-    for (i = 8; i < 15; i++) m[size - 15 + i][8] = fbits[i];
-
-    /* ---- version info (v7+) ---- */
-    if (ver >= 7) {
-      var vd = ver << 12, vg = 0x1f25;
-      for (i = 17; i >= 12; i--) if ((vd >> i) & 1) vd ^= vg << (i - 12);
-      var vbits = (ver << 12) | (vd & 0xfff);
-      for (i = 0; i < 18; i++) {
-        var bit2 = (vbits >> i) & 1;
-        m[Math.floor(i / 3)][size - 11 + (i % 3)] = bit2;
-        m[size - 11 + (i % 3)][Math.floor(i / 3)] = bit2;
-      }
-    }
-    return m;
-  }
-
-  function renderQR(text) {
-    var m;
-    try { m = qrMatrix(text); } catch (e) { m = null; }
-    if (!m) return null;
-    var n = m.length, q = 4, pad = 4, size = (n + pad * 2) * q;
-    var parts = [];
-    for (var r = 0; r < n; r++) {
-      for (var c = 0; c < n; c++) {
-        if (m[r][c]) parts.push('M' + ((c + pad) * q) + ' ' + ((r + pad) * q) + 'h' + q + 'v' + q + 'h-' + q + 'z');
-      }
-    }
-    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + size + ' ' + size + '" width="132" height="132" role="img" aria-label="QR">' +
-      '<rect width="' + size + '" height="' + size + '" fill="#ffffff"/>' +
-      '<path d="' + parts.join('') + '" fill="#000000"/></svg>';
-    return h('div', { class: 'qr', html: svg });
-  }
-
-  /* ---------- added: lock / unlock ---------- */
-  function toggleLock() {
-    state.data.locked = !state.data.locked;
-    markDirty(); render();
-    toast(state.data.locked ? t('lockOn') : t('lockOff'));
-  }
-
-  /* ---------- added: data backup, restore, reset ---------- */
-  function backupData() {
-    var json = JSON.stringify(state.data, null, 2);
-    var name = (slug('-') || 'portfolio') + '-data.json';
-    try {
-      var a = document.createElement('a');
-      if (typeof a.download === 'undefined') {
-        window.open('data:application/json;charset=utf-8,' + encodeURIComponent(json), '_blank');
+    var el = node.cloneNode(false);
+    for (var a = node.attributes.length - 1; a >= 0; a--) {
+      var at = node.attributes[a], name = at.name, val = at.value;
+      if (val.indexOf('{{') < 0) continue;
+      var m = val.match(WHOLE);
+      if (name.slice(0, 2) === 'on' && m) {
+        el.removeAttribute(name);
+        var fn = resolve(ctx, m[1]);
+        if (typeof fn === 'function') el.addEventListener(name.slice(2).toLowerCase(), fn);
       } else {
-        var url = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
-        a.href = url; a.download = name; a.rel = 'noopener';
-        document.body.appendChild(a); a.click(); a.remove();
-        setTimeout(function () { URL.revokeObjectURL(url); }, 1500);
+        el.setAttribute(name, interp(val, ctx));
       }
-      toast(t('backedUp'));
-    } catch (e) { toast(t('failed')); }
+    }
+    renderChildren(node, ctx, el);
+    out.appendChild(el);
   }
-  function restoreData() {
-    var inp = document.createElement('input');
-    inp.type = 'file'; inp.accept = 'application/json,.json'; inp.style.display = 'none';
-    document.body.appendChild(inp);
-    inp.addEventListener('change', function () {
-      var f = inp.files && inp.files[0];
-      inp.remove();
-      if (!f) return;
-      var fr = new FileReader();
-      fr.onload = function () {
-        try {
-          var d = JSON.parse(fr.result);
-          if (!d || !d.name || !Array.isArray(d.skills)) throw new Error('bad');
-          state.data = ensureData(d);
-          markDirty(); render(); toast(t('restored2'));
-        } catch (e) { toast(t('badFile')); }
-      };
-      fr.onerror = function () { toast(t('badFile')); };
-      fr.readAsText(f);
+  function renderInto(tplNode, ctx) { var f = document.createDocumentFragment(); renderNode(tplNode, ctx, f); return f; }
+
+  /* ---------- state + view model ---------- */
+  var saved = null;
+  try { saved = localStorage.getItem('pf-lang'); } catch (e) {}
+  var app = {
+    state: { lang: saved === 'en' || saved === 'ar' ? saved : 'ar', filter: 'all', copied: false, jtab: 'education', scrolled: false, active: 'top' },
+    setState: function (patch) {
+      var regions = {};
+      for (var k in patch) {
+        if (this.state[k] === patch[k]) continue;
+        this.state[k] = patch[k];
+        if (k === 'lang') regions.all = 1;
+        else if (k === 'filter') regions.projects = 1;
+        else if (k === 'jtab') regions.journey = 1;
+        else if (k === 'copied') regions.contact = 1;
+        else regions.scroll = 1;
+      }
+      if (regions.all) { try { localStorage.setItem('pf-lang', this.state.lang); } catch (e) {} renderAll(); return; }
+      if (regions.projects) renderRegion('projects');
+      if (regions.journey) renderRegion('journey');
+      if (regions.contact) renderRegion('contact');
+      if (regions.scroll) applyScroll();
+    }
+  };
+
+  function vals() {
+    var self = app, st = app.state;
+    var lang = st.lang, t = DATA[lang], filter = st.filter;
+    var tags = ['all'];
+    t.projects.forEach(function (p) { if (tags.indexOf(p.tag) < 0) tags.push(p.tag); });
+    var filters = tags.map(function (tag) {
+      var on = filter === tag;
+      return { label: tag === 'all' ? t.ui.all : tag, pressed: on ? 'true' : 'false',
+        bg: on ? '#fff' : 'transparent', fg: on ? '#0E7C86' : '#475569', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
+        pick: function () { self.setState({ filter: tag }); } };
     });
-    inp.click();
-  }
-  function resetData() {
-    if (!window.confirm(t('resetQ'))) return;
-    var seed = document.getElementById('site-data');
-    if (!seed) return;
-    try {
-      state.data = ensureData(JSON.parse(seed.textContent));
-      markDirty(); render(); toast(t('restored2'));
-    } catch (e) { toast(t('failed')); }
+    var projects = t.projects.filter(function (p) { return filter === 'all' || p.tag === filter; })
+      .map(function (p) { return Object.assign({}, p, { isBI: p.kind === 'bi', isPy: p.kind === 'py', isSQL: p.kind === 'sql' }); });
+    var shades = ['1', '.7', '.45', '.22'];
+    var skillsX = t.skills.map(function (g, i) { return Object.assign({}, g, { count: g.items.length, shade: shades[i] || '.2' }); });
+    var skillTable = t.skills.map(function (g) {
+      return { group: g.group, count: g.items.length, rows: g.items.map(function (s) {
+        var nums = t.projects.filter(function (p) { return (p.skills || []).indexOf(s) > -1; }).map(function (p) { return '#' + p.num; });
+        return { name: s, used: nums.length ? t.ui.usedIn + ' ' + nums.join(' ') : (LEARNING.indexOf(s) > -1 ? t.ui.learning : '✓') };
+      }) };
+    });
+    var tone = { next: ['#FEF3C7', '#92400E'], done: ['#DCFCE7', '#166534'], now: ['#E6F2F3', '#0E7C86'] };
+    function toned(list) { return (list || []).map(function (e) { var c = tone[e.state] || tone.now; return Object.assign({}, e, { hasMeta: !!(e.date || e.status), bg: c[0], fg: c[1] }); }); }
+    var jtab = st.jtab;
+    var journeyTabs = ['education', 'certificates', 'volunteering', 'awards'].map(function (key) {
+      var on = jtab === key;
+      return { label: t[key + 'Title'], count: (t[key] || []).length, pressed: on ? 'true' : 'false',
+        bg: on ? '#fff' : 'transparent', fg: on ? '#0E7C86' : '#475569', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
+        countBg: on ? '#E6F2F3' : '#E2E8F0', countFg: on ? '#0E7C86' : '#475569',
+        pick: function () { self.setState({ jtab: key }); } };
+    });
+    var journeyItems = toned(t[jtab]);
+    var nav = {};
+    ['top', 'about', 'journey', 'projects', 'skills', 'contact'].forEach(function (id) {
+      var on = st.active === id; nav[id] = { bg: on ? '#1E293B' : 'transparent', fg: on ? '#fff' : '#CBD5E1' };
+    });
+    return {
+      t: t, lang: lang, dir: lang === 'ar' ? 'rtl' : 'ltr',
+      hasProjects: t.projects.length > 0, noProjects: t.projects.length === 0,
+      kpis: t.kpis.map(function (k) {
+        if (k.href === '#projects') return Object.assign({}, k, { n: String(t.projects.length) });
+        if (k.href === '#journey') return Object.assign({}, k, { n: String((t.certificates || []).length) });
+        return k;
+      }),
+      filters: filters, projects: projects, skillsX: skillsX, skillTable: skillTable,
+      journeyTabs: journeyTabs, journeyItems: journeyItems, journeyEmpty: journeyItems.length === 0,
+      projectCount: t.projects.length,
+      skillCount: t.skills.reduce(function (n, g) { return n + g.items.length; }, 0),
+      nav: nav,
+      dockOpacity: st.scrolled ? '1' : '0',
+      dockTransform: st.scrolled ? 'translateY(0) scale(1)' : 'translateY(18px) scale(.96)',
+      dockVis: st.scrolled ? 'visible' : 'hidden',
+      dockHidden: st.scrolled ? 'false' : 'true',
+      copyLabel: st.copied ? t.ui.copied : t.ui.copy,
+      copyEmail: function () {
+        try { navigator.clipboard.writeText(t.email); } catch (e) {}
+        self.setState({ copied: true });
+        clearTimeout(self._ct); self._ct = setTimeout(function () { self.setState({ copied: false }); }, 1800);
+      },
+      sbOpen: '', menuExpanded: 'false',
+      toggleMenu: function () { setMenu(!document.getElementById('sidebar').classList.contains('sb-open')); },
+      closeMenu: function () { setMenu(false); },
+      toggle: function () { self.setState({ lang: lang === 'ar' ? 'en' : 'ar' }); }
+    };
   }
 
-  /* ---------- editing lifecycle ---------- */
-  var draftTimer;
-  function markDirty() {
-    state.dirty = true;
-    document.body.classList.add('dirty');
-    var b = document.getElementById('btn-save'); if (b) b.disabled = state.saving;
-    var u = document.getElementById('unsaved'); if (u) u.textContent = t('unsaved');
-    clearTimeout(draftTimer);
-    draftTimer = setTimeout(function () { try { sessionStorage.setItem(DRAFT_KEY, JSON.stringify(state.data)); } catch (e) {} }, 400);
-  }
-  function enterEdit() {
-    state.snapshot = JSON.parse(JSON.stringify(state.data));
-    state.editing = true; state.dirty = false;
-    render();
-    toast(t('editHint'));
-  }
-  function finishEdit() {
-    state.snapshot = null; state.editing = false; state.dirty = false;
-    try { sessionStorage.removeItem(DRAFT_KEY); } catch (e) {}
-    applyChrome(); render();
-  }
-  function cancelEdit() {
-    if (state.snapshot) state.data = state.snapshot;
-    finishEdit();
-  }
-  function safeJson(data) {
-    return JSON.stringify(data).split('<').join(BS + 'u003c').split(String.fromCharCode(8232)).join(BS + 'u2028').split(String.fromCharCode(8233)).join(BS + 'u2029');
-  }
-  function buildDocument(data) {
-    var style = document.getElementById('site-style').textContent;
-    var code = document.getElementById('site-code').textContent;
-    var lang = data.lang === 'ar' ? 'ar' : 'en';
-    var name = T(data.name, lang) || 'Portfolio';
-    var role = T(data.role, lang) || '';
-    var title = role ? name + ' \u2014 ' + role : name;
-    var desc = plainText(T(data.about && data.about.bio, lang)).slice(0, 160);
-    var mail = String(data.contact || '').replace(/^mailto:/i, '');
-    var firstSocial = '';
-    (data.socials || []).forEach(function (so) { if (!firstSocial && so.url) firstSocial = so.url; });
-    var ini = esc(String(data.initials || 'ME').slice(0, 2));
-    var NL = String.fromCharCode(10);
-    var ICO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1b26'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%237aa2f7' text-anchor='middle'%3E" + encodeURIComponent(ini) + "%3C/text%3E%3C/svg%3E";
-    return '<!doctype html>' + NL + '<html lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '" data-mode="dark">' + NL + '<head>' + NL +
-      '<meta charset="utf-8">' + NL + '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">' + NL +
-      '<title>' + esc(title) + '</title>' + NL +
-      '<meta name="description" id="meta-desc" content="' + esc(desc) + '">' + NL +
-      '<meta name="theme-color" id="meta-theme" content="#1a1b26">' + NL +
-      '<meta property="og:type" content="profile">' + NL +
-      '<meta property="og:locale" content="' + (lang === 'ar' ? 'ar_SA' : 'en_US') + '">' + NL +
-      '<meta property="og:title" id="og-title" content="' + esc(title) + '">' + NL +
-      '<meta property="og:description" id="og-desc" content="' + esc(desc) + '">' + NL +
-      '<meta name="twitter:card" content="summary">' + NL +
-      '<meta name="twitter:title" id="tw-title" content="' + esc(title) + '">' + NL +
-      '<meta name="twitter:description" id="tw-desc" content="' + esc(desc) + '">' + NL +
-      '<link rel="icon" href="' + ICO + '">' + NL +
-      '<link rel="preconnect" href="https://fonts.googleapis.com">' + NL +
-      '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' + NL +
-      '<link rel="stylesheet" href="' + FONTS + '">' + NL +
-      '<style id="site-style">' + style + '</style>' + NL + '</head>' + NL + '<body>' + NL +
-      '<a class="skip-link" href="#readme">' + (lang === 'ar' ? '\u062a\u062e\u0637\u0651 \u0625\u0644\u0649 \u0627\u0644\u0645\u062d\u062a\u0648\u0649' : 'Skip to content') + '</a>' + NL +
-      '<div id="app"></div>' + NL +
-      '<noscript>' + NL + '  <div class="noscript-note">' + NL +
-      '    <h1>' + esc(name) + '</h1>' + NL +
-      '    <p>' + esc(desc) + '</p>' + NL +
-      (mail ? '    <p><a href="mailto:' + esc(mail) + '">' + esc(mail) + '</a></p>' + NL : '') +
-      (firstSocial ? '    <p><a href="' + esc(safeUrl(firstSocial)) + '">' + esc(displayUrl(firstSocial)) + '</a></p>' + NL : '') +
-      '  </div>' + NL + '</noscript>' + NL +
-      '<script id="site-data" type="application/json">' + safeJson(data) + '</' + 'script>' + NL +
-      '<script id="site-code">' + code + '</' + 'script>' + NL + '</body>' + NL + '</html>' + NL;
-  }
-  function setSaving(on) {
-    state.saving = on;
-    var b = document.getElementById('btn-save');
-    if (b) { b.disabled = on || !state.dirty; b.textContent = on ? t('saving') : (state.can === 'artifact' ? t('save') : t('saveLocal')); }
-  }
-  function stampUpdated() {
-    var n = new Date();
-    function p2(v) { return (v < 10 ? '0' : '') + v; }
-    state.data.updated = n.getFullYear() + '-' + p2(n.getMonth() + 1) + '-' + p2(n.getDate());
-  }
-  function save() {
-    if (!state.dirty || state.saving) return;
-    stampUpdated();
-    if (state.can === 'local') {
-      try { localStorage.setItem(DATA_KEY, JSON.stringify(state.data)); toast(t('savedLocal')); }
-      catch (e) { toast(t('sessionOnly')); }
-      finishEdit();
-      return;
-    }
-    if (state.can !== 'artifact' || !state.artifact) return;
-    setSaving(true);
-    var html = buildDocument(state.data);
-    try { sessionStorage.setItem(DRAFT_KEY, JSON.stringify(state.data)); } catch (e) {}
-    state.artifact.publish(html).then(function () {
-      setSaving(false); toast(t('saved')); finishEdit();
-    }, function (err) {
-      setSaving(false);
-      var code = err && err.code;
-      if (code === 'conflict') toast(t('conflict'));
-      else if (code === 'not_writer' || code === 'not_granted' || code === 'not_declared' || code === 'consent_required') { state.can = 'none'; toast(t('readonly')); finishEdit(); }
-      else if (code === 'rate_limited') toast(t('slow'));
-      else if (code === 'too_large') toast(t('tooLarge'));
-      else toast(t('failed') + (err && err.message ? ': ' + err.message : ''));
-    });
-  }
-  function exportHtml() {
-    var fname = (slug('-') || 'index') + '.html';
-    if (!state.downloads) {
-      try {
-        var blob = new Blob([buildDocument(state.data)], { type: 'text/html;charset=utf-8' });
-        var url2 = URL.createObjectURL(blob);
-        var a2 = document.createElement('a');
-        a2.href = url2; a2.download = fname; a2.rel = 'noopener';
-        document.body.appendChild(a2); a2.click(); a2.remove();
-        setTimeout(function () { URL.revokeObjectURL(url2); }, 1500);
-        toast(t('exported'));
-      } catch (e) { toast(t('failed')); }
-      return;
-    }
-    state.downloads.save({ filename: slug('-') + '.html', data: buildDocument(state.data) }).then(function () { toast(t('exported')); }, function (err) {
-      if (err && err.code === 'declined') toast(t('declined'));
-      else toast(t('failed') + (err && err.message ? ': ' + err.message : ''));
-    });
-  }
-  function maybeRestoreDraft() {
-    if (!state.pendingDraft || state.can === 'none') return;
-    state.pendingDraft = false;
-    state.snapshot = JSON.parse(JSON.stringify(state.data));
-    state.editing = true; state.dirty = true;
-    render();
-    toast(t('restored'));
+  function setMenu(open) {
+    var sb = document.getElementById('sidebar'); if (!sb) return;
+    sb.classList.toggle('sb-open', open);
+    var b = sb.querySelector('.mbar button'); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
 
-  /* ---------- boot ---------- */
-  function ensureData(d) {
-    if (!d) return d;
-    if (!Array.isArray(d.certificates)) d.certificates = [];
-    if (!Array.isArray(d.recommendations)) d.recommendations = [];
-    if (typeof d.resume !== 'string') d.resume = '';
-    if (typeof d.photo !== 'string') d.photo = '';
-    if (typeof d.updated !== 'string') d.updated = '';
-    if (typeof d.locked !== 'boolean') d.locked = false;
-    (d.projects || []).forEach(function (g) {
-      (g.items || []).forEach(function (pr) { if (typeof pr.image !== 'string') pr.image = ''; });
-    });
-    return d;
+  /* ---------- rendering ---------- */
+  var tpl = document.getElementById('tpl').content;
+  var rootTpl = tpl.firstElementChild;
+  var mount = document.getElementById('app');
+  var noSDT = !(window.CSS && CSS.supports && CSS.supports('animation-timeline: view()'));
+  if (noSDT) document.documentElement.classList.add('no-sdt');
+  var io = noSDT && 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 }) : null;
+
+  function renderAll() {
+    var v = vals();
+    document.documentElement.lang = v.lang;
+    document.documentElement.dir = v.dir;
+    document.title = v.t.name + ' — Portfolio';
+    var y = window.scrollY;
+    mount.textContent = '';
+    mount.appendChild(renderInto(rootTpl, v));
+    window.scrollTo(0, y);
+    if (noSDT) mount.querySelectorAll('.rv').forEach(function (el) { io ? io.observe(el) : el.classList.add('in'); });
+    applyScroll();
   }
-  function boot() {
-    var seed = document.getElementById('site-data');
-    if (!seed) { showFatal('Missing site data.'); return; }
-    try { state.data = ensureData(JSON.parse(seed.textContent)); }
-    catch (e) { showFatal('Site data could not be read.'); return; }
-    var hasClaude = !!(window.claude && typeof window.claude.use === 'function');
-    if (!hasClaude) { try { var s = localStorage.getItem(DATA_KEY); if (s) state.data = ensureData(JSON.parse(s)); } catch (e) {} }
-    try {
-      var raw = sessionStorage.getItem(DRAFT_KEY);
-      if (raw) {
-        var draft = JSON.parse(raw);
-        if (JSON.stringify(draft) !== JSON.stringify(state.data)) { state.data = ensureData(draft); state.pendingDraft = true; }
-        else sessionStorage.removeItem(DRAFT_KEY);
-      }
-    } catch (e) {}
-    var lang = null, mode = null;
-    try { lang = localStorage.getItem(LANG_KEY); mode = localStorage.getItem(MODE_KEY); } catch (e) {}
-    state.lang = (state.data.bilingual !== false && (lang === 'en' || lang === 'ar')) ? lang : (state.data.lang === 'ar' ? 'ar' : 'en');
-    state.mode = mode === 'light' ? 'light' : 'dark';
-    applyChrome();
-    render();
-    // A locked page is read-only everywhere; only the verified owner on claude.ai can still edit it.
-    // Off claude.ai there is no authority to ask, so an unlocked copy stays editable in that browser.
-    function fallbackEditing() {
-      if (state.can !== 'none' || state.data.locked) return;
-      state.can = 'local';
-      render(); maybeRestoreDraft();
+  function renderRegion(id) {
+    var src = tpl.querySelector('#' + id), live = document.getElementById(id);
+    if (!src || !live) return renderAll();
+    var frag = renderInto(src, vals());
+    var fresh = frag.firstElementChild;
+    if (noSDT) fresh.classList.add('in');
+    live.replaceWith(fresh);
+  }
+  function applyScroll() {
+    var st = app.state;
+    mount.querySelectorAll('a.d-nav').forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + st.active;
+      a.style.background = on ? '#1E293B' : 'transparent';
+      a.style.color = on ? '#fff' : '#CBD5E1';
+    });
+    var dock = document.getElementById('dock');
+    if (dock) {
+      dock.style.opacity = st.scrolled ? '1' : '0';
+      dock.style.transform = st.scrolled ? 'translateY(0) scale(1)' : 'translateY(18px) scale(.96)';
+      dock.style.visibility = st.scrolled ? 'visible' : 'hidden';
+      dock.setAttribute('aria-hidden', st.scrolled ? 'false' : 'true');
     }
-    if (!hasClaude) { fallbackEditing(); return; }
-    var settled = false;
-    Promise.all([window.claude.use('user'), window.claude.use('artifact'), window.claude.use('downloads')]).then(function (r) {
-      var user = r[0], art = r[1];
-      state.downloads = r[2] || null;
-      return (user ? user.canEdit() : Promise.resolve(false)).then(function (ok) {
-        settled = true;
-        if (ok && art) { state.can = 'artifact'; state.artifact = art; render(); maybeRestoreDraft(); }
-        else fallbackEditing();
+  }
+  var raf = 0;
+  window.addEventListener('scroll', function () {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      raf = 0;
+      var y = window.scrollY, sc = app.state.scrolled ? y > 100 : y > 180, active = 'top';
+      ['about', 'journey', 'projects', 'skills', 'contact'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) active = id;
       });
-    }).catch(function () { settled = true; fallbackEditing(); });
-    // if the viewer never answers, don't leave the page stuck in read-only
-    setTimeout(function () { if (!settled) fallbackEditing(); }, 3000);
-  }
-  /* ---------- added: keep the focused field above the on-screen keyboard ---------- */
-  (function mobileEditingComfort() {
-    var coarse = false;
-    try { coarse = window.matchMedia('(pointer: coarse)').matches; } catch (e) {}
-    if (!coarse) return;
-    document.addEventListener('focusin', function (e) {
-      var el = e.target;
-      if (!el) return;
-      var editable = el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName);
-      if (!editable) return;
-      setTimeout(function () {
-        try { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (err) {}
-      }, 300);
+      var d = document.documentElement;
+      if (window.innerHeight + y >= d.scrollHeight - 8) active = 'contact';
+      app.setState({ scrolled: sc, active: active });
     });
-  })();
+  }, { passive: true });
 
-  function showFatal(msg) {
-    var app = document.getElementById('app');
-    if (!app) return;
-    app.innerHTML = '';
-    app.appendChild(h('div', { class: 'noscript-note' },
-      h('h1', null, 'Something went wrong'),
-      h('p', null, msg),
-      h('p', null, h('a', { href: 'mailto:abdualaziz1777@gmail.com' }, 'abdualaziz1777@gmail.com'))));
-  }
-  window.addEventListener('error', function () {
-    var app = document.getElementById('app');
-    if (app && !app.firstChild) showFatal('The page failed to load in this browser.');
-  });
-  try { boot(); }
-  catch (e) { showFatal(e && e.message ? e.message : 'Unexpected error.'); }
+  renderAll();
 })();
+
 </script>
 </body>
 </html>
