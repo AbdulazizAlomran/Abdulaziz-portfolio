@@ -56,6 +56,13 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
   .sb-open .sb-inner{display:block;max-height:calc(100vh - 80px)!important;overflow-y:auto;padding:14px 0 6px}
   section[id]{scroll-margin-top:80px}
 }
+
+.pf{--bg:#EEF0F3;--card:#fff;--ink:#0F172A;--text2:#334155;--muted:#475569;--muted2:#64748B;--line:#E2E8F0;--line-soft:#F1F5F9;--line2:#CBD5E1;--soft:#F1F5F9;--soft2:#F8FAFC;--tint:#E6F2F3;--accent-text:#0E7C86;color-scheme:light}
+.pf.dark{--bg:#0B1120;--card:#111827;--ink:#F1F5F9;--text2:#CBD5E1;--muted:#94A3B8;--muted2:#94A3B8;--line:#1F2937;--line-soft:#1F2937;--line2:#334155;--soft:#1F2937;--soft2:#0F172A;--tint:rgba(45,212,191,.12);--accent-text:#2DD4BF;color-scheme:dark}
+.pf a{color:var(--accent-text)}
+.pf.dark .d-card:hover{box-shadow:0 16px 34px rgba(0,0,0,.45)}
+.i-sun{display:none}.pf.dark .i-sun{display:block}.pf.dark .i-moon{display:none}
+html.dk,html.dk body{background:#0B1120}
 </style>
 </head>
 <body>
@@ -517,7 +524,7 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
 
 <!-- Page template (design) — no need to touch for content changes -->
 <template id="tpl">
-<div dir="{{dir}}" lang="{{lang}}" style="font-family: 'DM Sans', 'Tajawal', system-ui, sans-serif; color: #0F172A; background: #EEF0F3; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: flex-start">
+<div class="pf {{themeClass}}" dir="{{dir}}" lang="{{lang}}" style="font-family: 'DM Sans', 'Tajawal', system-ui, sans-serif; color: var(--ink); background: var(--bg); min-height: 100vh; display: flex; flex-wrap: wrap; align-items: flex-start">
 
   <aside id="sidebar" class="sb {{sbOpen}}" style="flex: 1 1 250px; max-width: 100%; box-sizing: border-box; padding: 22px 16px; background: #0F172A; color: #E2E8F0; align-self: stretch">
     <div class="mbar" style="align-items: center; justify-content: space-between; gap: 12px">
@@ -529,7 +536,7 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
       <div style="width: 46px; height: 46px; border-radius: 12px; background: #0E7C86; display: grid; place-items: center; font-weight: 800; color: #fff; font-size: 16px; flex: 0 0 auto">AA</div>
       <div style="min-width: 0"><div style="font-weight: 700; font-size: 15px">{{t.name}}</div><div style="font-size: 12px; color: #94A3B8">{{t.nameAlt}}</div></div>
     </div>
-    <div style="font-size: 11px; font-weight: 700; color: #64748B; letter-spacing: .08em; text-transform: uppercase; padding: 0 8px 8px">{{t.ui.menu}}</div>
+    <div style="font-size: 11px; font-weight: 700; color: var(--muted2); letter-spacing: .08em; text-transform: uppercase; padding: 0 8px 8px">{{t.ui.menu}}</div>
     <nav style="display: flex; flex-wrap: wrap; gap: 4px; font-size: 14px">
       <a class="d-nav" href="#top" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.top.bg}}; color: {{nav.top.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>{{t.nav.home}}</a>
       <a class="d-nav" href="#about" onClick="{{closeMenu}}" style="flex: 1 1 150px; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; background: {{nav.about.bg}}; color: {{nav.about.fg}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>{{t.nav.about}}</a>
@@ -552,41 +559,42 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
   <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 18px clamp(16px, 3vw, 36px) 48px; display: flex; flex-direction: column; gap: 20px">
 
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 0 2px">
-      <div style="font-size: 14px; color: #475569"><span>{{t.ui.crumb}}</span> <span style="color: #94A3B8">/</span> <b style="color: #0F172A">{{t.nav.home}}</b></div>
+      <div style="font-size: 14px; color: var(--muted)"><span>{{t.ui.crumb}}</span> <span style="color: #94A3B8">/</span> <b style="color: var(--ink)">{{t.nav.home}}</b></div>
       <div style="display: flex; flex-wrap: wrap; gap: 8px">
-        <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: #fff; border: 1px solid #E2E8F0; color: #0F172A; font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
-        <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2E8F0; background: #fff; color: #0F172A; font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
+        <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); color: var(--ink); font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
+        <button onClick="{{toggleTheme}}" aria-label="Dark mode" style="width: 44px; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0"><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+        <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
       </div>
     </div>
 
     <section id="top" style="display: flex; flex-wrap: wrap; gap: 20px">
-      <div class="d-card" style="flex: 2 1 420px; min-width: 0; background: #fff; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; position: relative; overflow: hidden">
+      <div class="d-card" style="flex: 2 1 420px; min-width: 0; background: var(--card); border-radius: 18px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; position: relative; overflow: hidden">
         <svg aria-hidden="true" viewBox="0 0 400 120" preserveAspectRatio="none" style="position: absolute; inset-inline: 0; bottom: 0; width: 100%; height: 90px; opacity: .9"><path class="d-line" d="M0,100 C50,96 80,80 120,84 C170,88 190,60 240,58 C290,56 310,40 350,30 L400,12" fill="none" stroke="#B9E1E3" stroke-width="2.5"></path></svg>
         <div style="position: relative">
           <h1 style="margin: 0; font-size: clamp(36px, 4.8vw, 60px); line-height: 1.08; letter-spacing: -0.025em; font-weight: 800">{{t.name}}</h1>
-          <p style="margin: 12px 0 0; font-size: clamp(18px, 2vw, 22px); color: #475569; line-height: 1.5">{{t.hero}}</p>
+          <p style="margin: 12px 0 0; font-size: clamp(18px, 2vw, 22px); color: var(--muted); line-height: 1.5">{{t.hero}}</p>
         </div>
         <div style="position: relative; display: flex; flex-wrap: wrap; gap: 10px">
           <a class="d-btn" href="#projects" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #0E7C86; color: #fff; font-weight: 700">{{t.ctaProjects}}</a>
-          <a class="d-btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #F1F5F9; color: #0F172A; font-weight: 700">{{t.ctaContact}}</a>
+          <a class="d-btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: var(--soft); color: var(--ink); font-weight: 700">{{t.ctaContact}}</a>
         </div>
       </div>
-      <div class="d-card" style="flex: 1 1 280px; min-width: 0; background: #fff; border-radius: 18px; padding: 24px">
+      <div class="d-card" style="flex: 1 1 280px; min-width: 0; background: var(--card); border-radius: 18px; padding: 24px">
         <div style="display: flex; justify-content: space-between; align-items: baseline"><div style="font-size: 14px; font-weight: 700">{{t.skillsTitle}}</div><a href="#skills" style="font-size: 13px; font-weight: 700">{{t.ui.details}}</a></div>
         <div style="display: flex; align-items: center; gap: 18px; margin-top: 12px; flex-wrap: wrap">
           <svg viewBox="0 0 160 160" width="140" height="140" role="img" aria-label="Skills by group">
             <g transform="rotate(-90 80 80)" fill="none" stroke-width="22">
-              <circle cx="80" cy="80" r="60" stroke="#F1F5F9"></circle>
+              <circle cx="80" cy="80" r="60" style="stroke: var(--soft)"></circle>
               <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" style="animation-delay: .3s"></circle>
               <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".7" stroke-dashoffset="-108" style="animation-delay: .6s"></circle>
               <circle class="d-s2" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".45" stroke-dashoffset="-216" style="animation-delay: .9s"></circle>
               <circle class="d-s1" cx="80" cy="80" r="60" stroke="#0E7C86" stroke-opacity=".22" stroke-dashoffset="-324" style="animation-delay: 1.2s"></circle>
             </g>
-            <text x="80" y="80" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="800" fill="#0F172A" font-family="DM Sans, sans-serif">{{skillCount}}</text>
+            <text x="80" y="80" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="800" style="fill: var(--ink)" font-family="DM Sans, sans-serif">{{skillCount}}</text>
           </svg>
           <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; flex: 1; min-width: 130px">
             <sc-for list="{{skillsX}}" as="g" hint-placeholder-count="4">
-              <div style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #0E7C86; opacity: {{g.shade}}"></span><span style="flex: 1; color: #334155">{{g.group}}</span><b>{{g.count}}</b></div>
+              <div style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #0E7C86; opacity: {{g.shade}}"></span><span style="flex: 1; color: var(--text2)">{{g.group}}</span><b>{{g.count}}</b></div>
             </sc-for>
           </div>
         </div>
@@ -595,8 +603,8 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
 
     <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px">
       <sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
-        <a class="d-card" href="{{k.href}}" style="display: block; background: #fff; border-radius: 16px; padding: 20px; color: #0F172A">
-          <div style="display: flex; justify-content: space-between; font-size: 13px; color: #475569; font-weight: 700"><span>{{k.l}}</span><span style="color: #0E7C86">↗</span></div>
+        <a class="d-card" href="{{k.href}}" style="display: block; background: var(--card); border-radius: 16px; padding: 20px; color: var(--ink)">
+          <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); font-weight: 700"><span>{{k.l}}</span><span style="color: var(--accent-text)">↗</span></div>
           <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; margin-top: 8px">
             <div style="font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">{{k.n}}</div>
             <svg width="70" height="28" viewBox="0 0 70 28" aria-hidden="true"><path d="M2 24 L14 18 L26 20 L38 11 L50 13 L68 4" fill="none" stroke="#0E7C86" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -605,13 +613,13 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
       </sc-for>
     </section>
 
-    <section class="d-card" aria-label="Data to decision" style="background: #fff; border-radius: 18px; padding: 26px">
+    <section class="d-card" aria-label="Data to decision" style="background: var(--card); border-radius: 18px; padding: 26px">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline">
-        <div><div style="font-weight: 800; font-size: 17px">Data → Decision</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.pipelineSub}}</div></div>
-        <div style="font-size: 13px; color: #475569; display: flex; align-items: center; gap: 6px"><span class="d-live" style="width: 10px; height: 10px; border-radius: 50%; background: #0E7C86"></span></div>
+        <div><div style="font-weight: 800; font-size: 17px">Data → Decision</div><div style="font-size: 13px; color: var(--muted); margin-top: 4px">{{t.ui.pipelineSub}}</div></div>
+        <div style="font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px"><span class="d-live" style="width: 10px; height: 10px; border-radius: 50%; background: #0E7C86"></span></div>
       </div>
       <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end">
-        <div class="d-chart" dir="ltr" aria-hidden="true" style="flex: 2 1 380px; min-width: 0; height: 180px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px; align-items: end; border-bottom: 1px solid #E2E8F0">
+        <div class="d-chart" dir="ltr" aria-hidden="true" style="flex: 2 1 380px; min-width: 0; height: 180px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px; align-items: end; border-bottom: 1px solid var(--line)">
           <div class="d-barh" style="height: 30%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .1s"></div></div>
           <div class="d-barh" style="height: 42%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .15s"></div></div>
           <div class="d-barh" style="height: 36%"><div class="d-bar" style="height: 100%; background: #CBD5E1; border-radius: 6px 6px 0 0; animation-delay: .2s"></div></div>
@@ -626,34 +634,34 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
           <div class="d-barh" style="height: 100%"><div class="d-bar" style="height: 100%; background: #0E7C86; border-radius: 6px 6px 0 0; animation-delay: .65s"></div></div>
         </div>
         <div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13px">
-          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.raw}}</div><div class="d-fun" style="height: 12px; width: 100%; border-radius: 6px; background: #CBD5E1; animation-delay: .8s"></div></div>
-          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.clean}}</div><div class="d-fun" style="height: 12px; width: 78%; border-radius: 6px; background: #94A3B8; animation-delay: 1s"></div></div>
-          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.model}}</div><div class="d-fun" style="height: 12px; width: 56%; border-radius: 6px; background: #5FB3B9; animation-delay: 1.2s"></div></div>
-          <div><div style="color: #475569; margin-bottom: 4px">{{t.ui.stages.insight}}</div><div class="d-fun" style="height: 12px; width: 36%; border-radius: 6px; background: #1F8A93; animation-delay: 1.4s"></div></div>
-          <div><div style="color: #0E7C86; font-weight: 800; margin-bottom: 4px">{{t.ui.stages.decision}} ✓</div><div class="d-fun" style="height: 12px; width: 18%; border-radius: 6px; background: #0E7C86; animation-delay: 1.6s"></div></div>
+          <div><div style="color: var(--muted); margin-bottom: 4px">{{t.ui.stages.raw}}</div><div class="d-fun" style="height: 12px; width: 100%; border-radius: 6px; background: #CBD5E1; animation-delay: .8s"></div></div>
+          <div><div style="color: var(--muted); margin-bottom: 4px">{{t.ui.stages.clean}}</div><div class="d-fun" style="height: 12px; width: 78%; border-radius: 6px; background: #94A3B8; animation-delay: 1s"></div></div>
+          <div><div style="color: var(--muted); margin-bottom: 4px">{{t.ui.stages.model}}</div><div class="d-fun" style="height: 12px; width: 56%; border-radius: 6px; background: #5FB3B9; animation-delay: 1.2s"></div></div>
+          <div><div style="color: var(--muted); margin-bottom: 4px">{{t.ui.stages.insight}}</div><div class="d-fun" style="height: 12px; width: 36%; border-radius: 6px; background: #1F8A93; animation-delay: 1.4s"></div></div>
+          <div><div style="color: var(--accent-text); font-weight: 800; margin-bottom: 4px">{{t.ui.stages.decision}} ✓</div><div class="d-fun" style="height: 12px; width: 18%; border-radius: 6px; background: #0E7C86; animation-delay: 1.6s"></div></div>
         </div>
       </div>
     </section>
 
     <section id="about" class="rv" style="display: flex; flex-wrap: wrap; gap: 20px">
-      <div class="d-card" style="flex: 1 1 340px; min-width: 0; background: #fff; border-radius: 18px; padding: 26px">
+      <div class="d-card" style="flex: 1 1 340px; min-width: 0; background: var(--card); border-radius: 18px; padding: 26px">
         <div style="font-weight: 800; font-size: 20px; margin-bottom: 12px">{{t.aboutTitle}}</div>
-        <p style="margin: 0; font-size: 16px; line-height: 1.85; color: #334155">{{t.bio}}</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.85; color: var(--text2)">{{t.bio}}</p>
       </div>
       <div style="flex: 1 1 340px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px">
         <sc-for list="{{t.info}}" as="i" hint-placeholder-count="4">
-          <div class="d-card" style="background: #fff; border-radius: 14px; padding: 16px">
-            <div style="font-size: 12px; color: #475569; font-weight: 700">{{i.k}}</div>
+          <div class="d-card" style="background: var(--card); border-radius: 14px; padding: 16px">
+            <div style="font-size: 12px; color: var(--muted); font-weight: 700">{{i.k}}</div>
             <div style="margin-top: 6px; font-size: 15px; font-weight: 700; line-height: 1.45">{{i.v}}</div>
           </div>
         </sc-for>
       </div>
     </section>
 
-    <section id="journey" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+    <section id="journey" class="rv" style="background: var(--card); border-radius: 18px; padding: 26px">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px">
-        <div><div style="font-weight: 800; font-size: 20px">{{t.journeyTitle}}</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.journeySub}}</div></div>
-        <div role="tablist" aria-label="{{t.journeyTitle}}" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: #F1F5F9; border-radius: 12px">
+        <div><div style="font-weight: 800; font-size: 20px">{{t.journeyTitle}}</div><div style="font-size: 13px; color: var(--muted); margin-top: 4px">{{t.ui.journeySub}}</div></div>
+        <div role="tablist" aria-label="{{t.journeyTitle}}" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--soft); border-radius: 12px">
           <sc-for list="{{journeyTabs}}" as="tab" hint-placeholder-count="3">
             <button class="d-chip" role="tab" aria-selected="{{tab.pressed}}" onClick="{{tab.pick}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border: 0; border-radius: 9px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: {{tab.bg}}; color: {{tab.fg}}; box-shadow: {{tab.shadow}}">{{tab.label}}<span style="font-size: 11px; min-width: 20px; padding: 1px 6px; border-radius: 999px; background: {{tab.countBg}}; color: {{tab.countFg}}">{{tab.count}}</span></button>
           </sc-for>
@@ -664,50 +672,50 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
         <sc-for list="{{journeyItems}}" as="e" hint-placeholder-count="1">
           <div class="d-fade" style="display: flex; gap: 18px">
             <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center">
-              <span style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #fff; border: 3px solid #0E7C86; box-sizing: border-box"></span>
-              <span style="flex: 1; width: 2px; background: #E2E8F0; margin-top: 4px"></span>
+              <span style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--card); border: 3px solid #0E7C86; box-sizing: border-box"></span>
+              <span style="flex: 1; width: 2px; background: var(--line2); margin-top: 4px"></span>
             </div>
             <div style="flex: 1; min-width: 0; padding-bottom: 26px">
-              <sc-if value="{{e.hasMeta}}" hint-placeholder-val="{{true}}"><div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; margin-bottom: 6px"><b style="color: #0F172A">{{e.date}}</b><sc-if value="{{e.status}}" hint-placeholder-val="{{true}}"><span style="font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: {{e.bg}}; color: {{e.fg}}">{{e.status}}</span></sc-if></div></sc-if>
+              <sc-if value="{{e.hasMeta}}" hint-placeholder-val="{{true}}"><div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; margin-bottom: 6px"><b style="color: var(--ink)">{{e.date}}</b><sc-if value="{{e.status}}" hint-placeholder-val="{{true}}"><span style="font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: {{e.bg}}; color: {{e.fg}}">{{e.status}}</span></sc-if></div></sc-if>
               <div style="font-size: 18px; font-weight: 800; line-height: 1.4">{{e.title}}</div>
-              <div style="margin-top: 2px; font-size: 14px; color: #475569">{{e.org}}</div>
-              <sc-if value="{{e.desc}}" hint-placeholder-val="{{true}}"><p style="margin: 8px 0 0; font-size: 15px; line-height: 1.75; color: #334155">{{e.desc}}</p></sc-if>
+              <div style="margin-top: 2px; font-size: 14px; color: var(--muted)">{{e.org}}</div>
+              <sc-if value="{{e.desc}}" hint-placeholder-val="{{true}}"><p style="margin: 8px 0 0; font-size: 15px; line-height: 1.75; color: var(--text2)">{{e.desc}}</p></sc-if>
             </div>
           </div>
         </sc-for>
         <sc-if value="{{journeyEmpty}}" hint-placeholder-val="{{false}}">
-          <div class="d-fade" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 2px dashed #CBD5E1; border-radius: 14px; background: #F8FAFC">
-            <span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 10px; background: #E6F2F3; display: grid; place-items: center; flex: 0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
-            <span style="font-size: 15px; color: #475569">{{t.ui.listEmpty}}</span>
+          <div class="d-fade" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 2px dashed var(--line2); border-radius: 14px; background: var(--soft2)">
+            <span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 10px; background: var(--tint); display: grid; place-items: center; flex: 0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
+            <span style="font-size: 15px; color: var(--muted)">{{t.ui.listEmpty}}</span>
           </div>
         </sc-if>
       </div>
     </section>
 
-    <section id="projects" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+    <section id="projects" class="rv" style="background: var(--card); border-radius: 18px; padding: 26px">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 18px">
-        <div><div style="font-weight: 800; font-size: 20px">{{t.projectsTitle}}</div><div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.projectsSub}}</div></div>
-        <sc-if value="{{hasProjects}}" hint-placeholder-val="{{false}}"><div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 6px; padding: 4px; background: #F1F5F9; border-radius: 12px">
+        <div><div style="font-weight: 800; font-size: 20px">{{t.projectsTitle}}</div><div style="font-size: 13px; color: var(--muted); margin-top: 4px">{{t.ui.projectsSub}}</div></div>
+        <sc-if value="{{hasProjects}}" hint-placeholder-val="{{false}}"><div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 6px; padding: 4px; background: var(--soft); border-radius: 12px">
           <sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
             <button class="d-chip" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 40px; padding: 0 14px; border: 0; border-radius: 9px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; background: {{f.bg}}; color: {{f.fg}}; box-shadow: {{f.shadow}}">{{f.label}}</button>
           </sc-for>
         </div></sc-if>
       </div>
       <sc-if value="{{noProjects}}" hint-placeholder-val="{{true}}">
-        <div style="border: 2px dashed #CBD5E1; border-radius: 16px; padding: clamp(28px, 5vw, 56px) 24px; text-align: center; background: #F8FAFC">
-          <div aria-hidden="true" style="width: 64px; height: 64px; margin: 0 auto; border-radius: 16px; background: #E6F2F3; display: grid; place-items: center">
+        <div style="border: 2px dashed var(--line2); border-radius: 16px; padding: clamp(28px, 5vw, 56px) 24px; text-align: center; background: var(--soft2)">
+          <div aria-hidden="true" style="width: 64px; height: 64px; margin: 0 auto; border-radius: 16px; background: var(--tint); display: grid; place-items: center">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"><path d="M4 20V14M10 20V9M16 20v-4M22 20H2"></path><path d="M17 3v6M14 6h6"></path></svg>
           </div>
           <div style="margin-top: 16px; font-size: 19px; font-weight: 800">{{t.ui.emptyTitle}}</div>
-          <p style="margin: 8px auto 0; max-width: 460px; font-size: 15px; line-height: 1.75; color: #475569">{{t.ui.emptyText}}</p>
+          <p style="margin: 8px auto 0; max-width: 460px; font-size: 15px; line-height: 1.75; color: var(--muted)">{{t.ui.emptyText}}</p>
           <a class="d-btn" href="{{t.linkedin}}" style="display: inline-flex; align-items: center; margin-top: 18px; min-height: 44px; padding: 0 20px; border-radius: 10px; background: #0E7C86; color: #fff; font-weight: 700; font-size: 14px">{{t.ui.emptyCta}} ↗</a>
         </div>
       </sc-if>
       <sc-if value="{{hasProjects}}" hint-placeholder-val="{{false}}">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px">
         <sc-for list="{{projects}}" as="p" hint-placeholder-count="3">
-          <article class="d-card d-fade" style="border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: #fff">
-            <div aria-hidden="true" dir="ltr" style="height: 140px; background: #F8FAFC; border-bottom: 1px solid #E2E8F0; overflow: hidden; display: grid; place-items: center">
+          <article class="d-card d-fade" style="border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: var(--card)">
+            <div aria-hidden="true" dir="ltr" style="height: 140px; background: var(--soft2); border-bottom: 1px solid var(--line); overflow: hidden; display: grid; place-items: center">
               <sc-if value="{{p.isBI}}" hint-placeholder-val="{{true}}">
                 <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
                   <rect x="20" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="112" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="204" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect>
@@ -738,12 +746,12 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
               </sc-if>
             </div>
             <div style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1">
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700"><span style="padding: 4px 10px; border-radius: 6px; background: #E6F2F3; color: #0E7C86">{{p.tag}}</span><span style="color: #64748B">#{{p.num}} · {{t.ui.sample}}</span></div>
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700"><span style="padding: 4px 10px; border-radius: 6px; background: var(--tint); color: var(--accent-text)">{{p.tag}}</span><span style="color: var(--muted2)">#{{p.num}} · {{t.ui.sample}}</span></div>
               <h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 800">{{p.title}}</h3>
-              <div><div style="font-size: 12px; font-weight: 700; color: #B45309">{{t.labels.problem}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #334155">{{p.problem}}</p></div>
-              <div><div style="font-size: 12px; font-weight: 700; color: #475569">{{t.labels.did}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #334155">{{p.did}}</p></div>
-              <div style="background: #E6F2F3; border-radius: 10px; padding: 12px 14px"><div style="font-size: 12px; font-weight: 700; color: #0E7C86">{{t.labels.result}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: #0F172A; font-weight: 500">{{p.result}}</p></div>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{p.tools}}" as="tool" hint-placeholder-count="3"><span style="font-size: 12px; padding: 4px 9px; border-radius: 6px; background: #F1F5F9; color: #334155">{{tool}}</span></sc-for></div>
+              <div><div style="font-size: 12px; font-weight: 700; color: #B45309">{{t.labels.problem}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: var(--text2)">{{p.problem}}</p></div>
+              <div><div style="font-size: 12px; font-weight: 700; color: var(--muted)">{{t.labels.did}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: var(--text2)">{{p.did}}</p></div>
+              <div style="background: var(--tint); border-radius: 10px; padding: 12px 14px"><div style="font-size: 12px; font-weight: 700; color: var(--accent-text)">{{t.labels.result}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: var(--ink); font-weight: 500">{{p.result}}</p></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{p.tools}}" as="tool" hint-placeholder-count="3"><span style="font-size: 12px; padding: 4px 9px; border-radius: 6px; background: var(--soft); color: var(--text2)">{{tool}}</span></sc-for></div>
               <a href="{{p.link}}" style="margin-top: auto; display: inline-flex; align-items: center; min-height: 40px; font-size: 14px; font-weight: 800">{{t.labels.view}} ↗</a>
             </div>
           </article>
@@ -752,13 +760,13 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
       </sc-if>
     </section>
 
-    <section id="skills" class="rv" style="background: #fff; border-radius: 18px; padding: 26px">
+    <section id="skills" class="rv" style="background: var(--card); border-radius: 18px; padding: 26px">
       <div style="font-weight: 800; font-size: 20px">{{t.skillsTitle}}</div>
-      <div style="font-size: 13px; color: #475569; margin-top: 4px">{{t.ui.skillsSub}}</div>
+      <div style="font-size: 13px; color: var(--muted); margin-top: 4px">{{t.ui.skillsSub}}</div>
       <div style="margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px">
         <sc-for list="{{skillTable}}" as="g" hint-placeholder-count="4">
-          <div class="d-card" style="border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px">
-            <div style="display: flex; justify-content: space-between; font-size: 13px; color: #475569; font-weight: 700"><span>{{g.group}}</span><span style="padding: 2px 8px; border-radius: 999px; background: #F1F5F9">{{g.count}}</span></div>
+          <div class="d-card" style="border: 1px solid var(--line); border-radius: 14px; padding: 18px">
+            <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); font-weight: 700"><span>{{g.group}}</span><span style="padding: 2px 8px; border-radius: 999px; background: var(--soft)">{{g.count}}</span></div>
             <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px">
               <sc-for list="{{g.rows}}" as="r" hint-placeholder-count="2">
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; border-radius: 10px; background: #0F172A; color: #fff"><span style="font-size: 15px; font-weight: 800">{{r.name}}</span><span style="font-size: 11px; color: #94A3B8; font-weight: 500">{{r.used}}</span></div>
@@ -786,11 +794,12 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
       </div>
     </section>
 
-    <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 12px; color: #475569; padding: 4px 0 64px"><span>{{t.footer}}</span><a href="#top" style="font-weight: 700">{{t.ui.backTop}} ↑</a></footer>
+    <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); padding: 4px 0 64px"><span>{{t.footer}}</span><a href="#top" style="font-weight: 700">{{t.ui.backTop}} ↑</a></footer>
   </main>
   <div id="dock" aria-hidden="{{dockHidden}}" style="position: fixed; bottom: 20px; inset-inline-end: 20px; z-index: 50; display: flex; gap: 8px; filter: drop-shadow(0 10px 24px rgba(15,23,42,.16)); transition: opacity .5s cubic-bezier(.22,.8,.24,1), transform .6s cubic-bezier(.22,.8,.24,1), visibility .6s; opacity: {{dockOpacity}}; transform: {{dockTransform}}; visibility: {{dockVis}}">
-      <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: #fff; border: 1px solid #E2E8F0; color: #0F172A; font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
-      <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2E8F0; background: #fff; color: #0F172A; font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
+      <a class="d-btn" href="{{t.cvUrl}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); color: var(--ink); font-weight: 700; font-size: 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{t.cv}}</a>
+      <button onClick="{{toggleTheme}}" aria-label="Dark mode" style="width: 44px; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0"><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+        <button onClick="{{toggle}}" aria-label="Switch language" style="min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-weight: 800; cursor: pointer">{{t.langBtn}}</button>
   </div>
 </div>
 </template>
@@ -854,10 +863,11 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
   function renderInto(tplNode, ctx) { var f = document.createDocumentFragment(); renderNode(tplNode, ctx, f); return f; }
 
   /* ---------- state + view model ---------- */
-  var saved = null;
-  try { saved = localStorage.getItem('pf-lang'); } catch (e) {}
+  var saved = null, savedTheme = null;
+  try { saved = localStorage.getItem('pf-lang'); savedTheme = localStorage.getItem('pf-theme'); } catch (e) {}
+  var prefersDark = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
   var app = {
-    state: { lang: saved === 'en' || saved === 'ar' ? saved : 'ar', filter: 'all', copied: false, jtab: 'education', scrolled: false, active: 'top' },
+    state: { theme: savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (prefersDark ? 'dark' : 'light'), lang: saved === 'en' || saved === 'ar' ? saved : 'ar', filter: 'all', copied: false, jtab: 'education', scrolled: false, active: 'top' },
     setState: function (patch) {
       var regions = {};
       for (var k in patch) {
@@ -885,7 +895,7 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
     var filters = tags.map(function (tag) {
       var on = filter === tag;
       return { label: tag === 'all' ? t.ui.all : tag, pressed: on ? 'true' : 'false',
-        bg: on ? '#fff' : 'transparent', fg: on ? '#0E7C86' : '#475569', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
+        bg: on ? 'var(--card)' : 'transparent', fg: on ? 'var(--accent-text)' : 'var(--muted)', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
         pick: function () { self.setState({ filter: tag }); } };
     });
     var projects = t.projects.filter(function (p) { return filter === 'all' || p.tag === filter; })
@@ -904,8 +914,8 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
     var journeyTabs = ['education', 'certificates', 'volunteering', 'awards'].map(function (key) {
       var on = jtab === key;
       return { label: t[key + 'Title'], count: (t[key] || []).length, pressed: on ? 'true' : 'false',
-        bg: on ? '#fff' : 'transparent', fg: on ? '#0E7C86' : '#475569', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
-        countBg: on ? '#E6F2F3' : '#E2E8F0', countFg: on ? '#0E7C86' : '#475569',
+        bg: on ? 'var(--card)' : 'transparent', fg: on ? 'var(--accent-text)' : 'var(--muted)', shadow: on ? '0 1px 3px rgba(15,23,42,.12)' : 'none',
+        countBg: on ? 'var(--tint)' : 'var(--line)', countFg: on ? 'var(--accent-text)' : 'var(--muted)',
         pick: function () { self.setState({ jtab: key }); } };
     });
     var journeyItems = toned(t[jtab]);
@@ -936,6 +946,14 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
         self.setState({ copied: true });
         clearTimeout(self._ct); self._ct = setTimeout(function () { self.setState({ copied: false }); }, 1800);
       },
+      themeClass: st.theme === 'dark' ? 'dark' : '',
+      toggleTheme: function () {
+        st.theme = st.theme === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('pf-theme', st.theme); } catch (e) {}
+        var root = mount.firstElementChild; if (root) root.classList.toggle('dark', st.theme === 'dark');
+        document.documentElement.classList.toggle('dk', st.theme === 'dark');
+        var mc = document.querySelector('meta[name=theme-color]'); if (mc) mc.setAttribute('content', st.theme === 'dark' ? '#0B1120' : '#0F172A');
+      },
       sbOpen: '', menuExpanded: 'false',
       toggleMenu: function () { setMenu(!document.getElementById('sidebar').classList.contains('sb-open')); },
       closeMenu: function () { setMenu(false); },
@@ -963,6 +981,7 @@ a{color:#0E7C86;text-decoration:none}a:hover{color:#095A61}
     var v = vals();
     document.documentElement.lang = v.lang;
     document.documentElement.dir = v.dir;
+    document.documentElement.classList.toggle('dk', app.state.theme === 'dark');
     document.title = v.t.name + ' — Portfolio';
     var y = window.scrollY;
     mount.textContent = '';
