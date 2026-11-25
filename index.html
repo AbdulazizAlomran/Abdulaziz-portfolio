@@ -186,6 +186,7 @@ html.dk,html.dk body{background:#0B1120}
         "num": "1",
         "kind": "img",
         "img": "projects/tamouh.jpg",
+      "imgBg": "#0E3B2E",
         "title": "طموح: منصة الهاكاثونات المفتوحة",
         "problem": "إعلانات الهاكاثونات متفرقة في قروبات الواتساب وتليجرام، فالطالب يعرف عنها بالصدفة وبعد ما يفوته التسجيل أو ما يمديه يجمع فريق.",
         "did": "كتبت الـ PRD وصممت الشاشات، وبنيت المنصة وأطلقتها: قائمة الهاكاثونات المفتوحة مرتبة حسب أقرب إغلاق مع عدّاد، وفلاتر بالمدينة والوقت، و«تسجيلاتي»، وحسابات اختيارية، وإرسال هاكاثون من الطلاب مع مراجعة ولوحة إدارة.",
@@ -429,6 +430,7 @@ html.dk,html.dk body{background:#0B1120}
         "num": "1",
         "kind": "img",
         "img": "projects/tamouh.jpg",
+      "imgBg": "#0E3B2E",
         "title": "Tamouh: open hackathons platform",
         "problem": "Hackathon announcements are scattered across WhatsApp and Telegram groups, so students find out by chance, often after registration closes or with no time left to form a team.",
         "did": "Wrote the PRD, designed the screens, then built and launched the platform: open hackathons sorted by closing date with a countdown, city and time filters, \"My registrations\", optional accounts, and student-submitted hackathons with review and an admin panel.",
@@ -766,7 +768,7 @@ html.dk,html.dk body{background:#0B1120}
           <article class="d-card d-fade" style="border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: var(--card)">
             <div aria-hidden="true" dir="ltr" style="height: 140px; background: var(--soft2); border-bottom: 1px solid var(--line); overflow: hidden; display: grid; place-items: center">
               <sc-if value="{{p.isImg}}" hint-placeholder-val="{{false}}">
-                <img class="d-prev" src="{{p.img}}" alt="" loading="lazy" style="width: 100%; height: 140px; object-fit: contain; background: #0F1B2D; display: block">
+                <img class="d-prev" src="{{p.img}}" alt="" loading="lazy" style="width: 100%; height: 140px; object-fit: contain; background: {{p.imgBg}}; display: block">
               </sc-if>
               <sc-if value="{{p.isBI}}" hint-placeholder-val="{{true}}">
                 <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
