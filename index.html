@@ -102,7 +102,7 @@ html.dk,html.dk body{background:#0B1120}
       "uni": "جامعة الإمام · CIS",
       "details": "التفاصيل",
       "pipelineSub": "كيف أشتغل على أي مشكلة بيانات",
-      "projectsSub": "التحليل وذكاء الأعمال وقواعد البيانات",
+      "projectsSub": "تطبيقات الويب، والتحليل، وقواعد البيانات",
       "skillsSub": "كل مهارة مع المشاريع اللي استخدمتها فيها",
       "all": "الكل",
       "sample": "تجريبي",
@@ -180,7 +180,31 @@ html.dk,html.dk body{background:#0B1120}
       "result": "النتيجة",
       "view": "عرض المشروع"
     },
-    "projects": [],
+    "projects": [
+      {
+        "tag": "تطبيق ويب",
+        "num": "1",
+        "kind": "img",
+        "img": "projects/tamouh.jpg",
+        "title": "طموح: منصة الهاكاثونات المفتوحة",
+        "problem": "إعلانات الهاكاثونات متفرقة في قروبات الواتساب وتليجرام، فالطالب يعرف عنها بالصدفة وبعد ما يفوته التسجيل أو ما يمديه يجمع فريق.",
+        "did": "كتبت الـ PRD وصممت الشاشات، وبنيت المنصة وأطلقتها: قائمة الهاكاثونات المفتوحة مرتبة حسب أقرب إغلاق مع عدّاد، وفلاتر بالمدينة والوقت، و«تسجيلاتي»، وحسابات اختيارية، وإرسال هاكاثون من الطلاب مع مراجعة ولوحة إدارة.",
+        "result": "منتج شغّال على الإنترنت، عربي بالكامل، يتثبّت كتطبيق على الجوال والكمبيوتر، وبيانات كل مستخدم محمية بقواعد صلاحيات في قاعدة البيانات نفسها.",
+        "tools": [
+          "React",
+          "Supabase",
+          "SQL",
+          "PWA",
+          "Vercel",
+          "Claude Code"
+        ],
+        "skills": [
+          "SQL",
+          "Databases"
+        ],
+        "link": "https://tamouh-eta.vercel.app"
+      }
+    ],
     "skillsTitle": "المهارات",
     "skills": [
       {
@@ -321,7 +345,7 @@ html.dk,html.dk body{background:#0B1120}
       "uni": "IMSIU · CIS",
       "details": "Details",
       "pipelineSub": "How I approach any data problem",
-      "projectsSub": "Analytics, BI and databases",
+      "projectsSub": "Web apps, analytics and databases",
       "skillsSub": "Each skill with the projects it was used in",
       "all": "All",
       "sample": "Sample",
@@ -399,7 +423,31 @@ html.dk,html.dk body{background:#0B1120}
       "result": "Result",
       "view": "View project"
     },
-    "projects": [],
+    "projects": [
+      {
+        "tag": "Web app",
+        "num": "1",
+        "kind": "img",
+        "img": "projects/tamouh.jpg",
+        "title": "Tamouh: open hackathons platform",
+        "problem": "Hackathon announcements are scattered across WhatsApp and Telegram groups, so students find out by chance, often after registration closes or with no time left to form a team.",
+        "did": "Wrote the PRD, designed the screens, then built and launched the platform: open hackathons sorted by closing date with a countdown, city and time filters, \"My registrations\", optional accounts, and student-submitted hackathons with review and an admin panel.",
+        "result": "A live, fully Arabic product, installable as an app on phone and desktop, with every user's data protected by permission rules in the database itself.",
+        "tools": [
+          "React",
+          "Supabase",
+          "SQL",
+          "PWA",
+          "Vercel",
+          "Claude Code"
+        ],
+        "skills": [
+          "SQL",
+          "Databases"
+        ],
+        "link": "https://tamouh-eta.vercel.app"
+      }
+    ],
     "skillsTitle": "Skills",
     "skills": [
       {
@@ -717,6 +765,9 @@ html.dk,html.dk body{background:#0B1120}
         <sc-for list="{{projects}}" as="p" hint-placeholder-count="3">
           <article class="d-card d-fade" style="border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: var(--card)">
             <div aria-hidden="true" dir="ltr" style="height: 140px; background: var(--soft2); border-bottom: 1px solid var(--line); overflow: hidden; display: grid; place-items: center">
+              <sc-if value="{{p.isImg}}" hint-placeholder-val="{{false}}">
+                <img class="d-prev" src="{{p.img}}" alt="" loading="lazy" style="width: 100%; height: 140px; object-fit: contain; background: #0F1B2D; display: block">
+              </sc-if>
               <sc-if value="{{p.isBI}}" hint-placeholder-val="{{true}}">
                 <svg class="d-prev" viewBox="0 0 300 120" width="100%" height="120">
                   <rect x="20" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="112" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect><rect x="204" y="14" width="76" height="30" rx="6" fill="#fff" stroke="#E2E8F0"></rect>
@@ -747,7 +798,7 @@ html.dk,html.dk body{background:#0B1120}
               </sc-if>
             </div>
             <div style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1">
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700"><span style="padding: 4px 10px; border-radius: 6px; background: var(--tint); color: var(--accent-text)">{{p.tag}}</span><span style="color: var(--muted2)">#{{p.num}} · {{t.ui.sample}}</span></div>
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700"><span style="padding: 4px 10px; border-radius: 6px; background: var(--tint); color: var(--accent-text)">{{p.tag}}</span><span style="color: var(--muted2)">#{{p.num}}<sc-if value="{{p.sample}}" hint-placeholder-val="{{false}}"> · {{t.ui.sample}}</sc-if></span></div>
               <h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 800">{{p.title}}</h3>
               <div><div style="font-size: 12px; font-weight: 700; color: #B45309">{{t.labels.problem}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: var(--text2)">{{p.problem}}</p></div>
               <div><div style="font-size: 12px; font-weight: 700; color: var(--muted)">{{t.labels.did}}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.7; color: var(--text2)">{{p.did}}</p></div>
@@ -900,7 +951,7 @@ html.dk,html.dk body{background:#0B1120}
         pick: function () { self.setState({ filter: tag }); } };
     });
     var projects = t.projects.filter(function (p) { return filter === 'all' || p.tag === filter; })
-      .map(function (p) { return Object.assign({}, p, { isBI: p.kind === 'bi', isPy: p.kind === 'py', isSQL: p.kind === 'sql' }); });
+      .map(function (p) { return Object.assign({}, p, { isBI: p.kind === 'bi', isPy: p.kind === 'py', isSQL: p.kind === 'sql', isImg: p.kind === 'img' }); });
     var shades = ['1', '.7', '.45', '.22'];
     var skillsX = t.skills.map(function (g, i) { return Object.assign({}, g, { count: g.items.length, shade: shades[i] || '.2' }); });
     var skillTable = t.skills.map(function (g) {
